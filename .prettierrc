@@ -1,0 +1,7 @@
+{
+  "printWidth": 100,
+  "quoteProps": "preserve",
+  "singleQuote": true,
+  "importOrderSeparation": true,
+  "jsxSingleQuote": true
+}
