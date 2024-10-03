@@ -50,7 +50,7 @@ const UpcomingWebinar = () => {
             </div>
           ))}
         </div>
-        <Button variant='contained'>Join the event</Button>
+        <Button variant='contained'>Записаться</Button>
       </CardContent>
     </Card>
   );
