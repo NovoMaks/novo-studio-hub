@@ -114,7 +114,7 @@ const WelcomeCard = () => {
         <Typography variant='h4'>Novo-studio HUB 👋🏻</Typography>
       </div>
       <div className='mbe-4'>
-        <Typography>Это открытая база знаний нашей web-студии,</Typography>
+        <Typography>Это база знаний нашей web-студии,</Typography>
         <Typography className='font-bold'>создавайте и учитесь вместе с нами!</Typography>
       </div>
       <div className='flex flex-wrap max-md:flex-col justify-between gap-6'>
