@@ -8,15 +8,37 @@ const horizontalMenuData = (): HorizontalMenuDataType[] => [
     icon: 'tabler-smart-home',
   },
   {
-    label: 'Tilda',
-    icon: 'tabler-info-circle',
+    label: 'Разработка',
+    icon: 'tabler-code-circle-2',
     children: [
       {
-        label: 'Готовые компоненты',
-        href: '/tilda',
-        icon: 'tabler-info-circle',
+        label: 'Tilda виджеты',
+        href: '/dev/tilda-widgets',
+        icon: 'tabler-tilde',
+      },
+      {
+        label: 'React',
+        icon: 'tabler-brand-react',
       },
     ],
+  },
+  {
+    label: 'Реклама',
+    icon: 'tabler-ad-circle',
+    children: [
+      {
+        label: 'Яндекс директ',
+        icon: 'tabler-brand-yandex',
+      },
+    ],
+  },
+  {
+    label: 'Дизайн',
+    icon: 'tabler-palette',
+  },
+  {
+    label: 'Документы',
+    icon: 'tabler-vocabulary',
   },
 ];
 
