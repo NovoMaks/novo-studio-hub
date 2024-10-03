@@ -43,7 +43,7 @@ const data: DataType[] = [
 
 const TopContent = () => {
   return (
-    <Card className='w-full'>
+    <Card className='w-full h-full'>
       <CardHeader title='🔝 Наш топ' />
       <CardContent className='flex flex-col gap-6'>
         {data.map((item, i) => (

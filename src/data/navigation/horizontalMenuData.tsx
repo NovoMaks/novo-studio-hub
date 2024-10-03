@@ -40,6 +40,11 @@ const horizontalMenuData = (): HorizontalMenuDataType[] => [
     label: 'Документы',
     icon: 'tabler-vocabulary',
   },
+  {
+    label: 'Тарифы',
+    icon: 'tabler-currency-rubel',
+    href: '/pricing',
+  },
 ];
 
 export default horizontalMenuData;

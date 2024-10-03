@@ -24,7 +24,7 @@ const data: DataType[] = [
 
 const UpcomingWebinar = () => {
   return (
-    <Card>
+    <Card className='h-full'>
       <CardContent className='flex flex-col gap-4'>
         <div className='flex justify-center pli-2.5 pbs-4 rounded bg-primaryLight'>
           <img src='/images/illustrations/characters/4.png' className='bs-[146px]' />
