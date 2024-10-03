@@ -62,31 +62,6 @@ const HorizontalMenu = () => {
         backgroundColor: 'var(--mui-palette-background-paper)',
       }}
     >
-      {/* <Menu
-        rootStyles={menuRootStyles(theme)}
-        renderExpandIcon={({ level }) => <RenderExpandIcon level={level} />}
-        menuItemStyles={menuItemStyles(theme, 'tabler-circle')}
-        renderExpandedMenuItemIcon={{ icon: <i className='tabler-circle text-xs' /> }}
-        popoutMenuOffset={{
-          mainAxis: ({ level }) => (level && level > 0 ? 14 : 12),
-          alignmentAxis: 0,
-        }}
-        verticalMenuProps={{
-          menuItemStyles: verticalMenuItemStyles(verticalNavOptions, theme),
-          renderExpandIcon: ({ open }) => (
-            <RenderVerticalExpandIcon open={open} transitionDuration={transitionDuration} />
-          ),
-          renderExpandedMenuItemIcon: { icon: <i className='tabler-circle text-xs' /> },
-          menuSectionStyles: verticalMenuSectionStyles(verticalNavOptions, theme),
-        }}
-      >
-        <MenuItem href='/home' icon={<i className='tabler-smart-home' />}>
-          HUB
-        </MenuItem>
-        <MenuItem href='/tilda' icon={<i className='tabler-info-circle' />}>
-          Tilda
-        </MenuItem>
-      </Menu> */}
       <Menu
         rootStyles={menuRootStyles(theme)}
         renderExpandIcon={({ level }) => <RenderExpandIcon level={level} />}

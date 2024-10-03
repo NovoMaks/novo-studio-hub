@@ -3,7 +3,7 @@ import { notFound } from 'next/navigation';
 import { getAllPosts, getPostBySlug } from '@/lib/api';
 import markdownToHtml from '@/lib/markdownToHtml';
 import { Divider, Grid, Typography } from '@mui/material';
-import PostCard from '@/app/_components/post/PostCard';
+import PostCard from '@/components/post/PostCard';
 
 export default async function Post({ params }: Params) {
   // const post = getPostBySlug(params.slug);

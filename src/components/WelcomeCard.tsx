@@ -7,24 +7,13 @@ import type { ReactNode } from 'react';
 import dynamic from 'next/dynamic';
 
 // MUI Imports
-import Divider from '@mui/material/Divider';
 import Typography from '@mui/material/Typography';
-import useMediaQuery from '@mui/material/useMediaQuery';
-import { lighten, darken, useTheme } from '@mui/material/styles';
-
-// Third-party Imports
-import type { ApexOptions } from 'apexcharts';
 
 // Type Imports
 import type { ThemeColor } from '@core/types';
 
 // Component Imports
 import CustomAvatar from '@core/components/mui/Avatar';
-import CardTelegram from './CardTelegram';
-import CardStudio from './CardStudio';
-
-// Styled Component Imports
-const AppReactApexCharts = dynamic(() => import('@/lib/styles/AppReactApexCharts'));
 
 type DataType = {
   title: string;
@@ -118,45 +107,30 @@ const data: DataType[] = [
 ];
 
 const WelcomeCard = () => {
-  // Hooks
-  const theme = useTheme();
-  const belowMdScreen = useMediaQuery(theme.breakpoints.down('md'));
-
   return (
-    <div className='flex max-md:flex-col md:items-center gap-6 plb-6'>
-      <div className='md:is-6/12'>
-        <div className='flex items-baseline gap-1 mbe-2 flex-wrap'>
-          <Typography variant='h5'>Добро пожаловать в </Typography>
-          <Typography variant='h4'>Novo-studio HUB 👋🏻</Typography>
-        </div>
-        <div className='mbe-4'>
-          <Typography>Это открытая база знаний нашей web-студии,</Typography>
-          <Typography className='font-bold'>создавайте и учитесь вместе с нами!</Typography>
-        </div>
-        <div className='flex flex-wrap max-md:flex-col justify-between gap-6'>
-          {data.map((item, i) => (
-            <div key={i} className='flex gap-4'>
-              <CustomAvatar variant='rounded' skin='light' size={54} color={item.color}>
-                {item.icon}
-              </CustomAvatar>
-              <div>
-                <Typography className='font-medium'>{item.title}</Typography>
-                <Typography variant='h4' color={`${item.color}.main`}>
-                  {item.value}
-                </Typography>
-              </div>
-            </div>
-          ))}
-        </div>
+    <div>
+      <div className='flex items-baseline gap-1 mbe-2 flex-wrap'>
+        <Typography variant='h5'>Добро пожаловать в </Typography>
+        <Typography variant='h4'>Novo-studio HUB 👋🏻</Typography>
       </div>
-      <Divider orientation={belowMdScreen ? 'horizontal' : 'vertical'} flexItem />
-      <div className='flex md:is-6/12 gap-6 flex-wrap'>
-        <div className='flex-1'>
-          <CardStudio />
-        </div>
-        <div className='flex-1'>
-          <CardTelegram />
-        </div>
+      <div className='mbe-4'>
+        <Typography>Это открытая база знаний нашей web-студии,</Typography>
+        <Typography className='font-bold'>создавайте и учитесь вместе с нами!</Typography>
+      </div>
+      <div className='flex flex-wrap max-md:flex-col justify-between gap-6'>
+        {data.map((item, i) => (
+          <div key={i} className='flex gap-4'>
+            <CustomAvatar variant='rounded' skin='light' size={54} color={item.color}>
+              {item.icon}
+            </CustomAvatar>
+            <div>
+              <Typography className='font-medium'>{item.title}</Typography>
+              <Typography variant='h4' color={`${item.color}.main`}>
+                {item.value}
+              </Typography>
+            </div>
+          </div>
+        ))}
       </div>
     </div>
   );

@@ -13,9 +13,6 @@ import type { VerticalNavContextProps } from '@menu/contexts/verticalNavContext'
 // Component Imports
 import NovoLogo from '@core/svg/Logo';
 
-// Config Imports
-import themeConfig from '@configs/themeConfig';
-
 // Hook Imports
 import useVerticalNav from '@menu/hooks/useVerticalNav';
 import { useSettings } from '@core/hooks/useSettings';
@@ -72,16 +69,6 @@ const Logo = ({ color }: { color?: CSSProperties['color'] }) => {
   return (
     <div className='flex items-center'>
       <NovoLogo className='text-2xl text-primary' />
-      {/* <LogoText
-        color={color}
-        ref={logoTextRef}
-        isHovered={isHovered}
-        isCollapsed={layout === 'collapsed'}
-        transitionDuration={transitionDuration}
-        isBreakpointReached={isBreakpointReached}
-      >
-        {themeConfig.templateName}
-      </LogoText> */}
     </div>
   );
 };

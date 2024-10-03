@@ -1,8 +1,6 @@
 // MUI Imports
 import Typography from '@mui/material/Typography';
 import Grid from '@mui/material/Grid';
-import Chip from '@mui/material/Chip';
-import { styled } from '@mui/material/styles';
 
 // Third-party Imports
 import classnames from 'classnames';
@@ -25,14 +23,6 @@ const team = [
     color: 'var(--mui-palette-info-mainOpacity)',
   },
 ];
-
-// const Card = styled('div')`
-//   border-color: ${(props: { color: ThemeColor }) => props.color};
-//   border-start-start-radius: 90px;
-//   border-start-end-radius: 20px;
-//   border-end-start-radius: 6px;
-//   border-end-end-radius: 6px;
-// `;
 
 const OurTeam = () => {
   return (

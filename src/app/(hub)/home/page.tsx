@@ -1,6 +1,6 @@
-import CardWithUs from '@/app/_components/CardWithUs';
-import TopContent from '@/app/_components/TopContent';
-import WelcomeCard from '@/app/_components/WelcomeCard';
+import CardWithUs from '@/components/CardWithUs';
+import TopContent from '@/components/TopContent';
+import WelcomeCard from '@/components/WelcomeCard';
 import { Grid } from '@mui/material';
 
 export default function Page() {

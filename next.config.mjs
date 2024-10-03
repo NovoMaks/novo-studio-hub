@@ -7,10 +7,9 @@ const nextConfig = {
         source: '/',
         destination: '/home',
         permanent: true,
-        locale: false
-      }
-    ]
-  }
-}
+      },
+    ];
+  },
+};
 
-export default nextConfig
+export default nextConfig;

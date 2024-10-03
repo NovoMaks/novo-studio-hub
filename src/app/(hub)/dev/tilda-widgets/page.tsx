@@ -1,4 +1,4 @@
-import PostCard from '@/app/_components/post/PostCard';
+import PostCard from '@/components/post/PostCard';
 import { Divider, Grid, Typography } from '@mui/material';
 
 export default function Page() {

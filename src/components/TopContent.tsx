@@ -3,14 +3,12 @@ import Card from '@mui/material/Card';
 import CardHeader from '@mui/material/CardHeader';
 import CardContent from '@mui/material/CardContent';
 import Typography from '@mui/material/Typography';
-import Chip from '@mui/material/Chip';
 
 // Type Imports
 import type { ThemeColor } from '@core/types';
 
 // Components Imports
 import CustomAvatar from '@core/components/mui/Avatar';
-import OptionMenu from '@core/components/option-menu';
 
 type DataType = {
   title: string;
