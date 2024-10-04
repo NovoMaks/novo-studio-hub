@@ -8,6 +8,8 @@ import ThemeProvider from '@components/theme';
 // Util Imports
 import { getMode, getSettingsFromCookie, getSystemMode } from '@core/utils/serverHelpers';
 import { VerticalNavProvider } from '@/@menu/contexts/verticalNavContext';
+import { HorizontalNavProvider } from '@/@menu/contexts/horizontalNavContext';
+import { NextAuthProvider } from '@/contexts/nextAuthProvider';
 
 type Props = ChildrenType & {
   direction: Direction;
@@ -23,13 +25,17 @@ const Providers = (props: Props) => {
   const systemMode = getSystemMode();
 
   return (
-    <VerticalNavProvider>
-      <SettingsProvider settingsCookie={settingsCookie} mode={mode}>
-        <ThemeProvider direction={direction} systemMode={systemMode}>
-          {children}
-        </ThemeProvider>
-      </SettingsProvider>
-    </VerticalNavProvider>
+    <NextAuthProvider>
+      <HorizontalNavProvider>
+        <VerticalNavProvider>
+          <SettingsProvider settingsCookie={settingsCookie} mode={mode}>
+            <ThemeProvider direction={direction} systemMode={systemMode}>
+              {children}
+            </ThemeProvider>
+          </SettingsProvider>
+        </VerticalNavProvider>
+      </HorizontalNavProvider>
+    </NextAuthProvider>
   );
 };
 
