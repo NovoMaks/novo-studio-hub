@@ -25,7 +25,7 @@ const Providers = (props: Props) => {
   const systemMode = getSystemMode();
 
   return (
-    <NextAuthProvider>
+    <NextAuthProvider basePath={process.env.NEXTAUTH_BASEPATH}>
       <HorizontalNavProvider>
         <VerticalNavProvider>
           <SettingsProvider settingsCookie={settingsCookie} mode={mode}>
