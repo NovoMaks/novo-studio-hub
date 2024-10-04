@@ -25,13 +25,13 @@ export const pricingData: PricingPlanType[] = [
     imgSrc: '/images/illustrations/objects/pricing-standard.png',
     imgHeight: 120,
     yearlyPlan: {
-      monthly: 200,
-      annually: 1000,
+      monthly: 180,
+      annually: 2160,
     },
     planBenefits: ['Доступ к платному контенту', 'Платные вебинары'],
   },
   {
-    monthlyPrice: 99,
+    monthlyPrice: 400,
     popularPlan: false,
     currentPlan: false,
     title: 'Продвинутый',
@@ -39,8 +39,8 @@ export const pricingData: PricingPlanType[] = [
     imgSrc: '/images/illustrations/objects/pricing-enterprise.png',
     imgHeight: 120,
     yearlyPlan: {
-      monthly: 500,
-      annually: 2000,
+      monthly: 360,
+      annually: 4320,
     },
     planBenefits: ['Доступ к платному контенту', 'Платные вебинары', 'Личный помощьник/наставник'],
   },

@@ -1,22 +1,22 @@
-'use client'
+'use client';
 
 // Next Imports
-import Link from 'next/link'
+import Link from 'next/link';
 
 // MUI Imports
-import useMediaQuery from '@mui/material/useMediaQuery'
-import { styled, useTheme } from '@mui/material/styles'
-import Button from '@mui/material/Button'
-import Typography from '@mui/material/Typography'
+import useMediaQuery from '@mui/material/useMediaQuery';
+import { styled, useTheme } from '@mui/material/styles';
+import Button from '@mui/material/Button';
+import Typography from '@mui/material/Typography';
 
 // Third-party Imports
-import classnames from 'classnames'
+import classnames from 'classnames';
 
 // Type Imports
-import type { SystemMode } from '@core/types'
+import type { SystemMode } from '@core/types';
 
 // Hook Imports
-import { useImageVariant } from '@core/hooks/useImageVariant'
+import { useImageVariant } from '@core/hooks/useImageVariant';
 
 // Styled Components
 const MaskImg = styled('img')({
@@ -25,18 +25,18 @@ const MaskImg = styled('img')({
   inlineSize: '100%',
   position: 'absolute',
   insetBlockEnd: 0,
-  zIndex: -1
-})
+  zIndex: -1,
+});
 
 const NotFound = ({ mode }: { mode: SystemMode }) => {
   // Vars
-  const darkImg = '/images/pages/misc-mask-dark.png'
-  const lightImg = '/images/pages/misc-mask-light.png'
+  const darkImg = '/images/pages/misc-mask-dark.png';
+  const lightImg = '/images/pages/misc-mask-light.png';
 
   // Hooks
-  const theme = useTheme()
-  const hidden = useMediaQuery(theme.breakpoints.down('md'))
-  const miscBackground = useImageVariant(mode, lightImg, darkImg)
+  const theme = useTheme();
+  const hidden = useMediaQuery(theme.breakpoints.down('md'));
+  const miscBackground = useImageVariant(mode, lightImg, darkImg);
 
   return (
     <div className='flex items-center justify-center min-bs-[100dvh] relative p-6 overflow-x-hidden'>
@@ -45,11 +45,11 @@ const NotFound = ({ mode }: { mode: SystemMode }) => {
           <Typography className='font-medium text-8xl' color='text.primary'>
             404
           </Typography>
-          <Typography variant='h4'>Page Not Found ⚠️</Typography>
-          <Typography>we couldn&#39;t find the page you are looking for.</Typography>
+          <Typography variant='h4'>Страница не найдена ⚠️</Typography>
+          <Typography> </Typography>
         </div>
         <Button href='/' component={Link} variant='contained'>
-          Back To Home
+          Вернуться на главную
         </Button>
         <img
           alt='error-404-illustration'
@@ -65,7 +65,7 @@ const NotFound = ({ mode }: { mode: SystemMode }) => {
         />
       )}
     </div>
-  )
-}
+  );
+};
 
-export default NotFound
+export default NotFound;

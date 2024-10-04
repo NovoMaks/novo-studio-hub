@@ -9,6 +9,7 @@ import classnames from 'classnames';
 
 // Type Imports
 import type { PricingPlanType } from '@/types/pricingTypes';
+import Link from 'next/link';
 
 type Props = {
   pricingPlan: 'monthly' | 'annually';
@@ -20,9 +21,6 @@ const PlanDetails = ({ data, pricingPlan }: Props) => {
     <CardContent
       className={classnames(
         'relative border rounded pli-5 pbs-[3.75rem] flex flex-col gap-5 h-full',
-        {
-          'border-primary': data?.popularPlan,
-        },
       )}
     >
       {data?.popularPlan ? (
@@ -75,14 +73,11 @@ const PlanDetails = ({ data, pricingPlan }: Props) => {
           </div>
         ))}
       </div>
-      <Button
-        fullWidth
-        className='mt-auto'
-        color={data?.currentPlan ? 'success' : 'primary'}
-        variant={data?.popularPlan ? 'contained' : 'tonal'}
-      >
-        {data?.currentPlan ? 'Текущий план' : 'Получить'}
-      </Button>
+      <Link href='/profile' className='mt-auto'>
+        <Button fullWidth color={'primary'} variant={'tonal'}>
+          Получить
+        </Button>
+      </Link>
     </CardContent>
   );
 };
