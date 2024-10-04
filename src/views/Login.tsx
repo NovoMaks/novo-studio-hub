@@ -116,17 +116,25 @@ const LoginV2 = ({ mode }: { mode: SystemMode }) => {
             <div className='flex flex-col gap-1.5'>
               <Button
                 variant='contained'
-                onClick={() => signIn('vk', { callbackUrl: '/home' })}
-                startIcon={<i className='tabler-brand-vk' />}
-                className='bg-white text-blue-600 font-bold'
+                onClick={() => signIn('yandex', { callbackUrl: '/home' })}
+                startIcon={<i className='tabler-brand-yandex text-[#ffdb4d]' />}
+                className='font-bold'
               >
-                ВКонтакте
+                Yandex
               </Button>
               <Button
-                startIcon={<i className='tabler-brand-google' />}
+                variant='contained'
+                onClick={() => signIn('mailru', { callbackUrl: '/home' })}
+                startIcon={<i className='tabler-at text-blue-300' />}
+                className='font-bold'
+              >
+                Mail.ru
+              </Button>
+              <Button
+                startIcon={<i className='tabler-brand-google text-red-300' />}
                 variant='contained'
                 onClick={() => signIn('google', { callbackUrl: '/home' })}
-                className='bg-white text-red-600 font-bold'
+                className=' font-bold'
               >
                 Google
               </Button>

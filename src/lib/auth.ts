@@ -1,6 +1,8 @@
 // Third-party Imports
 import GoogleProvider from 'next-auth/providers/google';
 import VkProvider from 'next-auth/providers/vk';
+import YandexProvider from 'next-auth/providers/yandex';
+
 import type { NextAuthOptions } from 'next-auth';
 
 export const authOptions: NextAuthOptions = {
@@ -12,6 +14,10 @@ export const authOptions: NextAuthOptions = {
     VkProvider({
       clientId: process.env.VK_CLIENT_ID as string,
       clientSecret: process.env.VK_CLIENT_SECRET as string,
+    }),
+    YandexProvider({
+      clientId: process.env.YANDEX_CLIENT_ID as string,
+      clientSecret: process.env.YANDEX_CLIENT_SECRET as string,
     }),
   ],
   session: {
