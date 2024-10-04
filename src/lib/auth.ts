@@ -2,6 +2,7 @@
 import GoogleProvider from 'next-auth/providers/google';
 import VkProvider from 'next-auth/providers/vk';
 import YandexProvider from 'next-auth/providers/yandex';
+import MailRuProvider from 'next-auth/providers/mailru';
 
 import type { NextAuthOptions } from 'next-auth';
 
@@ -18,6 +19,10 @@ export const authOptions: NextAuthOptions = {
     YandexProvider({
       clientId: process.env.YANDEX_CLIENT_ID as string,
       clientSecret: process.env.YANDEX_CLIENT_SECRET as string,
+    }),
+    MailRuProvider({
+      clientId: process.env.MAILRU_CLIENT_ID,
+      clientSecret: process.env.MAILRU_CLIENT_SECRET,
     }),
   ],
   session: {
