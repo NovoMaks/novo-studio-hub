@@ -5,7 +5,7 @@ import { useRef, useState } from 'react';
 import type { MouseEvent } from 'react';
 
 // Next Imports
-import { useRouter } from 'next/navigation';
+import { useParams, useRouter } from 'next/navigation';
 
 // MUI Imports
 import { styled } from '@mui/material/styles';
@@ -21,8 +21,12 @@ import Divider from '@mui/material/Divider';
 import MenuItem from '@mui/material/MenuItem';
 import Button from '@mui/material/Button';
 
+// Third-party Imports
+import { signOut, useSession } from 'next-auth/react';
+
 // Hook Imports
 import { useSettings } from '@core/hooks/useSettings';
+import Link from 'next/link';
 
 // Styled component for badge content
 const BadgeContentSpan = styled('span')({
@@ -43,7 +47,7 @@ const UserDropdown = () => {
 
   // Hooks
   const router = useRouter();
-
+  const { data: session } = useSession();
   const { settings } = useSettings();
 
   const handleDropdownOpen = () => {
@@ -66,9 +70,20 @@ const UserDropdown = () => {
   };
 
   const handleUserLogout = async () => {
-    // Redirect to login page
-    router.push('/login');
+    try {
+      await signOut({ callbackUrl: process.env.NEXT_PUBLIC_APP_URL });
+    } catch (error) {
+      console.error(error);
+    }
   };
+
+  if (!session?.user) {
+    return (
+      <Link href='/login'>
+        <Avatar alt='Login' className='cursor-pointer bs-[38px] is-[38px]' />
+      </Link>
+    );
+  }
 
   return (
     <>
@@ -81,8 +96,8 @@ const UserDropdown = () => {
       >
         <Avatar
           ref={anchorRef}
-          alt='John Doe'
-          src='/images/avatars/1.png'
+          alt={session?.user?.name || ''}
+          src={session?.user?.image || ''}
           onClick={handleDropdownOpen}
           className='cursor-pointer bs-[38px] is-[38px]'
         />
@@ -108,16 +123,19 @@ const UserDropdown = () => {
               >
                 <MenuList>
                   <div className='flex items-center plb-2 pli-6 gap-2' tabIndex={-1}>
-                    <Avatar alt='John Doe' src='/images/avatars/1.png' />
+                    <Avatar alt={session?.user?.name || ''} src={session?.user?.image || ''} />
                     <div className='flex items-start flex-col'>
                       <Typography className='font-medium' color='text.primary'>
-                        Максим Новосельцев
+                        {session?.user?.name || ''}
                       </Typography>
-                      <Typography variant='caption'>admin@vuexy.com</Typography>
+                      <Typography variant='caption'>{session?.user?.email || ''}</Typography>
                     </div>
                   </div>
                   <Divider className='mlb-1' />
-                  <MenuItem className='mli-2 gap-3' onClick={(e) => handleDropdownClose(e)}>
+                  <MenuItem
+                    className='mli-2 gap-3'
+                    onClick={(e) => handleDropdownClose(e, '/pages/user-profile')}
+                  >
                     <i className='tabler-user' />
                     <Typography color='text.primary'>Мой профиль</Typography>
                   </MenuItem>
@@ -131,7 +149,7 @@ const UserDropdown = () => {
                       onClick={handleUserLogout}
                       sx={{ '& .MuiButton-endIcon': { marginInlineStart: 1.5 } }}
                     >
-                      Выход
+                      Выйти
                     </Button>
                   </div>
                 </MenuList>

@@ -101,7 +101,7 @@ const LoginV2 = ({ mode }: { mode: SystemMode }) => {
         </Link>
         <div className='flex flex-col gap-6 is-full sm:is-auto md:is-full sm:max-is-[400px] md:max-is-[unset] mbs-11 sm:mbs-14 md:mbs-0'>
           <div className='flex flex-col gap-1'>
-            <Typography variant='h4'>{`Добро пожаловать в Novo-studio HUB! 👋🏻`}</Typography>
+            <Typography variant='h4'>{`Novo-studio HUB`}</Typography>
             <Typography>Авторизуйтесь через любой из этих сервисов</Typography>
           </div>
           <form
@@ -117,15 +117,16 @@ const LoginV2 = ({ mode }: { mode: SystemMode }) => {
               <Button
                 variant='contained'
                 onClick={() => signIn('vk', { callbackUrl: '/home' })}
-                className='bg-white text-blue-600'
+                startIcon={<i className='tabler-brand-vk' />}
+                className='bg-white text-blue-600 font-bold'
               >
-                ВК
+                ВКонтакте
               </Button>
               <Button
-                // startIcon={<img src='/images/logos/google.png' alt='Google' width={22} />}
+                startIcon={<i className='tabler-brand-google' />}
                 variant='contained'
                 onClick={() => signIn('google', { callbackUrl: '/home' })}
-                className='bg-white text-red-600'
+                className='bg-white text-red-600 font-bold'
               >
                 Google
               </Button>
