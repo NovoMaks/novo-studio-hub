@@ -38,5 +38,9 @@ export const authOptions: NextAuthOptions = {
 
       return session;
     },
+    async redirect({ url, baseUrl }) {
+      console.log('!!!', baseUrl);
+      return baseUrl;
+    },
   },
 };

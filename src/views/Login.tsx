@@ -116,7 +116,7 @@ const LoginV2 = ({ mode }: { mode: SystemMode }) => {
             <div className='flex flex-col gap-1.5'>
               <Button
                 variant='contained'
-                onClick={() => signIn('vk')}
+                onClick={() => signIn('vk', { callbackUrl: '/home' })}
                 className='bg-white text-blue-600'
               >
                 ВК
@@ -124,7 +124,7 @@ const LoginV2 = ({ mode }: { mode: SystemMode }) => {
               <Button
                 // startIcon={<img src='/images/logos/google.png' alt='Google' width={22} />}
                 variant='contained'
-                onClick={() => signIn('google')}
+                onClick={() => signIn('google', { callbackUrl: '/home' })}
                 className='bg-white text-red-600'
               >
                 Google
