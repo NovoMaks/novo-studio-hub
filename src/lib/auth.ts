@@ -20,10 +20,24 @@ export const authOptions: NextAuthOptions = {
       clientId: process.env.YANDEX_CLIENT_ID as string,
       clientSecret: process.env.YANDEX_CLIENT_SECRET as string,
     }),
-    MailRuProvider({
+    {
+      id: 'mailru',
+      name: 'Mail.ru',
+      type: 'oauth',
       clientId: process.env.MAILRU_CLIENT_ID,
       clientSecret: process.env.MAILRU_CLIENT_SECRET,
-    }),
+      authorization: 'https://oauth.mail.ru/login',
+      token: 'https://oauth.mail.ru/token',
+      userinfo: {
+        async request(context) {
+          const res = await fetch(
+            `https://oauth.mail.ru/userinfo?access_token=${context.tokens.access_token}`,
+          );
+          return await res.json();
+        },
+      },
+      profile: (profile) => profile,
+    },
   ],
   session: {
     strategy: 'jwt',
