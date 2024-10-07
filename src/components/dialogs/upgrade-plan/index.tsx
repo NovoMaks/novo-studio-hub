@@ -1,7 +1,7 @@
 'use client';
 
 // React Imports
-import { useState } from 'react';
+import { useEffect, useState, useTransition } from 'react';
 
 // MUI Imports
 import Dialog from '@mui/material/Dialog';
@@ -21,21 +21,37 @@ import DialogCloseButton from '../DialogCloseButton';
 import { useSession } from 'next-auth/react';
 import { pricingData } from '@/data/pricing';
 import dayjs from 'dayjs';
+import { useRouter } from 'next/navigation';
+import { Subscription } from '@prisma/client';
+import { Backdrop, CircularProgress } from '@mui/material';
 
 type UpgradePlanProps = {
   open: boolean;
   setOpen: (open: boolean) => void;
+  onSave: (
+    type: Subscription['type'],
+    endDate: Subscription['endDate'],
+    pricePlan: Subscription['pricePlan'],
+  ) => void;
 };
 
-const UpgradePlan = ({ open, setOpen }: UpgradePlanProps) => {
+const UpgradePlan = ({ open, setOpen, onSave }: UpgradePlanProps) => {
   const popularPlan = pricingData.find((val) => val.popularPlan);
+  const router = useRouter();
+  const [isPending, startTransition] = useTransition();
+  const [isFetching, setIsFetching] = useState(false);
+
+  const isMutating = isFetching || isPending;
+
+  useEffect(() => {
+    if (!isPending && isFetching) {
+      handleClose();
+      setIsFetching(false);
+    }
+  }, [isPending]);
 
   const { data: session, update: updateSession } = useSession();
   const [newPlan, setNewPlan] = useState(`${popularPlan?.id}_m`);
-
-  const plan = session?.subscription?.type
-    ? pricingData.find((val) => val.id === session?.subscription?.type)
-    : null;
 
   const startDate = session?.subscription?.startDate
     ? dayjs(session?.subscription?.startDate)
@@ -46,6 +62,7 @@ const UpgradePlan = ({ open, setOpen }: UpgradePlanProps) => {
   const [openConfirmation, setOpenConfirmation] = useState(false);
 
   async function onSubmit() {
+    setIsFetching(true);
     const [type, period] = newPlan.split('_');
 
     const newSubs = await fetch('/api/subscription/update', {
@@ -61,8 +78,11 @@ const UpgradePlan = ({ open, setOpen }: UpgradePlanProps) => {
             : pricingData.find((item) => item.id === type)?.yearlyPlan.annually,
       }),
     });
-    const data = await newSubs.json();
-    await updateSession();
+    const newSubscription = await newSubs.json();
+    await updateSession({ ...session, subscription: newSubscription });
+    startTransition(() => {
+      router.refresh();
+    });
   }
 
   const handleClose = () => {
@@ -73,7 +93,7 @@ const UpgradePlan = ({ open, setOpen }: UpgradePlanProps) => {
     <>
       <Dialog
         fullWidth
-        open={open}
+        open={open && !isFetching}
         onClose={handleClose}
         sx={{ '& .MuiDialog-paper': { overflow: 'visible' } }}
       >
@@ -149,6 +169,12 @@ const UpgradePlan = ({ open, setOpen }: UpgradePlanProps) => {
         setOpen={setOpenConfirmation}
         type='unsubscribe'
       />
+      <Backdrop
+        sx={(theme) => ({ color: '#fff', zIndex: theme.zIndex.drawer + 1 })}
+        open={isMutating}
+      >
+        <CircularProgress color='inherit' />
+      </Backdrop>
     </>
   );
 };
