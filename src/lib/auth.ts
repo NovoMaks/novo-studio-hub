@@ -2,9 +2,9 @@
 import GoogleProvider from 'next-auth/providers/google';
 import VkProvider from 'next-auth/providers/vk';
 import YandexProvider from 'next-auth/providers/yandex';
-import MailRuProvider from 'next-auth/providers/mailru';
 
 import type { NextAuthOptions } from 'next-auth';
+import { createLoginData } from '@/app/server/user';
 
 export const authOptions: NextAuthOptions = {
   providers: [
@@ -56,10 +56,14 @@ export const authOptions: NextAuthOptions = {
 
       return token;
     },
-    async session({ session, token }) {
-      if (session.user) {
-        session.user.name = token.name;
-      }
+    async session({ session }) {
+      const [user, subscription] = await createLoginData({
+        email: session.user?.email,
+        name: session.user?.name,
+        image: session.user?.image,
+      });
+      session.user = !!user ? { ...user } : null;
+      session.subscription = !!subscription ? { ...subscription } : null;
 
       return session;
     },

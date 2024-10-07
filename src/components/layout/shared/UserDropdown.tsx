@@ -27,6 +27,7 @@ import { signOut, useSession } from 'next-auth/react';
 // Hook Imports
 import { useSettings } from '@core/hooks/useSettings';
 import Link from 'next/link';
+import { CircularProgress } from '@mui/material';
 
 // Styled component for badge content
 const BadgeContentSpan = styled('span')({
@@ -47,7 +48,7 @@ const UserDropdown = () => {
 
   // Hooks
   const router = useRouter();
-  const { data: session } = useSession();
+  const { data: session, status } = useSession();
   const { settings } = useSettings();
 
   const handleDropdownOpen = () => {
@@ -76,6 +77,10 @@ const UserDropdown = () => {
       console.error(error);
     }
   };
+
+  if (status === 'loading') {
+    return <CircularProgress size={38} />;
+  }
 
   if (!session?.user) {
     return (
@@ -137,7 +142,9 @@ const UserDropdown = () => {
                     onClick={(e) => handleDropdownClose(e, '/profile/plan')}
                   >
                     <i className='tabler-user' />
-                    <Typography color='text.primary'>Подписка</Typography>
+                    <Typography color='text.primary'>
+                      Подписка ({session.subscription?.type})
+                    </Typography>
                   </MenuItem>
                   <div className='flex items-center plb-2 pli-3'>
                     <Button

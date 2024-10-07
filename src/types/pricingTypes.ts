@@ -1,15 +1,17 @@
+import { Subscription } from '@prisma/client';
+
 export type PricingPlanType = {
-  title: string
-  imgSrc: string
-  subtitle: string
-  imgWidth?: number
-  imgHeight?: number
-  currentPlan: boolean
-  popularPlan: boolean
-  monthlyPrice: number
-  planBenefits: string[]
+  id: Subscription['type'];
+  title: string;
+  imgSrc: string;
+  subtitle: string;
+  imgWidth?: number;
+  imgHeight?: number;
+  popularPlan: boolean;
+  monthlyPrice: number;
+  planBenefits: string[];
   yearlyPlan: {
-    monthly: number
-    annually: number
-  }
-}
+    monthly: number;
+    annually: number;
+  };
+};

@@ -3,9 +3,9 @@ import type { PricingPlanType } from '@/types/pricingTypes';
 
 export const pricingData: PricingPlanType[] = [
   {
+    id: 'BASIC',
     title: 'Базовый',
     monthlyPrice: 0,
-    currentPlan: true,
     popularPlan: false,
     subtitle: 'Хороший старт',
     imgSrc: '/images/illustrations/objects/pricing-basic.png',
@@ -17,10 +17,10 @@ export const pricingData: PricingPlanType[] = [
     planBenefits: ['Доступ к бесплатному контенту', 'Бесплатные вебинары'],
   },
   {
+    id: 'STANDARD',
     monthlyPrice: 200,
     title: 'Стандарт',
     popularPlan: true,
-    currentPlan: false,
     subtitle: 'Учись без ограничений',
     imgSrc: '/images/illustrations/objects/pricing-standard.png',
     imgHeight: 120,
@@ -31,9 +31,9 @@ export const pricingData: PricingPlanType[] = [
     planBenefits: ['Доступ к платному контенту', 'Платные вебинары'],
   },
   {
+    id: 'PRO',
     monthlyPrice: 400,
     popularPlan: false,
-    currentPlan: false,
     title: 'Продвинутый',
     subtitle: 'Все включено',
     imgSrc: '/images/illustrations/objects/pricing-enterprise.png',

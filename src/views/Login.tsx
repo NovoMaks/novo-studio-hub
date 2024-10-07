@@ -31,7 +31,7 @@ import { signIn } from 'next-auth/react';
 const LoginIllustration = styled('img')(({ theme }) => ({
   zIndex: 2,
   blockSize: 'auto',
-  maxBlockSize: 680,
+  maxBlockSize: 550,
   maxInlineSize: '100%',
   margin: theme.spacing(12),
   [theme.breakpoints.down(1536)]: {
@@ -55,8 +55,8 @@ const LoginV2 = ({ mode }: { mode: SystemMode }) => {
   // Vars
   const darkImg = '/images/pages/auth-mask-dark.png';
   const lightImg = '/images/pages/auth-mask-light.png';
-  const logoForDark = '/images/pages/logo-main.svg';
-  const logoForLight = '/images/pages/logo-black.svg';
+  const logoForDark = '/images/pages/cubes.png';
+  const logoForLight = '/images/pages/cubes.png';
 
   // Hooks
   const router = useRouter();

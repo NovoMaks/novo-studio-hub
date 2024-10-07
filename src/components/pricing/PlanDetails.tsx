@@ -73,7 +73,7 @@ const PlanDetails = ({ data, pricingPlan }: Props) => {
           </div>
         ))}
       </div>
-      <Link href='/profile' className='mt-auto'>
+      <Link href='/profile/plan' className='mt-auto'>
         <Button fullWidth color={'primary'} variant={'tonal'}>
           Получить
         </Button>
