@@ -1,6 +1,6 @@
 'use server';
-import { PrismaClient, User } from '@prisma/client';
-const prisma = new PrismaClient();
+import prisma from '@/lib/prisma';
+import { User } from '@prisma/client';
 
 export const getUserInfoByEmailData = async (email: string) => {
   return prisma.user.findFirst({

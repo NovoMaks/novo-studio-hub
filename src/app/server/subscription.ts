@@ -1,6 +1,6 @@
 'use server';
-import { PrismaClient, Subscription } from '@prisma/client';
-const prisma = new PrismaClient();
+import prisma from '@/lib/prisma';
+import { Subscription } from '@prisma/client';
 
 export const updateSubscription = async ({
   email,
