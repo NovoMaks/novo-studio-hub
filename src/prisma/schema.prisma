@@ -40,3 +40,14 @@ model Subscription {
   isDeactivated   Boolean             @default(false)
 }
 
+//posts
+model TildaWidgetsPost {
+  id              String        @id @default(auto()) @map("_id") @db.ObjectId
+  urlId           String        @unique
+  title           String
+  createdAt       DateTime      @default(now())
+  imgUrl          String
+  description     String
+  markdown        String
+  isFree          Boolean       @default(true)
+}
