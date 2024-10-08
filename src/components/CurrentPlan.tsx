@@ -1,3 +1,4 @@
+'use client';
 // MUI Imports
 import Card from '@mui/material/Card';
 import CardHeader from '@mui/material/CardHeader';
@@ -16,15 +17,14 @@ import type { ThemeColor } from '@core/types';
 import ConfirmationDialog from '@components/dialogs/confirmation-dialog';
 import UpgradePlan from '@components/dialogs/upgrade-plan';
 import OpenDialogOnElementClick from '@components/dialogs/OpenDialogOnElementClick';
-import { authOptions } from '@/lib/auth';
-import { getServerSession } from 'next-auth';
 import { pricingData } from '@/data/pricing';
 
 import dayjs from 'dayjs';
-import { Chip } from '@mui/material';
+import { Chip, CircularProgress, Skeleton } from '@mui/material';
+import { useSession } from 'next-auth/react';
 
-const CurrentPlan = async ({ data }: { data?: PricingPlanType[] }) => {
-  const session = await getServerSession(authOptions);
+const CurrentPlan = ({ data }: { data?: PricingPlanType[] }) => {
+  const { data: session, status } = useSession();
   const buttonProps = (
     children: string,
     color: ThemeColor,
@@ -46,13 +46,24 @@ const CurrentPlan = async ({ data }: { data?: PricingPlanType[] }) => {
     : null;
   const endDate = session?.subscription?.endDate ? dayjs(session?.subscription?.endDate) : null;
 
+  if (status === 'loading') {
+    return (
+      <div className='w-full flex items-center justify-center mt-8'>
+        <CircularProgress className='mx-auto' />
+      </div>
+    );
+  }
+
   return (
     <Card>
-      <CardHeader title='Ваша подписка' />
+      <CardHeader title={`Ваша подписка`} />
       <CardContent>
         <Grid container spacing={6}>
           <Grid item xs={12} md={6} className='flex flex-col gap-6'>
             <div className='flex flex-col gap-1'>
+              {session?.subscription?.isDeactivated && (
+                <Chip className='w-fit mt-0 mb-4' color='warning' label='Отменена' />
+              )}
               <Typography color='text.primary' className='font-medium'>
                 Тариф: {plan?.title}{' '}
                 {session?.subscription?.pricePlan &&
@@ -65,11 +76,13 @@ const CurrentPlan = async ({ data }: { data?: PricingPlanType[] }) => {
             <div className='flex flex-col gap-1'>
               <Typography color='text.primary' className='font-medium'>
                 {session?.subscription?.endDate
-                  ? `Активна до ${dayjs(session?.subscription?.endDate).format('DD.MM.YYYY')}`
+                  ? session?.subscription?.isDeactivated
+                    ? `Активна до ${dayjs(session?.subscription?.endDate).format('DD.MM.YYYY')}`
+                    : `Следующее списание: ${dayjs(session?.subscription?.endDate).format('DD.MM.YYYY')}`
                   : 'Безлимит'}
               </Typography>
-              {!!session?.subscription?.endDate && (
-                <Typography>Мы отправим Вам email, когда подписка закончится</Typography>
+              {!!session?.subscription?.endDate && !session?.subscription?.isDeactivated && (
+                <Typography>Мы отправим Вам email за 1 день до списания</Typography>
               )}
             </div>
             {session?.subscription?.type === 'BASIC' && (
@@ -95,16 +108,18 @@ const CurrentPlan = async ({ data }: { data?: PricingPlanType[] }) => {
                     Прошло
                   </Typography>
                   <Typography color='text.primary' className='font-medium'>
-                    {dayjs().diff(startDate, 'day')} из {endDate?.diff(startDate, 'day')} дней
+                    {dayjs().diff(startDate, 'day') + 1} из{' '}
+                    {(endDate?.diff(startDate, 'day') ?? 0) + 1} дней
                   </Typography>
                 </div>
                 <LinearProgress
                   variant='determinate'
-                  value={dayjs().diff(startDate, 'day') / (endDate?.diff(startDate, 'day') ?? 1)}
+                  value={
+                    ((dayjs().diff(startDate, 'day') + 1) /
+                      ((endDate?.diff(startDate, 'day') ?? 1) + 1)) *
+                    100
+                  }
                 />
-                <Typography variant='body2'>
-                  Осталось дней до конца подписки: {(endDate?.diff(dayjs(), 'day') ?? 0) + 1}
-                </Typography>
               </div>
             )}
           </Grid>
@@ -115,12 +130,14 @@ const CurrentPlan = async ({ data }: { data?: PricingPlanType[] }) => {
               dialog={UpgradePlan}
               dialogProps={{ data: data }}
             />
-            {plan?.id !== 'BASIC' && (
+            {plan?.id !== 'BASIC' && !session?.subscription?.isDeactivated && (
               <OpenDialogOnElementClick
                 element={Button}
                 elementProps={buttonProps('Отменить подписку', 'error', 'tonal')}
                 dialog={ConfirmationDialog}
-                dialogProps={{ type: 'unsubscribe' }}
+                dialogProps={{
+                  type: 'unsubscribe',
+                }}
               />
             )}
           </Grid>

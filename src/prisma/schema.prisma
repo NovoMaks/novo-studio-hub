@@ -31,12 +31,12 @@ type NextSubscription {
   pricePlan   Int          @default(0)
 }
 model Subscription {
-  id           String              @id @default(auto()) @map("_id") @db.ObjectId
-  userEmail    String              @unique
-  type         SubscriptionType    @default(BASIC)
-  startDate    DateTime            @default(now())
-  pricePlan    Int                 @default(0)
-  endDate      DateTime?
-  next         NextSubscription?
+  id              String              @id @default(auto()) @map("_id") @db.ObjectId
+  userEmail       String              @unique
+  type            SubscriptionType    @default(BASIC)
+  startDate       DateTime            @default(now())
+  pricePlan       Int                 @default(0)
+  endDate         DateTime?
+  isDeactivated   Boolean             @default(false)
 }
 

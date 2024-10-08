@@ -10,7 +10,6 @@ import DialogContent from '@mui/material/DialogContent';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import MenuItem from '@mui/material/MenuItem';
-import Divider from '@mui/material/Divider';
 
 // Style Imports
 import ConfirmationDialog from '../confirmation-dialog';
@@ -21,51 +20,25 @@ import DialogCloseButton from '../DialogCloseButton';
 import { useSession } from 'next-auth/react';
 import { pricingData } from '@/data/pricing';
 import dayjs from 'dayjs';
-import { useRouter } from 'next/navigation';
-import { Subscription } from '@prisma/client';
-import { Backdrop, CircularProgress } from '@mui/material';
+import { Alert, Backdrop, CircularProgress } from '@mui/material';
 
 type UpgradePlanProps = {
   open: boolean;
   setOpen: (open: boolean) => void;
-  onSave: (
-    type: Subscription['type'],
-    endDate: Subscription['endDate'],
-    pricePlan: Subscription['pricePlan'],
-  ) => void;
 };
 
-const UpgradePlan = ({ open, setOpen, onSave }: UpgradePlanProps) => {
+const UpgradePlan = ({ open, setOpen }: UpgradePlanProps) => {
   const popularPlan = pricingData.find((val) => val.popularPlan);
-  const router = useRouter();
-  const [isPending, startTransition] = useTransition();
   const [isFetching, setIsFetching] = useState(false);
-
-  const isMutating = isFetching || isPending;
-
-  useEffect(() => {
-    if (!isPending && isFetching) {
-      handleClose();
-      setIsFetching(false);
-    }
-  }, [isPending]);
 
   const { data: session, update: updateSession } = useSession();
   const [newPlan, setNewPlan] = useState(`${popularPlan?.id}_m`);
-
-  const startDate = session?.subscription?.startDate
-    ? dayjs(session?.subscription?.startDate)
-    : null;
-  const endDate = session?.subscription?.endDate ? dayjs(session?.subscription?.endDate) : null;
-
-  // States
-  const [openConfirmation, setOpenConfirmation] = useState(false);
 
   async function onSubmit() {
     setIsFetching(true);
     const [type, period] = newPlan.split('_');
 
-    const newSubs = await fetch('/api/subscription/update', {
+    await fetch('/api/subscription/update', {
       method: 'POST',
       body: JSON.stringify({
         email: session?.user?.email,
@@ -78,11 +51,7 @@ const UpgradePlan = ({ open, setOpen, onSave }: UpgradePlanProps) => {
             : pricingData.find((item) => item.id === type)?.yearlyPlan.annually,
       }),
     });
-    const newSubscription = await newSubs.json();
-    await updateSession({ ...session, subscription: newSubscription });
-    startTransition(() => {
-      router.refresh();
-    });
+    window.location.assign('/subscription-result');
   }
 
   const handleClose = () => {
@@ -136,42 +105,16 @@ const UpgradePlan = ({ open, setOpen, onSave }: UpgradePlanProps) => {
               Обновить
             </Button>
           </div>
-          {session?.subscription?.type !== 'BASIC' && endDate && startDate && (
-            <>
-              <Divider className='mlb-6' />
-              <div className='flex flex-col gap-1'>
-                <Typography variant='body2'>Ваш текущий план</Typography>
-                <div className='flex items-center justify-between flex-wrap gap-2'>
-                  <div className='flex justify-center items-baseline gap-1'>
-                    <Typography component='span' color='primary' variant='h1'>
-                      {session?.subscription?.pricePlan}₽
-                    </Typography>
-                    <Typography variant='body2' component='sub' className='self-baseline'>
-                      /{endDate?.diff(startDate, 'day') > 300 ? 'год' : 'месяц'}
-                    </Typography>
-                  </div>
-                  <Button
-                    variant='tonal'
-                    className='capitalize'
-                    color='error'
-                    onClick={() => setOpenConfirmation(true)}
-                  >
-                    Отменить подписку
-                  </Button>
-                </div>
-              </div>
-            </>
-          )}
+          <Alert severity='info' className='mt-5'>
+            Деньги спишутся сразу после подключения
+            <br />
+            Старый тариф будет аннулирован
+          </Alert>
         </DialogContent>
       </Dialog>
-      <ConfirmationDialog
-        open={openConfirmation}
-        setOpen={setOpenConfirmation}
-        type='unsubscribe'
-      />
       <Backdrop
         sx={(theme) => ({ color: '#fff', zIndex: theme.zIndex.drawer + 1 })}
-        open={isMutating}
+        open={isFetching}
       >
         <CircularProgress color='inherit' />
       </Backdrop>

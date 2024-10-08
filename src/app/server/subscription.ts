@@ -14,20 +14,14 @@ export const updateSubscription = async ({
   pricePlan: Subscription['pricePlan'];
 }) => {
   return prisma.subscription.update({
-    data: { type, endDate, pricePlan },
+    data: { type, endDate, pricePlan, startDate: new Date(), isDeactivated: false },
     where: { userEmail: email },
   });
 };
 
-export const updateNextSubscription = async ({
-  email,
-  next,
-}: {
-  email: Subscription['userEmail'];
-  next: Subscription['next'];
-}) => {
+export const deactivateSubscription = async ({ email }: { email: Subscription['userEmail'] }) => {
   return prisma.subscription.update({
-    data: { next },
+    data: { isDeactivated: true },
     where: { userEmail: email },
   });
 };

@@ -1,22 +1,20 @@
 // Next Imports
 import type { Metadata } from 'next';
 
-// Component Imports
-import Login from '@views/Login';
-
 // Server Action Imports
 import { getServerMode } from '@core/utils/serverHelpers';
+import SubscriptionResult from '@/views/SubscriptionResult';
 
 export const metadata: Metadata = {
-  title: 'Логин',
-  description: 'Вход в аккаунт',
+  title: 'Подписка',
+  description: 'Подписка успешно оформлена',
 };
 
 const LoginPage = () => {
   // Vars
   const mode = getServerMode();
 
-  return <Login mode={mode} />;
+  return <SubscriptionResult mode={mode} />;
 };
 
 export default LoginPage;

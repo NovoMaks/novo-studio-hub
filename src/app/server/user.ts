@@ -30,6 +30,7 @@ export const createLoginData = async ({
       create: {
         userEmail: email,
         pricePlan: 0,
+        isDeactivated: false,
       },
       update: {},
       where: { userEmail: email },
