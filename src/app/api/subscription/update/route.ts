@@ -7,7 +7,7 @@ export async function POST(req: Request): Promise<NextResponse<Subscription>> {
   const body: {
     email: Subscription['userEmail'];
     type: Subscription['type'];
-    endDate: Subscription['endDate'];
+    period: 'm' | 'y';
     pricePlan: Subscription['pricePlan'];
   } = await req.json();
   return NextResponse.json(await updateSubscription(body));

@@ -59,7 +59,7 @@ const CurrentPlan = ({ data }: { data?: PricingPlanType[] }) => {
       <CardHeader title={`Ваша подписка`} />
       <CardContent>
         <Grid container spacing={6}>
-          <Grid item xs={12} md={6} className='flex flex-col gap-6'>
+          <Grid item xs={12} className='flex flex-col gap-6'>
             <div className='flex flex-col gap-1'>
               {session?.subscription?.isDeactivated && (
                 <Chip className='w-fit mt-0 mb-4' color='warning' label='Отменена' />
@@ -100,7 +100,7 @@ const CurrentPlan = ({ data }: { data?: PricingPlanType[] }) => {
               </div>
             )}
           </Grid>
-          <Grid item xs={12} md={6} className='flex flex-col gap-6'>
+          {/* <Grid item xs={12} md={6} className='flex flex-col gap-6'>
             {session?.subscription?.endDate && (
               <div className='flex flex-col gap-1'>
                 <div className='flex items-center justify-between'>
@@ -122,7 +122,7 @@ const CurrentPlan = ({ data }: { data?: PricingPlanType[] }) => {
                 />
               </div>
             )}
-          </Grid>
+          </Grid> */}
           <Grid item xs={12} className='flex gap-4 flex-wrap'>
             <OpenDialogOnElementClick
               element={Button}

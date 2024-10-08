@@ -31,7 +31,7 @@ const UpgradePlan = ({ open, setOpen }: UpgradePlanProps) => {
   const popularPlan = pricingData.find((val) => val.popularPlan);
   const [isFetching, setIsFetching] = useState(false);
 
-  const { data: session, update: updateSession } = useSession();
+  const { data: session } = useSession();
   const [newPlan, setNewPlan] = useState(`${popularPlan?.id}_m`);
 
   async function onSubmit() {
@@ -43,8 +43,7 @@ const UpgradePlan = ({ open, setOpen }: UpgradePlanProps) => {
       body: JSON.stringify({
         email: session?.user?.email,
         type,
-        endDate:
-          period === 'm' ? dayjs().add(1, 'month').toDate() : dayjs().add(1, 'year').toDate(),
+        period,
         pricePlan:
           period === 'm'
             ? pricingData.find((item) => item.id === type)?.monthlyPrice

@@ -1,20 +1,30 @@
 'use server';
 import prisma from '@/lib/prisma';
 import { Subscription } from '@prisma/client';
+import dayjs from 'dayjs';
 
 export const updateSubscription = async ({
   email,
   type,
   pricePlan,
-  endDate,
+  period,
 }: {
   email: Subscription['userEmail'];
   type: Subscription['type'];
-  endDate: Subscription['endDate'];
+  period: 'm' | 'y';
   pricePlan: Subscription['pricePlan'];
 }) => {
   return prisma.subscription.update({
-    data: { type, endDate, pricePlan, startDate: new Date(), isDeactivated: false },
+    data: {
+      type,
+      endDate: dayjs()
+        .startOf('d')
+        .add(1, period === 'm' ? 'month' : 'year')
+        .toDate(),
+      pricePlan,
+      startDate: dayjs().startOf('d').toDate(),
+      isDeactivated: false,
+    },
     where: { userEmail: email },
   });
 };

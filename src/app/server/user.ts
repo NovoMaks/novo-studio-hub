@@ -1,6 +1,7 @@
 'use server';
 import prisma from '@/lib/prisma';
 import { User } from '@prisma/client';
+import dayjs from 'dayjs';
 
 export const getUserInfoByEmailData = async (email: string) => {
   return prisma.user.findFirst({
@@ -31,6 +32,7 @@ export const createLoginData = async ({
         userEmail: email,
         pricePlan: 0,
         isDeactivated: false,
+        startDate: dayjs().startOf('d').toDate(),
       },
       update: {},
       where: { userEmail: email },
