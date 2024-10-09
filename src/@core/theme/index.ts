@@ -1,5 +1,5 @@
 // Next Imports
-import { Montserrat } from 'next/font/google';
+import { Open_Sans } from 'next/font/google';
 
 // MUI Imports
 import type { Theme } from '@mui/material/styles';
@@ -16,9 +16,9 @@ import shadows from './shadows';
 import customShadows from './customShadows';
 import typography from './typography';
 
-const montserrat_sans = Montserrat({
+const open_sans = Open_Sans({
   subsets: ['latin'],
-  weight: ['300', '400', '500', '600', '700', '800', '900'],
+  weight: ['300', '400', '500', '600', '700', '800'],
 });
 
 const theme = (settings: Settings, mode: SystemMode, direction: Theme['direction']): Theme => {
@@ -38,7 +38,7 @@ const theme = (settings: Settings, mode: SystemMode, direction: Theme['direction
       },
     },
     shadows: shadows(mode),
-    typography: typography(montserrat_sans.style.fontFamily),
+    typography: typography(open_sans.style.fontFamily),
     customShadows: customShadows(mode),
     mainColorChannels: {
       light: '47 43 61',

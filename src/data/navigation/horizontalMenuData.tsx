@@ -12,6 +12,17 @@ const horizontalMenuData = (): HorizontalMenuDataType[] => [
     icon: 'tabler-code-circle-2',
     children: [
       {
+        label: 'Утилиты',
+        icon: 'tabler-code-circle-2',
+        children: [
+          {
+            label: 'Редактор Markdown',
+            href: '/dev/utils/markdown-editor',
+            icon: 'tabler-tilde',
+          },
+        ],
+      },
+      {
         label: 'Tilda виджеты',
         href: '/dev/tilda-widgets',
         icon: 'tabler-tilde',

@@ -10,11 +10,11 @@ export const metadata: Metadata = {
   description: 'Подписка успешно оформлена',
 };
 
-const LoginPage = () => {
+const Page = () => {
   // Vars
   const mode = getServerMode();
 
   return <SubscriptionResult mode={mode} />;
 };
 
-export default LoginPage;
+export default Page;

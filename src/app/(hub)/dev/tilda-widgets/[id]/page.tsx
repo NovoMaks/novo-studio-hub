@@ -1,83 +1,18 @@
-import { Metadata } from 'next';
-import { notFound } from 'next/navigation';
-import { getAllPosts, getPostBySlug } from '@/lib/api';
-import markdownToHtml from '@/lib/markdownToHtml';
-import { Divider, Grid, Typography } from '@mui/material';
-import PostCard from '@/components/post/PostCard';
-
-export default async function Post({ params }: Params) {
-  // const post = getPostBySlug(params.slug);
-
-  // if (!post) {
-  //   return notFound();
-  // }
-
-  // const content = await markdownToHtml(post.content || '');
+import prisma from '@/lib/prisma';
+import 'md-editor-rt/lib/style.css';
+import '@vavt/cm-extension/dist/previewTheme/arknights.css';
+export default async function Page({ params }: { params: { id: string } }) {
+  const postInfo = await prisma.tildaWidgetsPost.findFirst({
+    select: { html: true },
+    where: { urlId: params.id as string },
+  });
 
   return (
-    <Grid container spacing={6}>
-      <Grid item xs={12}>
-        <Typography variant='h3'>Basic Cards</Typography>
-        <Divider />
-      </Grid>
-      <Grid item xs={12} sm={6} md={4}>
-        <PostCard />
-      </Grid>
-      <Grid item xs={12} sm={6} md={4}>
-        <PostCard />
-      </Grid>
-      <Grid item xs={12} sm={6} md={4}>
-        <PostCard />
-      </Grid>
-    </Grid>
+    <div className='md-editor h-auto px-8 pb-8'>
+      <div
+        className='md-editor-preview'
+        dangerouslySetInnerHTML={{ __html: postInfo?.html ?? '' }}
+      ></div>
+    </div>
   );
 }
-
-{
-  /* <main>
-<Container>
-  <Header />
-  <article className='mb-32'>
-    <PostHeader
-      title={post.title}
-      coverImage={post.coverImage}
-      date={post.date}
-      author={post.author}
-    />
-    <PostBody content={content} />
-  </article>
-</Container>
-</main> */
-}
-
-type Params = {
-  params: {
-    slug: string;
-  };
-};
-
-// export function generateMetadata({ params }: Params): Metadata {
-//   const post = getPostBySlug(params.slug);
-
-//   if (!post) {
-//     return notFound();
-//   }
-
-//   const title = `${post.title}`;
-
-//   return {
-//     title,
-//     openGraph: {
-//       title,
-//       images: [post.ogImage.url],
-//     },
-//   };
-// }
-
-// export async function generateStaticParams() {
-//   const posts = getAllPosts();
-
-//   return posts.map((post) => ({
-//     slug: post.slug,
-//   }));
-// }

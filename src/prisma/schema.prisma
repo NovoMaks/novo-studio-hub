@@ -13,11 +13,16 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 
+enum Role {
+  ADMIN
+}
+
 model User {
   id      String    @id @default(auto()) @map("_id") @db.ObjectId
   name    String
   email   String    @unique
   image   String?
+  role    Role?
 }
 
 enum SubscriptionType {
@@ -45,9 +50,9 @@ model TildaWidgetsPost {
   id              String        @id @default(auto()) @map("_id") @db.ObjectId
   urlId           String        @unique
   title           String
-  createdAt       DateTime      @default(now())
+  createdAt       DateTime?      @default(now())
   imgUrl          String
   description     String
-  markdown        String
+  html            String
   isFree          Boolean       @default(true)
 }

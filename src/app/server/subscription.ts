@@ -17,10 +17,13 @@ export const updateSubscription = async ({
   return prisma.subscription.update({
     data: {
       type,
-      endDate: dayjs()
-        .startOf('d')
-        .add(1, period === 'm' ? 'month' : 'year')
-        .toDate(),
+      endDate:
+        type === 'BASIC'
+          ? null
+          : dayjs()
+              .startOf('d')
+              .add(1, period === 'm' ? 'month' : 'year')
+              .toDate(),
       pricePlan,
       startDate: dayjs().startOf('d').toDate(),
       isDeactivated: false,
