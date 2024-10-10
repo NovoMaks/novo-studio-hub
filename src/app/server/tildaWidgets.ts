@@ -16,7 +16,7 @@ export const createTildaWidgetsPost = async (postInfo: {
   title: TildaWidgetsPost['title'];
   imgUrl: TildaWidgetsPost['imgUrl'];
   description: TildaWidgetsPost['description'];
-  markdown: TildaWidgetsPost['markdown'];
+  html: TildaWidgetsPost['html'];
   isFree: TildaWidgetsPost['isFree'];
 }) => {
   return prisma.tildaWidgetsPost.create({ data: postInfo });
