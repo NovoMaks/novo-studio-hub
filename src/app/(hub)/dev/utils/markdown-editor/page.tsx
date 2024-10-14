@@ -6,8 +6,8 @@ import MarkdownEditor from '@/components/MarkdownEditor';
 import { getServerMode } from '@/@core/utils/serverHelpers';
 
 export const metadata: Metadata = {
-  title: 'Пост',
-  description: 'Форма для создания поста',
+  title: 'Markdown редактор',
+  description: '',
 };
 
 const Page = () => {

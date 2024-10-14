@@ -132,7 +132,7 @@ code {
   border: 0;
 }
 
-.md-editor-preview img {
-  max-height: 600px !important;
-  width: 100% !important;
+.post img {
+  max-height: 500px;
+  max-width: 100%;
 }

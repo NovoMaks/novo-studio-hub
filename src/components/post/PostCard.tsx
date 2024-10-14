@@ -4,21 +4,21 @@ import CardContent from '@mui/material/CardContent';
 import Typography from '@mui/material/Typography';
 import Link from 'next/link';
 import { Chip } from '@mui/material';
+import { Post } from '@/types/post';
 
-type Props = {
-  title: string;
-  imgUrl: string;
-  urlId: string;
-  isFree: boolean;
-  description: string;
-  basePath: string;
-};
-
-const PostCard = ({ title, imgUrl, urlId, description, basePath, isFree }: Props) => {
+const PostCard = ({
+  basePath,
+  title,
+  slug,
+  description,
+  coverImage,
+  isFree,
+  status,
+}: Post & { basePath: string }) => {
   return (
     <Card className='h-full relative'>
-      <Link href={`${basePath}/${urlId}`}>
-        {isFree && (
+      <Link href={`${basePath}/${slug}`}>
+        {isFree ? (
           <Chip
             className='absolute right-0 top-0'
             label='Бесплатно'
@@ -26,8 +26,26 @@ const PostCard = ({ title, imgUrl, urlId, description, basePath, isFree }: Props
             variant='filled'
             color='primary'
           />
+        ) : (
+          <Chip
+            className='absolute right-0 top-0'
+            label='По подписке'
+            size='small'
+            variant='filled'
+            color='info'
+          />
         )}
-        <CardMedia image={imgUrl} className='bs-[200px]' />
+
+        {status === 'draft' && (
+          <Chip
+            className='absolute left-0 top-0'
+            label='Черновик'
+            size='small'
+            variant='filled'
+            color='error'
+          />
+        )}
+        <CardMedia image={coverImage} className='bs-[200px]' />
         <CardContent>
           <Typography variant='h5' className='mbe-2'>
             {title}

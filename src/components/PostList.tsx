@@ -1,22 +1,12 @@
-// MUI Imports
 import { Grid } from '@mui/material';
 import PostCard from './post/PostCard';
-import prisma from '@/lib/prisma';
+import { Post } from '@/types/post';
 
-const PostList = async ({ currentPage, basePath }: { currentPage: number; basePath: string }) => {
-  const postList = await prisma.tildaWidgetsPost.findMany({
-    select: {
-      title: true,
-      imgUrl: true,
-      urlId: true,
-      description: true,
-      isFree: true,
-    },
-  });
+const PostList = async ({ basePath, posts }: { basePath: string; posts: Post[] }) => {
   return (
     <>
-      {postList.map((post) => (
-        <Grid key={post.urlId} item xs={12} sm={6} md={4}>
+      {posts.map((post) => (
+        <Grid key={post.slug} item xs={12} sm={6} md={4}>
           <PostCard {...post} basePath={basePath} />
         </Grid>
       ))}

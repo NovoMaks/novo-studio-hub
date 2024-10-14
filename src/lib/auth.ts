@@ -2,6 +2,7 @@
 import GoogleProvider from 'next-auth/providers/google';
 import VkProvider from 'next-auth/providers/vk';
 import YandexProvider from 'next-auth/providers/yandex';
+import GitHubProvider from 'next-auth/providers/github';
 
 import type { NextAuthOptions } from 'next-auth';
 import { createLoginData } from '@/app/server/user';
@@ -19,6 +20,10 @@ export const authOptions: NextAuthOptions = {
     YandexProvider({
       clientId: process.env.YANDEX_CLIENT_ID as string,
       clientSecret: process.env.YANDEX_CLIENT_SECRET as string,
+    }),
+    GitHubProvider({
+      clientId: process.env.OST_GITHUB_ID as string,
+      clientSecret: process.env.OST_GITHUB_SECRET as string,
     }),
     {
       id: 'mailru',
