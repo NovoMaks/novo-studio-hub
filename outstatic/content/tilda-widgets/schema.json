@@ -1,0 +1,13 @@
+{
+  "title": "tilda-widgets",
+  "type": "object",
+  "properties": {
+    "isFree": {
+      "required": true,
+      "description": "",
+      "fieldType": "Boolean",
+      "dataType": "boolean",
+      "title": "isFree"
+    }
+  }
+}
