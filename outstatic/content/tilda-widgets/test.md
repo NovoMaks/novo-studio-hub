@@ -13,7 +13,7 @@ publishedAt: '2024-10-13T04:32:57.830Z'
 
 # Моя первая тестовая статья
 
-Все описание статьи {#identifier .red}
+Все описание статьи{#identifier .red}
 
 ```javascript
 const a = '123'
