@@ -7,6 +7,7 @@ author:
 slug: 'test'
 description: 'Тестовое описание'
 coverImage: '/images/screenshot-2024-10-11-at-13.58.24-EzMT.png'
+isFree: 'true'
 publishedAt: '2024-10-13T04:32:57.830Z'
 ---
 
