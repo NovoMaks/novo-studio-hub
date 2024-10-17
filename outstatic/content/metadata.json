@@ -1,6 +1,6 @@
 {
-  "commit": "b194697900a1e4d8e5b5d575bfa9d9443bad9ac9",
-  "generated": "Thu, 17 Oct 2024 15:11:22 GMT",
+  "commit": "b30694fe7845a882cebc36d0dea6264dfdece260",
+  "generated": "2024-10-17T15:38:53.561Z",
   "metadata": [
     {
       "__outstatic": {
@@ -25,27 +25,6 @@
     },
     {
       "__outstatic": {
-        "commit": "a8786ff0f0ad37c32b9911768e804c2ced66bfb4",
-        "hash": "473311285",
-        "path": "outstatic/content/tilda-widgets/test-platnogo-kontenta.md"
-      },
-      "author": {
-        "name": "Maksim",
-        "picture": "https://avatars.githubusercontent.com/u/116797616?v=4"
-      },
-      "category": "tilda-widgets",
-      "collection": "tilda-widgets",
-      "coverImage": "/images/------------3_20241004182250-A4ND.png",
-      "description": "Описание тестового контента",
-      "isFree": "",
-      "price": "100",
-      "publishedAt": "2024-10-14T08:11:03.485Z",
-      "slug": "test-platnogo-kontenta",
-      "status": "published",
-      "title": "Тест платного контента"
-    },
-    {
-      "__outstatic": {
         "commit": "58713148ca7b2a9285fb8273ab55108ffc1a205e",
         "hash": "3442489698",
         "path": "outstatic/content/tilda-widgets/test-chernovika.md"
@@ -64,6 +43,27 @@
       "slug": "test-chernovika",
       "status": "draft",
       "title": "Тест черновика"
+    },
+    {
+      "__outstatic": {
+        "commit": "b30694fe7845a882cebc36d0dea6264dfdece260",
+        "hash": "473311285",
+        "path": "outstatic/content/tilda-widgets/test-platnogo-kontenta.md"
+      },
+      "author": {
+        "name": "Maksim",
+        "picture": "https://avatars.githubusercontent.com/u/116797616?v=4"
+      },
+      "category": "tilda-widgets",
+      "collection": "tilda-widgets",
+      "coverImage": "/images/------------3_20241004182250-A4ND.png",
+      "description": "Описание тестового контента",
+      "isFree": "",
+      "price": "100",
+      "publishedAt": "2024-10-14T08:11:03.485Z",
+      "slug": "test-platnogo-kontenta",
+      "status": "published",
+      "title": "Тест платного контента"
     }
   ]
 }
