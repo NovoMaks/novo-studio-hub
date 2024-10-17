@@ -1,0 +1,66 @@
+{
+  "commit": "f867f16ac486cb13edea5e3da66bdeb1bd1c5146",
+  "generated": "Thu, 17 Oct 2024 09:17:37 GMT",
+  "metadata": [
+    {
+      "__outstatic": {
+        "commit": "6306e5df8ed06440760e6d7951f2c28a44d004bb",
+        "hash": "4227573216",
+        "path": "outstatic/content/tilda-widgets/test.md"
+      },
+      "author": {
+        "name": "Maksim",
+        "picture": "https://avatars.githubusercontent.com/u/116797616?v=4"
+      },
+      "collection": "tilda-widgets",
+      "coverImage": "/images/screenshot-2024-10-11-at-13.58.24-EzMT.png",
+      "description": "Тестовое описание",
+      "isFree": "true",
+      "price": "",
+      "publishedAt": "2024-10-13T04:32:57.830Z",
+      "slug": "test",
+      "status": "published",
+      "title": "Тест"
+    },
+    {
+      "__outstatic": {
+        "commit": "a8786ff0f0ad37c32b9911768e804c2ced66bfb4",
+        "hash": "2357175873",
+        "path": "outstatic/content/tilda-widgets/test-platnogo-kontenta.md"
+      },
+      "author": {
+        "name": "Maksim",
+        "picture": "https://avatars.githubusercontent.com/u/116797616?v=4"
+      },
+      "collection": "tilda-widgets",
+      "coverImage": "/images/------------3_20241004182250-A4ND.png",
+      "description": "Описание тестового контента",
+      "isFree": "",
+      "price": "100",
+      "publishedAt": "2024-10-14T08:11:03.485Z",
+      "slug": "test-platnogo-kontenta",
+      "status": "published",
+      "title": "Тест платного контента"
+    },
+    {
+      "__outstatic": {
+        "commit": "58713148ca7b2a9285fb8273ab55108ffc1a205e",
+        "hash": "3814840042",
+        "path": "outstatic/content/tilda-widgets/test-chernovika.md"
+      },
+      "author": {
+        "name": "Maksim",
+        "picture": "https://avatars.githubusercontent.com/u/116797616?v=4"
+      },
+      "collection": "tilda-widgets",
+      "coverImage": "/images/screenshot-2024-10-07-at-10.45.13-k0MD.png",
+      "description": "Тест черновика",
+      "isFree": "",
+      "price": "",
+      "publishedAt": "2024-10-14T09:10:39.365Z",
+      "slug": "test-chernovika",
+      "status": "draft",
+      "title": "Тест черновика"
+    }
+  ]
+}
