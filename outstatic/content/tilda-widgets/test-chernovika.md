@@ -1,4 +1,5 @@
 ---
+category: 'tilda-widgets'
 price: ''
 coverImage: '/images/screenshot-2024-10-07-at-10.45.13-k0MD.png'
 description: 'Тест черновика'
