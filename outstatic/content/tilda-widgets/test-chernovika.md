@@ -1,12 +1,13 @@
 ---
-title: 'Тест черновика'
-status: 'draft'
+price: ''
+coverImage: '/images/screenshot-2024-10-07-at-10.45.13-k0MD.png'
+description: 'Тест черновика'
+slug: 'test-chernovika'
 author:
   name: 'Maksim'
   picture: 'https://avatars.githubusercontent.com/u/116797616?v=4'
-slug: 'test-chernovika'
-description: 'Тест черновика'
-coverImage: '/images/screenshot-2024-10-07-at-10.45.13-k0MD.png'
+status: 'draft'
+title: 'Тест черновика'
 isFree: ''
 publishedAt: '2024-10-14T09:10:39.365Z'
 ---
