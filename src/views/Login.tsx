@@ -4,7 +4,7 @@
 import { useState } from 'react';
 
 // Next Imports
-import { useRouter } from 'next/navigation';
+import { useRouter, useSearchParams } from 'next/navigation';
 
 // MUI Imports
 import useMediaQuery from '@mui/material/useMediaQuery';
@@ -61,6 +61,8 @@ const LoginV2 = ({ mode }: { mode: SystemMode }) => {
   // Hooks
   const router = useRouter();
   const { settings } = useSettings();
+  const searchParams = useSearchParams();
+  const redirectTo = searchParams.get('redirectTo') ?? '/';
   const theme = useTheme();
   const hidden = useMediaQuery(theme.breakpoints.down('md'));
   const authBackground = useImageVariant(mode, lightImg, darkImg);
@@ -118,7 +120,7 @@ const LoginV2 = ({ mode }: { mode: SystemMode }) => {
               </Button>
               <Button
                 variant='contained'
-                onClick={() => signIn('mailru', { callbackUrl: '/home' })}
+                onClick={() => signIn('mailru', { callbackUrl: redirectTo })}
                 startIcon={<i className='tabler-at text-blue-300' />}
                 className='font-bold'
               >

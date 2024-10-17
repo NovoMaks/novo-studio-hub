@@ -13,5 +13,6 @@ export type Post = {
   description: string;
   coverImage: string;
   publishedAt: Date;
-  isFree: boolean;
+  price: string;
+  category: string;
 };

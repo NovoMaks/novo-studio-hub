@@ -1,10 +1,5 @@
-'use client';
-
 // React Imports
 import type { ReactNode } from 'react';
-
-// Next Imports
-import dynamic from 'next/dynamic';
 
 // MUI Imports
 import Typography from '@mui/material/Typography';
@@ -14,10 +9,11 @@ import type { ThemeColor } from '@core/types';
 
 // Component Imports
 import CustomAvatar from '@core/components/mui/Avatar';
+import prisma from '@/lib/prisma';
 
 type DataType = {
   title: string;
-  value: string;
+  slug: 'solutions' | 'articles' | 'utils';
   color: ThemeColor;
   icon: ReactNode;
 };
@@ -26,7 +22,7 @@ type DataType = {
 const data: DataType[] = [
   {
     title: 'Готовые решения',
-    value: '10',
+    slug: 'solutions',
     color: 'primary',
     icon: (
       <svg
@@ -53,7 +49,7 @@ const data: DataType[] = [
   },
   {
     title: 'Статьи',
-    value: '15',
+    slug: 'articles',
     color: 'info',
     icon: (
       <svg
@@ -79,7 +75,7 @@ const data: DataType[] = [
   },
   {
     title: 'Утилиты',
-    value: '2',
+    slug: 'utils',
     color: 'warning',
     icon: (
       <svg
@@ -106,7 +102,9 @@ const data: DataType[] = [
   },
 ];
 
-const WelcomeCard = () => {
+const WelcomeCard = async () => {
+  const counts = await prisma.count.findFirst();
+
   return (
     <div>
       <div className='flex items-baseline gap-1 mbe-2 flex-wrap'>
@@ -126,7 +124,7 @@ const WelcomeCard = () => {
             <div>
               <Typography className='font-medium'>{item.title}</Typography>
               <Typography variant='h4' color={`${item.color}.main`}>
-                {item.value}
+                {counts ? counts[item.slug] : 0}
               </Typography>
             </div>
           </div>

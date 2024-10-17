@@ -17,12 +17,17 @@ enum Role {
   ADMIN
 }
 
+type Purchase {
+  category        String
+  slug            String 
+}
 model User {
-  id      String    @id @default(auto()) @map("_id") @db.ObjectId
-  name    String
-  email   String    @unique
-  image   String?
-  role    Role?
+  id          String    @id @default(auto()) @map("_id") @db.ObjectId
+  name        String
+  email       String    @unique
+  image       String?
+  role        Role?
+  purchases   Purchase[]
 }
 
 enum SubscriptionType {
@@ -31,10 +36,6 @@ enum SubscriptionType {
   PRO
 }
 
-type NextSubscription {
-  type        SubscriptionType @default(BASIC)
-  pricePlan   Int          @default(0)
-}
 model Subscription {
   id              String              @id @default(auto()) @map("_id") @db.ObjectId
   userEmail       String              @unique
@@ -45,14 +46,35 @@ model Subscription {
   isDeactivated   Boolean             @default(false)
 }
 
-//posts
-model TildaWidgetsPost {
-  id              String        @id @default(auto()) @map("_id") @db.ObjectId
-  urlId           String        @unique
+enum TopPostType {
+  solution
+  article
+  util
+}
+
+model TopPost {
+  id              String              @id @default(auto()) @map("_id") @db.ObjectId
+  url             String              @unique
+  price           Int
+  logo            String            
   title           String
-  createdAt       DateTime?      @default(now())
-  imgUrl          String
-  description     String
-  html            String
-  isFree          Boolean       @default(true)
+  type            TopPostType     
+}
+
+model Meeting {
+  id              String              @id @default(auto()) @map("_id") @db.ObjectId
+  slug            String              @unique
+  url             String              
+  title           String
+  description     String            
+  date            DateTime    
+  duration        String     
+}
+
+model Count {
+  id              String              @id @default(auto()) @map("_id") @db.ObjectId
+  path            String              @unique
+  solutions       Int              
+  articles        Int
+  utils           Int            
 }

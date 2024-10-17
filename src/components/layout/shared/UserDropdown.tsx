@@ -137,7 +137,7 @@ const UserDropdown = () => {
                     </div>
                   </div>
                   <Divider className='mlb-1' />
-                  <MenuItem
+                  {/* <MenuItem
                     className='mli-2 gap-3'
                     onClick={(e) => handleDropdownClose(e, '/profile/plan')}
                   >
@@ -145,6 +145,13 @@ const UserDropdown = () => {
                     <Typography color='text.primary'>
                       Подписка ({session.subscription?.type})
                     </Typography>
+                  </MenuItem> */}
+                  <MenuItem
+                    className='mli-2 gap-3'
+                    onClick={(e) => handleDropdownClose(e, '/profile/purchases')}
+                  >
+                    <i className='tabler-credit-card' />
+                    <Typography color='text.primary'>Мои покупки</Typography>
                   </MenuItem>
                   <div className='flex items-center plb-2 pli-3'>
                     <Button

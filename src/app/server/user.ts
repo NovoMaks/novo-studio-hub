@@ -23,7 +23,7 @@ export const createLoginData = async ({
   }
   return prisma.$transaction([
     prisma.user.upsert({
-      create: { name, email },
+      create: { name, email, purchases: [] },
       update: { name, image },
       where: { email: email },
     }),
@@ -38,4 +38,18 @@ export const createLoginData = async ({
       where: { userEmail: email },
     }),
   ]);
+};
+
+export const addUserPurchase = async ({
+  email,
+  purchase,
+}: {
+  email: string;
+  purchase: User['purchases']['0'];
+}) => {
+  console.log(email, purchase);
+  return prisma.user.update({
+    where: { email },
+    data: { purchases: { push: purchase } },
+  });
 };

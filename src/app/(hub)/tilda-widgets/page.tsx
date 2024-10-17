@@ -21,10 +21,7 @@ export default async function Page({ searchParams }: { searchParams?: { page?: s
         <Typography variant='h2'>Виджеты для Tilda</Typography>
         <Divider />
       </Grid>
-      <PostList
-        posts={allPostsData.slice(currentPage - 1, pageLimit)}
-        basePath='/dev/tilda-widgets'
-      />
+      <PostList posts={allPostsData.slice(currentPage - 1, pageLimit)} />
       {Math.ceil(allPostsData.length / 9) > 1 && (
         <Grid item xs={12} className='flex items-center justify-center'>
           <Pagination totalPages={Math.ceil(allPostsData.length / pageLimit)} />

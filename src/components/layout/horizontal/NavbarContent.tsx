@@ -14,6 +14,7 @@ import useHorizontalNav from '@menu/hooks/useHorizontalNav';
 // Util Imports
 import { horizontalLayoutClasses } from '@layouts/utils/layoutClasses';
 import UserDropdown from '../shared/UserDropdown';
+import Link from 'next/link';
 
 const NavbarContent = () => {
   // Hooks
@@ -29,7 +30,11 @@ const NavbarContent = () => {
       <div className='flex items-center gap-4'>
         <NavToggle />
         {/* Hide Logo on Smaller screens */}
-        {!isBreakpointReached && <Logo />}
+        {!isBreakpointReached && (
+          <Link href='/'>
+            <Logo />
+          </Link>
+        )}
       </div>
       <div className='flex items-center'>
         <ModeDropdown />

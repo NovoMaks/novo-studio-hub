@@ -5,20 +5,24 @@ import Typography from '@mui/material/Typography';
 import Link from 'next/link';
 import { Chip } from '@mui/material';
 import { Post } from '@/types/post';
+import { getServerSession } from 'next-auth';
+import { authOptions } from '@/lib/auth';
 
-const PostCard = ({
-  basePath,
+const PostCard = async ({
   title,
   slug,
   description,
   coverImage,
-  isFree,
+  price,
   status,
-}: Post & { basePath: string }) => {
+  category,
+}: Post) => {
+  const session = await getServerSession(authOptions);
+
   return (
     <Card className='h-full relative'>
-      <Link href={`${basePath}/${slug}`}>
-        {isFree ? (
+      <Link href={`/${category}/${slug}`}>
+        {!price ? (
           <Chip
             className='absolute right-0 top-0'
             label='Бесплатно'
@@ -26,10 +30,23 @@ const PostCard = ({
             variant='filled'
             color='primary'
           />
+        ) : !!session?.user?.purchases?.find((p) => p.slug === slug && p.category === category) ? (
+          <Chip
+            className='absolute right-0 top-0'
+            label={'Куплено'}
+            size='small'
+            variant='filled'
+            color='success'
+          />
         ) : (
           <Chip
             className='absolute right-0 top-0'
-            label='По подписке'
+            label={
+              <Typography className='flex justify-center items-center text-sm text-white'>
+                {price}
+                <i className='tabler-currency-rubel text-sm' />
+              </Typography>
+            }
             size='small'
             variant='filled'
             color='info'

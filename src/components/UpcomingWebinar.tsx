@@ -9,20 +9,29 @@ import classnames from 'classnames';
 
 // Components Imports
 import CustomAvatar from '@core/components/mui/Avatar';
+import prisma from '@/lib/prisma';
+import dayjs from 'dayjs';
+import Link from 'next/link';
+import { links } from '@/data/links';
 
 type DataType = {
   icon: string;
-  title: string;
+  slug: 'date' | 'duration';
   value: string;
 };
 
 // Vars
 const data: DataType[] = [
-  { icon: 'tabler-calendar', title: '17 января', value: 'Дата' },
-  { icon: 'tabler-clock', title: '30 минут', value: 'Продолжительность' },
+  { icon: 'tabler-calendar', value: 'Дата', slug: 'date' },
+  { icon: 'tabler-clock', value: 'Продолжительность', slug: 'duration' },
 ];
 
-const UpcomingWebinar = () => {
+const UpcomingWebinar = async () => {
+  const meeting = await prisma.meeting.findFirst({
+    where: { date: { gte: new Date() } },
+    orderBy: { 'date': 'asc' },
+  });
+
   return (
     <Card className='h-full'>
       <CardContent className='flex flex-col gap-4'>
@@ -31,26 +40,42 @@ const UpcomingWebinar = () => {
         </div>
         <div>
           <Typography variant='h5' className='mbe-2'>
-            Ближайший вебинар
+            {meeting?.title}
           </Typography>
-          <Typography variant='body2'>Создание локального хранилища в Tilda</Typography>
+          <Typography variant='body2'>{meeting?.description}</Typography>
         </div>
-        <div className='flex flex-wrap justify-between gap-4'>
-          {data.map((item, i) => (
-            <div key={i} className='flex items-center gap-3'>
-              <CustomAvatar variant='rounded' skin='light' color='primary'>
-                <i className={classnames('text-[28px]', item.icon)} />
-              </CustomAvatar>
-              <div>
-                <Typography color='text.primary' className='font-medium'>
-                  {item.title}
-                </Typography>
-                <Typography variant='body2'>{item.value}</Typography>
-              </div>
+
+        {meeting && (
+          <>
+            <div className='flex flex-wrap justify-between gap-4'>
+              {data.map((item, i) => (
+                <div key={i} className='flex items-center gap-3'>
+                  <CustomAvatar variant='rounded' skin='light' color='primary'>
+                    <i className={classnames('text-[28px]', item.icon)} />
+                  </CustomAvatar>
+                  <div>
+                    <Typography color='text.primary' className='font-medium'>
+                      {item.slug === 'date'
+                        ? dayjs(meeting[item.slug]).format('DD.MM.YYYY HH:mm')
+                        : item.slug === 'duration'
+                          ? meeting.duration
+                          : null}
+                    </Typography>
+                    <Typography variant='body2'>{item.value}</Typography>
+                  </div>
+                </div>
+              ))}
             </div>
-          ))}
-        </div>
-        <Button variant='contained'>Записаться</Button>
+            <Link
+              href={`${links.tg_service}?text=Привет, хочу записаться на вебинар '${meeting.title}'`}
+              target='_blank'
+            >
+              <Button variant='contained' className='w-full'>
+                Записаться
+              </Button>
+            </Link>
+          </>
+        )}
       </CardContent>
     </Card>
   );

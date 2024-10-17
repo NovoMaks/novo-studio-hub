@@ -17,14 +17,14 @@ const horizontalMenuData = (): HorizontalMenuDataType[] => [
         children: [
           {
             label: 'Редактор Markdown',
-            href: '/dev/utils/markdown-editor',
+            href: '/markdown-editor',
             icon: 'tabler-tilde',
           },
         ],
       },
       {
         label: 'Tilda виджеты',
-        href: '/dev/tilda-widgets',
+        href: '/tilda-widgets',
         icon: 'tabler-tilde',
       },
       {
@@ -50,11 +50,6 @@ const horizontalMenuData = (): HorizontalMenuDataType[] => [
   {
     label: 'Документы',
     icon: 'tabler-vocabulary',
-  },
-  {
-    label: 'Тарифы',
-    icon: 'tabler-currency-rubel',
-    href: '/pricing',
   },
 ];
 
