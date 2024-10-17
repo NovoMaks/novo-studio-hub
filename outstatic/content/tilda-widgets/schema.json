@@ -8,6 +8,13 @@
       "fieldType": "Boolean",
       "dataType": "boolean",
       "title": "isFree"
+    },
+    "price": {
+      "required": true,
+      "description": "Цена в рублях",
+      "fieldType": "Number",
+      "dataType": "number",
+      "title": "price"
     }
   }
 }
