@@ -1,17 +1,18 @@
 {
-  "commit": "59a7f4bd106d0a4eb356abcffcbf4de5962bd9a9",
-  "generated": "2024-10-17T09:26:02.903Z",
+  "commit": "b194697900a1e4d8e5b5d575bfa9d9443bad9ac9",
+  "generated": "Thu, 17 Oct 2024 15:11:22 GMT",
   "metadata": [
     {
       "__outstatic": {
         "commit": "6306e5df8ed06440760e6d7951f2c28a44d004bb",
-        "hash": "4227573216",
+        "hash": "2651011653",
         "path": "outstatic/content/tilda-widgets/test.md"
       },
       "author": {
         "name": "Maksim",
         "picture": "https://avatars.githubusercontent.com/u/116797616?v=4"
       },
+      "category": "tilda-widgets",
       "collection": "tilda-widgets",
       "coverImage": "/images/screenshot-2024-10-11-at-13.58.24-EzMT.png",
       "description": "Тестовое описание",
@@ -24,27 +25,7 @@
     },
     {
       "__outstatic": {
-        "commit": "58713148ca7b2a9285fb8273ab55108ffc1a205e",
-        "hash": "3814840042",
-        "path": "outstatic/content/tilda-widgets/test-chernovika.md"
-      },
-      "author": {
-        "name": "Maksim",
-        "picture": "https://avatars.githubusercontent.com/u/116797616?v=4"
-      },
-      "collection": "tilda-widgets",
-      "coverImage": "/images/screenshot-2024-10-07-at-10.45.13-k0MD.png",
-      "description": "Тест черновика",
-      "isFree": "",
-      "price": "",
-      "publishedAt": "2024-10-14T09:10:39.365Z",
-      "slug": "test-chernovika",
-      "status": "draft",
-      "title": "Тест черновика"
-    },
-    {
-      "__outstatic": {
-        "commit": "59a7f4bd106d0a4eb356abcffcbf4de5962bd9a9",
+        "commit": "a8786ff0f0ad37c32b9911768e804c2ced66bfb4",
         "hash": "473311285",
         "path": "outstatic/content/tilda-widgets/test-platnogo-kontenta.md"
       },
@@ -62,6 +43,27 @@
       "slug": "test-platnogo-kontenta",
       "status": "published",
       "title": "Тест платного контента"
+    },
+    {
+      "__outstatic": {
+        "commit": "58713148ca7b2a9285fb8273ab55108ffc1a205e",
+        "hash": "3442489698",
+        "path": "outstatic/content/tilda-widgets/test-chernovika.md"
+      },
+      "author": {
+        "name": "Maksim",
+        "picture": "https://avatars.githubusercontent.com/u/116797616?v=4"
+      },
+      "category": "tilda-widgets",
+      "collection": "tilda-widgets",
+      "coverImage": "/images/screenshot-2024-10-07-at-10.45.13-k0MD.png",
+      "description": "Тест черновика",
+      "isFree": "",
+      "price": "",
+      "publishedAt": "2024-10-14T09:10:39.365Z",
+      "slug": "test-chernovika",
+      "status": "draft",
+      "title": "Тест черновика"
     }
   ]
 }
