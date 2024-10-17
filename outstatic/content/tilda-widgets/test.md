@@ -1,4 +1,5 @@
 ---
+category: 'tilda-widgets'
 price: ''
 coverImage: '/images/screenshot-2024-10-11-at-13.58.24-EzMT.png'
 description: 'Тестовое описание'
