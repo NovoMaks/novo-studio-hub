@@ -1,4 +1,5 @@
 ---
+category: 'tilda-widgets'
 price: '100'
 coverImage: '/images/------------3_20241004182250-A4ND.png'
 description: 'Описание тестового контента'
