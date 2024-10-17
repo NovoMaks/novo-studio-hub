@@ -1,28 +1,7 @@
 {
-  "commit": "b30694fe7845a882cebc36d0dea6264dfdece260",
-  "generated": "2024-10-17T15:38:53.561Z",
+  "commit": "62554b92d4335d0f920ec738a2fd5c20d0d7a5d7",
+  "generated": "2024-10-17T15:39:25.604Z",
   "metadata": [
-    {
-      "__outstatic": {
-        "commit": "6306e5df8ed06440760e6d7951f2c28a44d004bb",
-        "hash": "2651011653",
-        "path": "outstatic/content/tilda-widgets/test.md"
-      },
-      "author": {
-        "name": "Maksim",
-        "picture": "https://avatars.githubusercontent.com/u/116797616?v=4"
-      },
-      "category": "tilda-widgets",
-      "collection": "tilda-widgets",
-      "coverImage": "/images/screenshot-2024-10-11-at-13.58.24-EzMT.png",
-      "description": "Тестовое описание",
-      "isFree": "true",
-      "price": "",
-      "publishedAt": "2024-10-13T04:32:57.830Z",
-      "slug": "test",
-      "status": "published",
-      "title": "Тест"
-    },
     {
       "__outstatic": {
         "commit": "58713148ca7b2a9285fb8273ab55108ffc1a205e",
@@ -64,6 +43,27 @@
       "slug": "test-platnogo-kontenta",
       "status": "published",
       "title": "Тест платного контента"
+    },
+    {
+      "__outstatic": {
+        "commit": "62554b92d4335d0f920ec738a2fd5c20d0d7a5d7",
+        "hash": "3868434767",
+        "path": "outstatic/content/tilda-widgets/test.md"
+      },
+      "author": {
+        "name": "Maksim",
+        "picture": "https://avatars.githubusercontent.com/u/116797616?v=4"
+      },
+      "category": "tilda-widgets",
+      "collection": "tilda-widgets",
+      "coverImage": "/images/screenshot-2024-10-11-at-13.58.24-EzMT.png",
+      "description": "Тестовое описание",
+      "isFree": "true",
+      "price": "",
+      "publishedAt": "2024-10-13T04:32:57.830Z",
+      "slug": "test",
+      "status": "published",
+      "title": "Тест"
     }
   ]
 }
