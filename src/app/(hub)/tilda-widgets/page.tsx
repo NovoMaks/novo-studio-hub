@@ -5,6 +5,7 @@ import { authOptions } from '@/lib/auth';
 import { getSortedPostsData } from '@/lib/posts';
 import { Divider, Grid, Typography } from '@mui/material';
 import { getServerSession } from 'next-auth';
+export const dynamic = 'force-static';
 
 export default async function Page({ searchParams }: { searchParams?: { page?: string } }) {
   const session = await getServerSession(authOptions);

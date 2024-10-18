@@ -5,6 +5,8 @@ import BuyPostGuard from '@/hocs/BuyPostGuard';
 import { getPostContent } from '@/lib/posts';
 import { Divider } from '@mui/material';
 import { redirect } from 'next/navigation';
+
+export const dynamic = 'force-static';
 export default async function Page({ params }: { params: { id: string } }) {
   const postInfo = await getPostContent({ category: 'tilda-widgets', slug: params.id });
 
