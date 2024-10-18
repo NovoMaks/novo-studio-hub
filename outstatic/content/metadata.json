@@ -1,6 +1,6 @@
 {
-  "commit": "aa852b5da3bc834ddc50a49ae422d2e956fd115b",
-  "generated": "2024-10-18T13:32:53.875Z",
+  "commit": "f6b69f30d0c67603ff95cd1ec5c8c3c49e3f5be9",
+  "generated": "2024-10-18T14:42:27.407Z",
   "metadata": [
     {
       "__outstatic": {
@@ -46,17 +46,17 @@
     },
     {
       "__outstatic": {
-        "commit": "aa852b5da3bc834ddc50a49ae422d2e956fd115b",
-        "hash": "987421500",
+        "commit": "f6b69f30d0c67603ff95cd1ec5c8c3c49e3f5be9",
+        "hash": "3805074287",
         "path": "outstatic/content/tilda-widgets/test-platnogo-kontenta.md"
       },
       "author": {
         "name": "",
-        "picture": "/images/------------3_20241004182250-I5OT.png"
+        "picture": ""
       },
       "category": "tilda-widgets",
       "collection": "tilda-widgets",
-      "coverImage": "/images/94132137-7d4fc100-fe7c-11ea-8512-69f90cb65e48-QxND.gif",
+      "coverImage": "/images/untitled-A4Nz.gif",
       "description": "Описание тестового контента",
       "isFree": "",
       "price": "100",
