@@ -1,23 +1,19 @@
 ---
 category: 'tilda-widgets'
 price: '100'
-coverImage: '/images/untitled-A4Nz.gif'
-description: 'Описание тестового контента'
+coverImage: '/images/untitled-A1Nz.gif'
+description: 'Очень эффектный фон для главного экрана'
 slug: 'test-platnogo-kontenta'
 author:
   name: ''
   picture: ''
 status: 'published'
-title: 'Тест платного контента'
+title: 'Анимированный
+фон (particles.js)'
 isFree: ''
 publishedAt: '2024-10-14T08:11:03.485Z'
 ---
 
-# Платный контент по подписке
+# Анимированный фон (particles.js)
 
-Какой-то тект
-
-| 1 | ыывы | ывыфв |
-| --- | --- | --- |
-| фвыфыв | выфвф | ывфвы |
-| фвы | фвы | фвы |
+Какой-то тек

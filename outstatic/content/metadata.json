@@ -1,6 +1,6 @@
 {
   "commit": "f6b69f30d0c67603ff95cd1ec5c8c3c49e3f5be9",
-  "generated": "2024-10-18T14:42:27.407Z",
+  "generated": "2024-10-18T14:48:03.296Z",
   "metadata": [
     {
       "__outstatic": {
@@ -47,7 +47,7 @@
     {
       "__outstatic": {
         "commit": "f6b69f30d0c67603ff95cd1ec5c8c3c49e3f5be9",
-        "hash": "3805074287",
+        "hash": "4290266388",
         "path": "outstatic/content/tilda-widgets/test-platnogo-kontenta.md"
       },
       "author": {
@@ -56,14 +56,14 @@
       },
       "category": "tilda-widgets",
       "collection": "tilda-widgets",
-      "coverImage": "/images/untitled-A4Nz.gif",
-      "description": "Описание тестового контента",
+      "coverImage": "/images/untitled-A1Nz.gif",
+      "description": "Очень эффектный фон для главного экрана",
       "isFree": "",
       "price": "100",
       "publishedAt": "2024-10-14T08:11:03.485Z",
       "slug": "test-platnogo-kontenta",
       "status": "published",
-      "title": "Тест платного контента"
+      "title": "Анимированный фон (particles.js)"
     }
   ]
 }
