@@ -1,12 +1,12 @@
 ---
 category: 'tilda-widgets'
 price: '100'
-coverImage: '/images/------------3_20241004182250-A4ND.png'
+coverImage: '/images/94132137-7d4fc100-fe7c-11ea-8512-69f90cb65e48-QxND.gif'
 description: 'Описание тестового контента'
 slug: 'test-platnogo-kontenta'
 author:
-  name: 'Maksim'
-  picture: 'https://avatars.githubusercontent.com/u/116797616?v=4'
+  name: ''
+  picture: '/images/------------3_20241004182250-I5OT.png'
 status: 'published'
 title: 'Тест платного контента'
 isFree: ''

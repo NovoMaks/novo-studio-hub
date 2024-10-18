@@ -1,6 +1,6 @@
 {
-  "commit": "62554b92d4335d0f920ec738a2fd5c20d0d7a5d7",
-  "generated": "2024-10-17T15:39:25.604Z",
+  "commit": "aa852b5da3bc834ddc50a49ae422d2e956fd115b",
+  "generated": "2024-10-18T13:32:53.875Z",
   "metadata": [
     {
       "__outstatic": {
@@ -25,27 +25,6 @@
     },
     {
       "__outstatic": {
-        "commit": "b30694fe7845a882cebc36d0dea6264dfdece260",
-        "hash": "473311285",
-        "path": "outstatic/content/tilda-widgets/test-platnogo-kontenta.md"
-      },
-      "author": {
-        "name": "Maksim",
-        "picture": "https://avatars.githubusercontent.com/u/116797616?v=4"
-      },
-      "category": "tilda-widgets",
-      "collection": "tilda-widgets",
-      "coverImage": "/images/------------3_20241004182250-A4ND.png",
-      "description": "Описание тестового контента",
-      "isFree": "",
-      "price": "100",
-      "publishedAt": "2024-10-14T08:11:03.485Z",
-      "slug": "test-platnogo-kontenta",
-      "status": "published",
-      "title": "Тест платного контента"
-    },
-    {
-      "__outstatic": {
         "commit": "62554b92d4335d0f920ec738a2fd5c20d0d7a5d7",
         "hash": "3868434767",
         "path": "outstatic/content/tilda-widgets/test.md"
@@ -64,6 +43,27 @@
       "slug": "test",
       "status": "published",
       "title": "Тест"
+    },
+    {
+      "__outstatic": {
+        "commit": "aa852b5da3bc834ddc50a49ae422d2e956fd115b",
+        "hash": "987421500",
+        "path": "outstatic/content/tilda-widgets/test-platnogo-kontenta.md"
+      },
+      "author": {
+        "name": "",
+        "picture": "/images/------------3_20241004182250-I5OT.png"
+      },
+      "category": "tilda-widgets",
+      "collection": "tilda-widgets",
+      "coverImage": "/images/94132137-7d4fc100-fe7c-11ea-8512-69f90cb65e48-QxND.gif",
+      "description": "Описание тестового контента",
+      "isFree": "",
+      "price": "100",
+      "publishedAt": "2024-10-14T08:11:03.485Z",
+      "slug": "test-platnogo-kontenta",
+      "status": "published",
+      "title": "Тест платного контента"
     }
   ]
 }
