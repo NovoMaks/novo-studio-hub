@@ -8,6 +8,8 @@ import { Post } from '@/types/post';
 import { getServerSession } from 'next-auth';
 import { authOptions } from '@/lib/auth';
 
+export const dynamic = 'force-static';
+
 const PostCard = async ({
   title,
   slug,
