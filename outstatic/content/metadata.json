@@ -1,28 +1,7 @@
 {
-  "commit": "f6b69f30d0c67603ff95cd1ec5c8c3c49e3f5be9",
-  "generated": "2024-10-18T14:48:03.296Z",
+  "commit": "0186c44ec1cd686e578a19d8770a166ce0986158",
+  "generated": "2024-10-19T08:29:34.783Z",
   "metadata": [
-    {
-      "__outstatic": {
-        "commit": "58713148ca7b2a9285fb8273ab55108ffc1a205e",
-        "hash": "3442489698",
-        "path": "outstatic/content/tilda-widgets/test-chernovika.md"
-      },
-      "author": {
-        "name": "Maksim",
-        "picture": "https://avatars.githubusercontent.com/u/116797616?v=4"
-      },
-      "category": "tilda-widgets",
-      "collection": "tilda-widgets",
-      "coverImage": "/images/screenshot-2024-10-07-at-10.45.13-k0MD.png",
-      "description": "Тест черновика",
-      "isFree": "",
-      "price": "",
-      "publishedAt": "2024-10-14T09:10:39.365Z",
-      "slug": "test-chernovika",
-      "status": "draft",
-      "title": "Тест черновика"
-    },
     {
       "__outstatic": {
         "commit": "62554b92d4335d0f920ec738a2fd5c20d0d7a5d7",
