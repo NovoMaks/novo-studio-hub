@@ -112,7 +112,9 @@ const LoginV2 = ({ mode }: { mode: SystemMode }) => {
             <div className='flex flex-col gap-1.5'>
               <Button
                 variant='contained'
-                onClick={() => signIn('yandex', { callbackUrl: '/home' })}
+                onClick={() =>
+                  signIn('yandex', { callbackUrl: process.env.NEXT_PUBLIC_APP_URL + redirectTo })
+                }
                 startIcon={<i className='tabler-brand-yandex text-[#ffdb4d]' />}
                 className='font-bold'
               >
@@ -120,7 +122,9 @@ const LoginV2 = ({ mode }: { mode: SystemMode }) => {
               </Button>
               <Button
                 variant='contained'
-                onClick={() => signIn('mailru', { callbackUrl: redirectTo })}
+                onClick={() =>
+                  signIn('mailru', { callbackUrl: process.env.NEXT_PUBLIC_APP_URL + redirectTo })
+                }
                 startIcon={<i className='tabler-at text-blue-300' />}
                 className='font-bold'
               >
@@ -129,7 +133,9 @@ const LoginV2 = ({ mode }: { mode: SystemMode }) => {
               <Button
                 startIcon={<i className='tabler-brand-google text-red-300' />}
                 variant='contained'
-                onClick={() => signIn('google', { callbackUrl: '/home' })}
+                onClick={() =>
+                  signIn('google', { callbackUrl: process.env.NEXT_PUBLIC_APP_URL + redirectTo })
+                }
                 className=' font-bold'
               >
                 Google
