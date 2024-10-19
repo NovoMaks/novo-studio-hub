@@ -1,6 +1,7 @@
 import Pagination from '@/components/Pagination';
 
 import PostList from '@/components/PostList';
+import WidgetHelpCards from '@/components/WidgetHelpCards';
 import { authOptions } from '@/lib/auth';
 import { getSortedPostsData } from '@/lib/posts';
 import { Divider, Grid, Typography } from '@mui/material';
@@ -20,6 +21,9 @@ export default async function Page({ searchParams }: { searchParams?: { page?: s
       <Grid item xs={12}>
         <Typography variant='h2'>Виджеты для Tilda</Typography>
         <Divider />
+      </Grid>
+      <Grid item xs={12}>
+        <WidgetHelpCards />
       </Grid>
       <PostList posts={allPostsData.slice(currentPage - 1, pageLimit)} />
       {Math.ceil(allPostsData.length / 9) > 1 && (
