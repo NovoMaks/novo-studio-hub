@@ -1,6 +1,6 @@
 {
   "commit": "e2f9c7846d9968731e02f047b28106b5e648ccb1",
-  "generated": "2024-10-19T11:44:55.627Z",
+  "generated": "2024-10-19T11:47:56.260Z",
   "metadata": [
     {
       "__outstatic": {
@@ -26,7 +26,7 @@
     {
       "__outstatic": {
         "commit": "e2f9c7846d9968731e02f047b28106b5e648ccb1",
-        "hash": "1566262358",
+        "hash": "21482203",
         "path": "outstatic/content/tilda-widgets/test-platnogo-kontenta.md"
       },
       "author": {
