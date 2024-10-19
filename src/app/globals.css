@@ -135,4 +135,10 @@ code {
 .post img {
   max-height: 500px;
   max-width: 100%;
+  margin: 10px 0;
+}
+
+.post h2 {
+  margin-top: 30px;
+  margin-bottom: 10px;
 }
