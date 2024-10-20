@@ -1,6 +1,6 @@
 {
-  "commit": "226dedfa5d406b694e41b14f06222dd90df47c9b",
-  "generated": "2024-10-20T17:07:39.818Z",
+  "commit": "68ba1e9c8471b764f7de0b433d62943a0e4ebd3a",
+  "generated": "2024-10-20T17:15:22.259Z",
   "metadata": [
     {
       "__outstatic": {
@@ -46,8 +46,8 @@
     },
     {
       "__outstatic": {
-        "commit": "226dedfa5d406b694e41b14f06222dd90df47c9b",
-        "hash": "2401659298",
+        "commit": "68ba1e9c8471b764f7de0b433d62943a0e4ebd3a",
+        "hash": "1799020743",
         "path": "outstatic/content/tilda-widgets/min-audio-pleer.md"
       },
       "author": {
@@ -61,7 +61,7 @@
       "price": "350",
       "publishedAt": "2024-10-20T16:48:41.275Z",
       "slug": "min-audio-pleer",
-      "status": "draft",
+      "status": "published",
       "title": "Минималистичный аудио плеер"
     }
   ]
