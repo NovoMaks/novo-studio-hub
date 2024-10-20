@@ -1,6 +1,6 @@
 {
-  "commit": "eac41f0cc0ba7a925c59da2a4a5c041c0bedd80a",
-  "generated": "2024-10-20T16:30:27.393Z",
+  "commit": "226dedfa5d406b694e41b14f06222dd90df47c9b",
+  "generated": "2024-10-20T17:07:39.818Z",
   "metadata": [
     {
       "__outstatic": {
@@ -43,6 +43,26 @@
       "slug": "particles-main-bg",
       "status": "published",
       "title": "Анимированный фон (particles.js)"
+    },
+    {
+      "__outstatic": {
+        "commit": "226dedfa5d406b694e41b14f06222dd90df47c9b",
+        "hash": "2401659298",
+        "path": "outstatic/content/tilda-widgets/min-audio-pleer.md"
+      },
+      "author": {
+        "name": "Maksim",
+        "picture": ""
+      },
+      "category": "tilda-widgets",
+      "collection": "tilda-widgets",
+      "coverImage": "http://novo-studio-hub.s3.cloud.ru/tilda-widgets/min-audio-pleer/0.gif",
+      "description": "Аудио плеер для плейлистов и одиночных треков",
+      "price": "350",
+      "publishedAt": "2024-10-20T16:48:41.275Z",
+      "slug": "min-audio-pleer",
+      "status": "draft",
+      "title": "Минималистичный аудио плеер"
     }
   ]
 }
