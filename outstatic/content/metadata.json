@@ -1,6 +1,6 @@
 {
-  "commit": "e2f9c7846d9968731e02f047b28106b5e648ccb1",
-  "generated": "2024-10-19T11:47:56.260Z",
+  "commit": "eac41f0cc0ba7a925c59da2a4a5c041c0bedd80a",
+  "generated": "2024-10-20T16:30:27.393Z",
   "metadata": [
     {
       "__outstatic": {
@@ -25,9 +25,9 @@
     },
     {
       "__outstatic": {
-        "commit": "e2f9c7846d9968731e02f047b28106b5e648ccb1",
-        "hash": "21482203",
-        "path": "outstatic/content/tilda-widgets/test-platnogo-kontenta.md"
+        "commit": "eac41f0cc0ba7a925c59da2a4a5c041c0bedd80a",
+        "hash": "1737196173",
+        "path": "outstatic/content/tilda-widgets/particles-main-bg.md"
       },
       "author": {
         "name": "",
@@ -40,7 +40,7 @@
       "isFree": "",
       "price": "100",
       "publishedAt": "2024-10-14T08:11:03.485Z",
-      "slug": "test-platnogo-kontenta",
+      "slug": "particles-main-bg",
       "status": "published",
       "title": "Анимированный фон (particles.js)"
     }

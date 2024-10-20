@@ -3,7 +3,7 @@ category: 'tilda-widgets'
 price: '100'
 coverImage: '/images/untitled-A1Nz.gif'
 description: 'Очень эффектный фон для главного экрана'
-slug: 'test-platnogo-kontenta'
+slug: 'particles-main-bg'
 author:
   name: ''
   picture: ''
