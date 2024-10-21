@@ -1,6 +1,6 @@
 {
-  "commit": "3c7d90bf3b6fdbd13da5419e11558ff7196ec5a0",
-  "generated": "2024-10-21T07:32:04.351Z",
+  "commit": "6669c9cce20b8811c43e0c849625691f38c4cbed",
+  "generated": "2024-10-21T07:51:09.406Z",
   "metadata": [
     {
       "__outstatic": {
@@ -83,6 +83,26 @@
       "slug": "future-btn",
       "status": "published",
       "title": "Футуристичная кнопка"
+    },
+    {
+      "__outstatic": {
+        "commit": "6669c9cce20b8811c43e0c849625691f38c4cbed",
+        "hash": "144988655",
+        "path": "outstatic/content/tilda-widgets/cursor-water.md"
+      },
+      "author": {
+        "name": "Maksim",
+        "picture": "https://avatars.githubusercontent.com/u/116797616?v=4"
+      },
+      "category": "tilda-widgets",
+      "collection": "tilda-widgets",
+      "coverImage": "http://novo-studio-hub.s3.cloud.ru/tilda-widgets/cursor-water/0.gif",
+      "description": "Курсор в форме капли с эффектом негатива при наведении на объекты",
+      "price": "300",
+      "publishedAt": "2024-10-21T07:51:19.201Z",
+      "slug": "cursor-water",
+      "status": "published",
+      "title": "Курсор-капля"
     }
   ]
 }
