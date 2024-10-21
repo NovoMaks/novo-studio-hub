@@ -1,6 +1,6 @@
 {
-  "commit": "68ba1e9c8471b764f7de0b433d62943a0e4ebd3a",
-  "generated": "2024-10-20T17:15:22.259Z",
+  "commit": "3c7d90bf3b6fdbd13da5419e11558ff7196ec5a0",
+  "generated": "2024-10-21T07:32:04.351Z",
   "metadata": [
     {
       "__outstatic": {
@@ -63,6 +63,26 @@
       "slug": "min-audio-pleer",
       "status": "published",
       "title": "Минималистичный аудио плеер"
+    },
+    {
+      "__outstatic": {
+        "commit": "3c7d90bf3b6fdbd13da5419e11558ff7196ec5a0",
+        "hash": "3590190438",
+        "path": "outstatic/content/tilda-widgets/future-btn.md"
+      },
+      "author": {
+        "name": "Maksim",
+        "picture": ""
+      },
+      "category": "tilda-widgets",
+      "collection": "tilda-widgets",
+      "coverImage": "http://novo-studio-hub.s3.cloud.ru/tilda-widgets/future-btn/0.gif",
+      "description": "Футуристичная кнопка для привлечения внимания к целевому действию",
+      "price": "",
+      "publishedAt": "2024-10-21T07:18:20.173Z",
+      "slug": "future-btn",
+      "status": "published",
+      "title": "Футуристичная кнопка"
     }
   ]
 }
