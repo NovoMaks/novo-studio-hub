@@ -16,6 +16,10 @@ publishedAt: '2024-10-21T07:51:19.201Z'
 
 ![](http://novo-studio-hub.s3.cloud.ru/tilda-widgets/cursor-water/0.gif)
 
+## ID шаблона: **56814299**
+
+(Инструкция по добавлению шаблона [тут](https://help-ru.tilda.cc/page-template))
+
 ## Шаг 1
 
 В самом низу страницы добавляем html-блок, и вставляем туда код, который представлен ниже.\
