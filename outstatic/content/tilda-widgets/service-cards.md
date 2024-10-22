@@ -1,9 +1,10 @@
 ---
+tags: 'Бесплатная установка на сайт'
 category: 'tilda-widgets'
 price: '450'
 coverImage: ''
 description: 'Адаптивные анимированные карточки услуг в Zero-блоке'
-slug: 'kartochki-uslug'
+slug: 'service-cards'
 author:
   name: 'Maksim'
   picture: ''

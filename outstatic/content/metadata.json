@@ -1,6 +1,6 @@
 {
-  "commit": "3bcfcfdf81a5c8a8e0f08030f8e7502defa84217",
-  "generated": "2024-10-22T11:22:43.448Z",
+  "commit": "da2d6fd7962958677843e6d7c57ea4736fcc80bc",
+  "generated": "2024-10-22T11:32:47.301Z",
   "metadata": [
     {
       "__outstatic": {
@@ -106,9 +106,9 @@
     },
     {
       "__outstatic": {
-        "commit": "3bcfcfdf81a5c8a8e0f08030f8e7502defa84217",
-        "hash": "3598187523",
-        "path": "outstatic/content/tilda-widgets/kartochki-uslug.md"
+        "commit": "da2d6fd7962958677843e6d7c57ea4736fcc80bc",
+        "hash": "726106278",
+        "path": "outstatic/content/tilda-widgets/service-cards.md"
       },
       "author": {
         "name": "Maksim",
@@ -120,8 +120,9 @@
       "description": "Адаптивные анимированные карточки услуг в Zero-блоке",
       "price": "450",
       "publishedAt": "2024-10-22T11:36:18.705Z",
-      "slug": "kartochki-uslug",
+      "slug": "service-cards",
       "status": "published",
+      "tags": "Бесплатная установка на сайт",
       "title": "Карточки услуг"
     }
   ]
