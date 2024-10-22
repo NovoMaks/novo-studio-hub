@@ -14,6 +14,7 @@ export function getSortedPostsData({ category }: { category: string; isAdmin?: b
     'publishedAt',
     'price',
     'category',
+    'tags',
   ]) as unknown as Post[];
 
   return allPostsData.sort((a, b) => {
@@ -37,6 +38,7 @@ export async function getPostContent({ category, slug }: { category: string; slu
     'price',
     'content',
     'category',
+    'tags',
   ]) as unknown as Post & { content: string };
 
   if (!post) return null;
@@ -65,6 +67,7 @@ export async function getMyPurchases({ purchases }: { purchases: User['purchases
       'publishedAt',
       'price',
       'category',
+      'tags',
     ])
     .toArray()) ?? []) as unknown as Post[];
 

@@ -112,7 +112,7 @@ const WelcomeCard = async () => {
         <Typography variant='h4'>Novo-studio HUB 👋🏻</Typography>
       </div>
       <div className='mbe-4'>
-        <Typography>Это база знаний нашей web-студии,</Typography>
+        <Typography>Это база знаний нашей студии,</Typography>
         <Typography className='font-bold'>создавайте и учитесь вместе с нами!</Typography>
       </div>
       <div className='flex flex-wrap max-md:flex-col justify-between gap-6'>

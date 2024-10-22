@@ -16,9 +16,10 @@ const PostCard = async ({
   price,
   status,
   category,
+  tags,
 }: Post) => {
   const session = await getServerSession(authOptions);
-
+  const tagsArr = tags?.split('/') ?? [];
   return (
     <Card className='h-full relative'>
       <Link href={`/${category}/${slug}`}>
@@ -70,6 +71,13 @@ const PostCard = async ({
           <Typography color='text.secondary' className='whitespace-pre-wrap'>
             {description}
           </Typography>
+          {tagsArr.length > 0 && (
+            <div className='flex flex-wrap gap-3 mt-3'>
+              {tagsArr.map((tag) => (
+                <Chip label={tag} size='small' variant='filled' color='primary' />
+              ))}
+            </div>
+          )}
         </CardContent>
       </Link>
     </Card>

@@ -142,3 +142,8 @@ code {
   margin-top: 30px;
   margin-bottom: 10px;
 }
+
+.post a {
+  color: var(--mui-palette-action);
+  text-decoration: underline;
+}

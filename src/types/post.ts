@@ -15,4 +15,5 @@ export type Post = {
   publishedAt: Date;
   price: string;
   category: string;
+  tags?: string;
 };

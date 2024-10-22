@@ -12,6 +12,11 @@ const horizontalMenuData = (): HorizontalMenuDataType[] => [
     icon: 'tabler-code-circle-2',
     children: [
       {
+        label: 'Tilda виджеты',
+        href: '/tilda-widgets',
+        icon: 'tabler-tilde',
+      },
+      {
         label: 'Утилиты',
         icon: 'tabler-code-circle-2',
         children: [
@@ -21,15 +26,6 @@ const horizontalMenuData = (): HorizontalMenuDataType[] => [
             icon: 'tabler-tilde',
           },
         ],
-      },
-      {
-        label: 'Tilda виджеты',
-        href: '/tilda-widgets',
-        icon: 'tabler-tilde',
-      },
-      {
-        label: 'React',
-        icon: 'tabler-brand-react',
       },
     ],
   },
