@@ -1,6 +1,6 @@
 {
-  "commit": "2efeb0c918f18e73a382df69d35449496cf74ab9",
-  "generated": "2024-10-22T11:18:07.436Z",
+  "commit": "3bcfcfdf81a5c8a8e0f08030f8e7502defa84217",
+  "generated": "2024-10-22T11:22:43.448Z",
   "metadata": [
     {
       "__outstatic": {
@@ -103,6 +103,26 @@
       "slug": "particles-main-bg",
       "status": "published",
       "title": "Анимированный фон (particles.js)"
+    },
+    {
+      "__outstatic": {
+        "commit": "3bcfcfdf81a5c8a8e0f08030f8e7502defa84217",
+        "hash": "3598187523",
+        "path": "outstatic/content/tilda-widgets/kartochki-uslug.md"
+      },
+      "author": {
+        "name": "Maksim",
+        "picture": ""
+      },
+      "category": "tilda-widgets",
+      "collection": "tilda-widgets",
+      "coverImage": "",
+      "description": "Адаптивные анимированные карточки услуг в Zero-блоке",
+      "price": "450",
+      "publishedAt": "2024-10-22T11:36:18.705Z",
+      "slug": "kartochki-uslug",
+      "status": "published",
+      "title": "Карточки услуг"
     }
   ]
 }
