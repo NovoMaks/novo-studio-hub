@@ -1,6 +1,6 @@
 {
-  "commit": "da2d6fd7962958677843e6d7c57ea4736fcc80bc",
-  "generated": "2024-10-22T11:32:47.301Z",
+  "commit": "ba14c1bcaa3b513744d15e25da28900e6573db91",
+  "generated": "2024-10-22T11:38:31.840Z",
   "metadata": [
     {
       "__outstatic": {
@@ -106,8 +106,8 @@
     },
     {
       "__outstatic": {
-        "commit": "da2d6fd7962958677843e6d7c57ea4736fcc80bc",
-        "hash": "726106278",
+        "commit": "ba14c1bcaa3b513744d15e25da28900e6573db91",
+        "hash": "3114907262",
         "path": "outstatic/content/tilda-widgets/service-cards.md"
       },
       "author": {
@@ -116,7 +116,7 @@
       },
       "category": "tilda-widgets",
       "collection": "tilda-widgets",
-      "coverImage": "",
+      "coverImage": "http://novo-studio-hub.s3.cloud.ru/tilda-widgets/service-cards/0.gif",
       "description": "Адаптивные анимированные карточки услуг в Zero-блоке",
       "price": "450",
       "publishedAt": "2024-10-22T11:36:18.705Z",
