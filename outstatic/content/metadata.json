@@ -1,6 +1,6 @@
 {
-  "commit": "c256076975a009c93e8ed635009758f7f46eef0a",
-  "generated": "2024-10-22T11:15:14.328Z",
+  "commit": "72afcc3f37a539539f87e015f772473cd93d95cf",
+  "generated": "2024-10-22T11:16:03.214Z",
   "metadata": [
     {
       "__outstatic": {
@@ -66,26 +66,6 @@
     },
     {
       "__outstatic": {
-        "commit": "3c7d90bf3b6fdbd13da5419e11558ff7196ec5a0",
-        "hash": "3590190438",
-        "path": "outstatic/content/tilda-widgets/future-btn.md"
-      },
-      "author": {
-        "name": "Maksim",
-        "picture": ""
-      },
-      "category": "tilda-widgets",
-      "collection": "tilda-widgets",
-      "coverImage": "http://novo-studio-hub.s3.cloud.ru/tilda-widgets/future-btn/0.gif",
-      "description": "Футуристичная кнопка для привлечения внимания к целевому действию",
-      "price": "",
-      "publishedAt": "2024-10-21T07:18:20.173Z",
-      "slug": "future-btn",
-      "status": "published",
-      "title": "Футуристичная кнопка"
-    },
-    {
-      "__outstatic": {
         "commit": "c256076975a009c93e8ed635009758f7f46eef0a",
         "hash": "2070605957",
         "path": "outstatic/content/tilda-widgets/cursor-water.md"
@@ -103,6 +83,26 @@
       "slug": "cursor-water",
       "status": "published",
       "title": "Курсор-капля"
+    },
+    {
+      "__outstatic": {
+        "commit": "72afcc3f37a539539f87e015f772473cd93d95cf",
+        "hash": "2542302305",
+        "path": "outstatic/content/tilda-widgets/future-btn.md"
+      },
+      "author": {
+        "name": "Maksim",
+        "picture": ""
+      },
+      "category": "tilda-widgets",
+      "collection": "tilda-widgets",
+      "coverImage": "http://novo-studio-hub.s3.cloud.ru/tilda-widgets/future-btn/0.gif",
+      "description": "Футуристичная кнопка для привлечения внимания к целевому действию",
+      "price": "",
+      "publishedAt": "2024-10-21T07:18:20.173Z",
+      "slug": "future-btn",
+      "status": "published",
+      "title": "Футуристичная кнопка"
     }
   ]
 }
