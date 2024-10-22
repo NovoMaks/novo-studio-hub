@@ -15,6 +15,13 @@
       "fieldType": "String",
       "dataType": "string",
       "title": "category"
+    },
+    "tags": {
+      "required": false,
+      "description": "Теги (разделитель \"/\")",
+      "fieldType": "String",
+      "dataType": "string",
+      "title": "tags"
     }
   }
 }
