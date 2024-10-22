@@ -1,6 +1,6 @@
 {
-  "commit": "feb3f747ab6d54e98e3a9bd1de5f79281b4cca46",
-  "generated": "2024-10-22T11:17:32.059Z",
+  "commit": "2efeb0c918f18e73a382df69d35449496cf74ab9",
+  "generated": "2024-10-22T11:18:07.436Z",
   "metadata": [
     {
       "__outstatic": {
@@ -85,8 +85,8 @@
     },
     {
       "__outstatic": {
-        "commit": "feb3f747ab6d54e98e3a9bd1de5f79281b4cca46",
-        "hash": "1747292692",
+        "commit": "2efeb0c918f18e73a382df69d35449496cf74ab9",
+        "hash": "2541408007",
         "path": "outstatic/content/tilda-widgets/particles-main-bg.md"
       },
       "author": {
@@ -98,7 +98,7 @@
       "coverImage": "/images/untitled-A1Nz.gif",
       "description": "Очень эффектный фон для главного экрана",
       "isFree": "",
-      "price": "100",
+      "price": "350",
       "publishedAt": "2024-10-14T08:11:03.485Z",
       "slug": "particles-main-bg",
       "status": "published",
