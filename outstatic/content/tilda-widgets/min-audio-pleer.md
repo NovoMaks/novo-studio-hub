@@ -16,6 +16,10 @@ publishedAt: '2024-10-20T16:48:41.275Z'
 
 ![](http://novo-studio-hub.s3.cloud.ru/tilda-widgets/min-audio-pleer/0.gif)
 
+## ID шаблона: **56795561**
+
+(Инструкция по добавлению шаблона [тут](https://help-ru.tilda.cc/page-template))
+
 ## Шаг 1
 
 Создаем блок html в нужном месте на сайте

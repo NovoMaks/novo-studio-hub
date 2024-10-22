@@ -1,6 +1,6 @@
 {
-  "commit": "72afcc3f37a539539f87e015f772473cd93d95cf",
-  "generated": "2024-10-22T11:16:03.214Z",
+  "commit": "fc8f7ad8400c8c3164d28a00f7283056b2046379",
+  "generated": "2024-10-22T11:16:49.720Z",
   "metadata": [
     {
       "__outstatic": {
@@ -46,26 +46,6 @@
     },
     {
       "__outstatic": {
-        "commit": "68ba1e9c8471b764f7de0b433d62943a0e4ebd3a",
-        "hash": "1799020743",
-        "path": "outstatic/content/tilda-widgets/min-audio-pleer.md"
-      },
-      "author": {
-        "name": "Maksim",
-        "picture": ""
-      },
-      "category": "tilda-widgets",
-      "collection": "tilda-widgets",
-      "coverImage": "http://novo-studio-hub.s3.cloud.ru/tilda-widgets/min-audio-pleer/0.gif",
-      "description": "Аудио плеер для плейлистов и одиночных треков",
-      "price": "350",
-      "publishedAt": "2024-10-20T16:48:41.275Z",
-      "slug": "min-audio-pleer",
-      "status": "published",
-      "title": "Минималистичный аудио плеер"
-    },
-    {
-      "__outstatic": {
         "commit": "c256076975a009c93e8ed635009758f7f46eef0a",
         "hash": "2070605957",
         "path": "outstatic/content/tilda-widgets/cursor-water.md"
@@ -103,6 +83,26 @@
       "slug": "future-btn",
       "status": "published",
       "title": "Футуристичная кнопка"
+    },
+    {
+      "__outstatic": {
+        "commit": "fc8f7ad8400c8c3164d28a00f7283056b2046379",
+        "hash": "219739122",
+        "path": "outstatic/content/tilda-widgets/min-audio-pleer.md"
+      },
+      "author": {
+        "name": "Maksim",
+        "picture": ""
+      },
+      "category": "tilda-widgets",
+      "collection": "tilda-widgets",
+      "coverImage": "http://novo-studio-hub.s3.cloud.ru/tilda-widgets/min-audio-pleer/0.gif",
+      "description": "Аудио плеер для плейлистов и одиночных треков",
+      "price": "350",
+      "publishedAt": "2024-10-20T16:48:41.275Z",
+      "slug": "min-audio-pleer",
+      "status": "published",
+      "title": "Минималистичный аудио плеер"
     }
   ]
 }
