@@ -1,6 +1,6 @@
 {
-  "commit": "455fe2aac890459f12511c321db2aea694b3701e",
-  "generated": "2024-10-23T08:26:22.910Z",
+  "commit": "615d64786b7e481b8816f78c72c7a2448d7fd1df",
+  "generated": "2024-10-23T12:27:59.287Z",
   "metadata": [
     {
       "__outstatic": {
@@ -145,6 +145,27 @@
       "status": "published",
       "tags": "",
       "title": "Чб-фильтр на Zero-блок"
+    },
+    {
+      "__outstatic": {
+        "commit": "615d64786b7e481b8816f78c72c7a2448d7fd1df",
+        "hash": "571984908",
+        "path": "outstatic/content/tilda-widgets/hranilishche-izobrazheniy.md"
+      },
+      "author": {
+        "name": "Maksim",
+        "picture": "https://avatars.githubusercontent.com/u/116797616?v=4"
+      },
+      "category": "tilda-widgets",
+      "collection": "tilda-widgets",
+      "coverImage": "http://novo-studio-hub.s3.cloud.ru/tilda-widgets/static-img/0.png",
+      "description": "Сохраняйте свои изображения в тильде для того, чтобы получить прямую ссылку для использования в виджетак",
+      "price": "",
+      "publishedAt": "2024-10-23T12:28:19.089Z",
+      "slug": "hranilishche-izobrazheniy",
+      "status": "draft",
+      "tags": "Полезная информация",
+      "title": "Хранилище изображений"
     }
   ]
 }
