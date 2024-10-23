@@ -1,6 +1,6 @@
 {
-  "commit": "ba14c1bcaa3b513744d15e25da28900e6573db91",
-  "generated": "2024-10-22T11:38:31.840Z",
+  "commit": "52b796dc5a3d8605ac8e8ed2a3a9a9c48dc9fcc5",
+  "generated": "2024-10-23T08:05:23.008Z",
   "metadata": [
     {
       "__outstatic": {
@@ -124,6 +124,27 @@
       "status": "published",
       "tags": "Бесплатная установка на сайт",
       "title": "Карточки услуг"
+    },
+    {
+      "__outstatic": {
+        "commit": "52b796dc5a3d8605ac8e8ed2a3a9a9c48dc9fcc5",
+        "hash": "4189761426",
+        "path": "outstatic/content/tilda-widgets/bw-filter.md"
+      },
+      "author": {
+        "name": "Maksim",
+        "picture": ""
+      },
+      "category": "tilda-widgets",
+      "collection": "tilda-widgets",
+      "coverImage": "http://novo-studio-hub.s3.cloud.ru/tilda-widgets/bw-filter/0.gif",
+      "description": "Привлеките внимание к своим блокам с эффектом цветной картинки при наведении",
+      "price": "100",
+      "publishedAt": "2024-10-23T08:10:15.916Z",
+      "slug": "bw-filter",
+      "status": "published",
+      "tags": "",
+      "title": "Чб-фильтр на Zero-блок"
     }
   ]
 }
