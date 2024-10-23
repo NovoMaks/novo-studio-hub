@@ -1,6 +1,6 @@
 {
-  "commit": "52b796dc5a3d8605ac8e8ed2a3a9a9c48dc9fcc5",
-  "generated": "2024-10-23T08:05:23.008Z",
+  "commit": "455fe2aac890459f12511c321db2aea694b3701e",
+  "generated": "2024-10-23T08:26:22.910Z",
   "metadata": [
     {
       "__outstatic": {
@@ -127,8 +127,8 @@
     },
     {
       "__outstatic": {
-        "commit": "52b796dc5a3d8605ac8e8ed2a3a9a9c48dc9fcc5",
-        "hash": "4189761426",
+        "commit": "455fe2aac890459f12511c321db2aea694b3701e",
+        "hash": "38111745",
         "path": "outstatic/content/tilda-widgets/bw-filter.md"
       },
       "author": {
