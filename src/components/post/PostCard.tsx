@@ -19,7 +19,7 @@ const PostCard = async ({
   tags,
 }: Post) => {
   const session = await getServerSession(authOptions);
-  const tagsArr = tags?.split('/') ?? [];
+  const tagsArr = tags?.trim().split('/') ?? [];
   return (
     <Card className='h-full relative'>
       <Link href={`/${category}/${slug}`}>
