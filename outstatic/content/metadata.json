@@ -1,6 +1,6 @@
 {
-  "commit": "7b8c8f8fc01c817242eb83a19a6552b4b9ec736e",
-  "generated": "2024-10-24T11:18:54.786Z",
+  "commit": "ececa4b65054ca6b90de2ef049ce62e455d41e83",
+  "generated": "2024-10-24T16:20:37.996Z",
   "metadata": [
     {
       "__outstatic": {
@@ -149,6 +149,27 @@
       "status": "published",
       "tags": "",
       "title": "Курсор-капля"
+    },
+    {
+      "__outstatic": {
+        "commit": "ececa4b65054ca6b90de2ef049ce62e455d41e83",
+        "hash": "1671949975",
+        "path": "outstatic/content/tilda-widgets/before-after.md"
+      },
+      "author": {
+        "name": "Maksim",
+        "picture": "https://avatars.githubusercontent.com/u/116797616?v=4"
+      },
+      "category": "tilda-widgets",
+      "collection": "tilda-widgets",
+      "coverImage": "http://novo-studio-hub.s3.cloud.ru/tilda-widgets/before-after/0.gif",
+      "description": "Слайдер До-После поможет показать результат ваших работ",
+      "price": "350",
+      "publishedAt": "2024-10-24T11:37:02.281Z",
+      "slug": "before-after",
+      "status": "published",
+      "tags": "",
+      "title": "Блок До-После"
     }
   ]
 }
