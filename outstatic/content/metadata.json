@@ -1,6 +1,6 @@
 {
-  "commit": "50c810d2d1ac36b46fc80eec717ff2a5cb4552b2",
-  "generated": "2024-10-24T11:16:47.759Z",
+  "commit": "b3dcb4703e3b795f30ac8cb5e6f5ff71991064cc",
+  "generated": "2024-10-24T11:17:06.944Z",
   "metadata": [
     {
       "__outstatic": {
@@ -106,27 +106,6 @@
     },
     {
       "__outstatic": {
-        "commit": "ba14c1bcaa3b513744d15e25da28900e6573db91",
-        "hash": "3114907262",
-        "path": "outstatic/content/tilda-widgets/service-cards.md"
-      },
-      "author": {
-        "name": "Maksim",
-        "picture": ""
-      },
-      "category": "tilda-widgets",
-      "collection": "tilda-widgets",
-      "coverImage": "http://novo-studio-hub.s3.cloud.ru/tilda-widgets/service-cards/0.gif",
-      "description": "Адаптивные анимированные карточки услуг в Zero-блоке",
-      "price": "450",
-      "publishedAt": "2024-10-22T11:36:18.705Z",
-      "slug": "service-cards",
-      "status": "published",
-      "tags": "Бесплатная установка на сайт",
-      "title": "Карточки услуг"
-    },
-    {
-      "__outstatic": {
         "commit": "408609c684f72f273b3836fb9e3b6c109af7c86e",
         "hash": "9418033",
         "path": "outstatic/content/tilda-widgets/bw-filter.md"
@@ -145,6 +124,27 @@
       "status": "published",
       "tags": "",
       "title": "Чб-фильтр на Zero-блок"
+    },
+    {
+      "__outstatic": {
+        "commit": "b3dcb4703e3b795f30ac8cb5e6f5ff71991064cc",
+        "hash": "3161556365",
+        "path": "outstatic/content/tilda-widgets/service-cards.md"
+      },
+      "author": {
+        "name": "Maksim",
+        "picture": ""
+      },
+      "category": "tilda-widgets",
+      "collection": "tilda-widgets",
+      "coverImage": "http://novo-studio-hub.s3.cloud.ru/tilda-widgets/service-cards/0.gif",
+      "description": "Адаптивные анимированные карточки услуг в Zero-блоке",
+      "price": "450",
+      "publishedAt": "2024-10-22T11:36:18.705Z",
+      "slug": "service-cards",
+      "status": "published",
+      "tags": "Бесплатная установка на сайт",
+      "title": "Карточки услуг"
     }
   ]
 }

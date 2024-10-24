@@ -13,10 +13,6 @@ title: 'Карточки услуг'
 publishedAt: '2024-10-22T11:36:18.705Z'
 ---
 
-# Карточки услуг
-
-![](http://novo-studio-hub.s3.cloud.ru/tilda-widgets/service-cards/0.gif)
-
 ## ID шаблона: **56838215**
 
 Инструкция по добавлению шаблона [тут](https://help-ru.tilda.cc/page-template)
