@@ -1,6 +1,6 @@
 {
-  "commit": "7b8c8f8fc01c817242eb83a19a6552b4b9ec736e",
-  "generated": "2024-10-24T11:18:54.786Z",
+  "commit": "2c069798b3f71dffa7392ea3f9a7ed761511528a",
+  "generated": "2024-10-24T12:11:37.557Z",
   "metadata": [
     {
       "__outstatic": {
@@ -149,6 +149,27 @@
       "status": "published",
       "tags": "",
       "title": "Курсор-капля"
+    },
+    {
+      "__outstatic": {
+        "commit": "2c069798b3f71dffa7392ea3f9a7ed761511528a",
+        "hash": "1786923094",
+        "path": "outstatic/content/tilda-widgets/blok-do-posle.md"
+      },
+      "author": {
+        "name": "Maksim",
+        "picture": "https://avatars.githubusercontent.com/u/116797616?v=4"
+      },
+      "category": "tilda-widgets",
+      "collection": "tilda-widgets",
+      "coverImage": "",
+      "description": "",
+      "price": "",
+      "publishedAt": "2024-10-24T11:37:02.281Z",
+      "slug": "blok-do-posle",
+      "status": "draft",
+      "tags": "",
+      "title": "Блок До-После"
     }
   ]
 }
