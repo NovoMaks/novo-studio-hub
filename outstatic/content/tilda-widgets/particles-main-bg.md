@@ -1,4 +1,5 @@
 ---
+tags: ''
 category: 'tilda-widgets'
 price: '350'
 coverImage: '/images/untitled-A1Nz.gif'
@@ -13,13 +14,9 @@ isFree: ''
 publishedAt: '2024-10-14T08:11:03.485Z'
 ---
 
-# Анимированный фон для главного экрана (particles.js)
-
-![](/images/untitled-M1Nj.gif)
-
 ## ID шаблона: **56716579**
 
-(Инструкция по добавлению шаблона [тут](https://help-ru.tilda.cc/page-template))
+Инструкция по добавлению шаблона [тут](https://help-ru.tilda.cc/page-template)
 
 ## Шаг 1
 

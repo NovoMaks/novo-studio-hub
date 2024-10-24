@@ -1,6 +1,6 @@
 {
-  "commit": "3e25b80ad0e294ea751f1fb447b4883da5907b36",
-  "generated": "2024-10-24T11:18:09.231Z",
+  "commit": "12e6522adee7b6dd79e83818001eafed2503977a",
+  "generated": "2024-10-24T11:18:31.327Z",
   "metadata": [
     {
       "__outstatic": {
@@ -22,27 +22,6 @@
       "slug": "test-chernovika",
       "status": "draft",
       "title": "Тест черновика"
-    },
-    {
-      "__outstatic": {
-        "commit": "2efeb0c918f18e73a382df69d35449496cf74ab9",
-        "hash": "2541408007",
-        "path": "outstatic/content/tilda-widgets/particles-main-bg.md"
-      },
-      "author": {
-        "name": "",
-        "picture": ""
-      },
-      "category": "tilda-widgets",
-      "collection": "tilda-widgets",
-      "coverImage": "/images/untitled-A1Nz.gif",
-      "description": "Очень эффектный фон для главного экрана",
-      "isFree": "",
-      "price": "350",
-      "publishedAt": "2024-10-14T08:11:03.485Z",
-      "slug": "particles-main-bg",
-      "status": "published",
-      "title": "Анимированный фон (particles.js)"
     },
     {
       "__outstatic": {
@@ -148,6 +127,28 @@
       "status": "published",
       "tags": "",
       "title": "Минималистичный аудио плеер"
+    },
+    {
+      "__outstatic": {
+        "commit": "12e6522adee7b6dd79e83818001eafed2503977a",
+        "hash": "229039001",
+        "path": "outstatic/content/tilda-widgets/particles-main-bg.md"
+      },
+      "author": {
+        "name": "",
+        "picture": ""
+      },
+      "category": "tilda-widgets",
+      "collection": "tilda-widgets",
+      "coverImage": "/images/untitled-A1Nz.gif",
+      "description": "Очень эффектный фон для главного экрана",
+      "isFree": "",
+      "price": "350",
+      "publishedAt": "2024-10-14T08:11:03.485Z",
+      "slug": "particles-main-bg",
+      "status": "published",
+      "tags": "",
+      "title": "Анимированный фон (particles.js)"
     }
   ]
 }
