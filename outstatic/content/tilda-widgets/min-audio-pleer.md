@@ -1,4 +1,5 @@
 ---
+tags: ''
 category: 'tilda-widgets'
 price: '350'
 coverImage: 'http://novo-studio-hub.s3.cloud.ru/tilda-widgets/min-audio-pleer/0.gif'
@@ -11,10 +12,6 @@ status: 'published'
 title: 'Минималистичный аудио плеер'
 publishedAt: '2024-10-20T16:48:41.275Z'
 ---
-
-# Минималистичный аудио плеер
-
-![](http://novo-studio-hub.s3.cloud.ru/tilda-widgets/min-audio-pleer/0.gif)
 
 ## ID шаблона: **56795561**
 

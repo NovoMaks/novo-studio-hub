@@ -1,6 +1,6 @@
 {
-  "commit": "a6b25ad4353f17c8f1b40b76fd9d5b21dc5a7db3",
-  "generated": "2024-10-24T11:17:44.170Z",
+  "commit": "3e25b80ad0e294ea751f1fb447b4883da5907b36",
+  "generated": "2024-10-24T11:18:09.231Z",
   "metadata": [
     {
       "__outstatic": {
@@ -22,26 +22,6 @@
       "slug": "test-chernovika",
       "status": "draft",
       "title": "Тест черновика"
-    },
-    {
-      "__outstatic": {
-        "commit": "fc8f7ad8400c8c3164d28a00f7283056b2046379",
-        "hash": "219739122",
-        "path": "outstatic/content/tilda-widgets/min-audio-pleer.md"
-      },
-      "author": {
-        "name": "Maksim",
-        "picture": ""
-      },
-      "category": "tilda-widgets",
-      "collection": "tilda-widgets",
-      "coverImage": "http://novo-studio-hub.s3.cloud.ru/tilda-widgets/min-audio-pleer/0.gif",
-      "description": "Аудио плеер для плейлистов и одиночных треков",
-      "price": "350",
-      "publishedAt": "2024-10-20T16:48:41.275Z",
-      "slug": "min-audio-pleer",
-      "status": "published",
-      "title": "Минималистичный аудио плеер"
     },
     {
       "__outstatic": {
@@ -147,6 +127,27 @@
       "status": "published",
       "tags": "",
       "title": "Футуристичная кнопка"
+    },
+    {
+      "__outstatic": {
+        "commit": "3e25b80ad0e294ea751f1fb447b4883da5907b36",
+        "hash": "905133469",
+        "path": "outstatic/content/tilda-widgets/min-audio-pleer.md"
+      },
+      "author": {
+        "name": "Maksim",
+        "picture": ""
+      },
+      "category": "tilda-widgets",
+      "collection": "tilda-widgets",
+      "coverImage": "http://novo-studio-hub.s3.cloud.ru/tilda-widgets/min-audio-pleer/0.gif",
+      "description": "Аудио плеер для плейлистов и одиночных треков",
+      "price": "350",
+      "publishedAt": "2024-10-20T16:48:41.275Z",
+      "slug": "min-audio-pleer",
+      "status": "published",
+      "tags": "",
+      "title": "Минималистичный аудио плеер"
     }
   ]
 }
