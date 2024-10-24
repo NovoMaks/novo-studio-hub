@@ -26,7 +26,7 @@ export default async function Page({ searchParams }: { searchParams?: { page?: s
         <WidgetHelpCards />
       </Grid>
       <PostList posts={allPostsData.slice(currentPage - 1, pageLimit)} />
-      {Math.ceil(allPostsData.length / 9) > 1 && (
+      {Math.ceil(allPostsData.length / pageLimit) > 1 && (
         <Grid item xs={12} className='flex items-center justify-center'>
           <Pagination totalPages={Math.ceil(allPostsData.length / pageLimit)} />
         </Grid>
