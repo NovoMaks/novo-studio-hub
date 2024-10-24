@@ -1,6 +1,6 @@
 {
-  "commit": "72460d06e6c4432f811c923de4b703edec7e87f4",
-  "generated": "2024-10-24T11:18:42.595Z",
+  "commit": "7b8c8f8fc01c817242eb83a19a6552b4b9ec736e",
+  "generated": "2024-10-24T11:18:54.786Z",
   "metadata": [
     {
       "__outstatic": {
@@ -67,27 +67,6 @@
     },
     {
       "__outstatic": {
-        "commit": "9915cb1bc4c5a6b25c10e5e5bad8052ab68da218",
-        "hash": "1362838242",
-        "path": "outstatic/content/tilda-widgets/cursor-water.md"
-      },
-      "author": {
-        "name": "Maksim",
-        "picture": "https://avatars.githubusercontent.com/u/116797616?v=4"
-      },
-      "category": "tilda-widgets",
-      "collection": "tilda-widgets",
-      "coverImage": "http://novo-studio-hub.s3.cloud.ru/tilda-widgets/cursor-water/0.gif",
-      "description": "Курсор в форме капли с эффектом негатива при наведении на объекты",
-      "price": "300",
-      "publishedAt": "2024-10-21T07:51:19.201Z",
-      "slug": "cursor-water",
-      "status": "published",
-      "tags": "",
-      "title": "Курсор-капля"
-    },
-    {
-      "__outstatic": {
         "commit": "a6b25ad4353f17c8f1b40b76fd9d5b21dc5a7db3",
         "hash": "3546845511",
         "path": "outstatic/content/tilda-widgets/future-btn.md"
@@ -149,6 +128,27 @@
       "status": "published",
       "tags": "",
       "title": "Минималистичный аудио плеер"
+    },
+    {
+      "__outstatic": {
+        "commit": "7b8c8f8fc01c817242eb83a19a6552b4b9ec736e",
+        "hash": "568931258",
+        "path": "outstatic/content/tilda-widgets/cursor-water.md"
+      },
+      "author": {
+        "name": "Maksim",
+        "picture": "https://avatars.githubusercontent.com/u/116797616?v=4"
+      },
+      "category": "tilda-widgets",
+      "collection": "tilda-widgets",
+      "coverImage": "http://novo-studio-hub.s3.cloud.ru/tilda-widgets/cursor-water/0.gif",
+      "description": "Курсор в форме капли с эффектом негатива при наведении на объекты",
+      "price": "300",
+      "publishedAt": "2024-10-21T07:51:19.201Z",
+      "slug": "cursor-water",
+      "status": "published",
+      "tags": "",
+      "title": "Курсор-капля"
     }
   ]
 }
