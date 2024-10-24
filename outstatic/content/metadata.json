@@ -1,6 +1,6 @@
 {
-  "commit": "2c069798b3f71dffa7392ea3f9a7ed761511528a",
-  "generated": "2024-10-24T12:11:37.557Z",
+  "commit": "ececa4b65054ca6b90de2ef049ce62e455d41e83",
+  "generated": "2024-10-24T16:01:40.955Z",
   "metadata": [
     {
       "__outstatic": {
@@ -152,8 +152,8 @@
     },
     {
       "__outstatic": {
-        "commit": "2c069798b3f71dffa7392ea3f9a7ed761511528a",
-        "hash": "1786923094",
+        "commit": "ececa4b65054ca6b90de2ef049ce62e455d41e83",
+        "hash": "2335670742",
         "path": "outstatic/content/tilda-widgets/blok-do-posle.md"
       },
       "author": {
@@ -164,7 +164,7 @@
       "collection": "tilda-widgets",
       "coverImage": "",
       "description": "",
-      "price": "",
+      "price": "350",
       "publishedAt": "2024-10-24T11:37:02.281Z",
       "slug": "blok-do-posle",
       "status": "draft",
