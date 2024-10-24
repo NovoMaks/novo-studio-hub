@@ -1,6 +1,6 @@
 {
-  "commit": "408609c684f72f273b3836fb9e3b6c109af7c86e",
-  "generated": "2024-10-24T11:16:35.104Z",
+  "commit": "50c810d2d1ac36b46fc80eec717ff2a5cb4552b2",
+  "generated": "2024-10-24T11:16:47.759Z",
   "metadata": [
     {
       "__outstatic": {
@@ -124,27 +124,6 @@
       "status": "published",
       "tags": "Бесплатная установка на сайт",
       "title": "Карточки услуг"
-    },
-    {
-      "__outstatic": {
-        "commit": "615d64786b7e481b8816f78c72c7a2448d7fd1df",
-        "hash": "571984908",
-        "path": "outstatic/content/tilda-widgets/hranilishche-izobrazheniy.md"
-      },
-      "author": {
-        "name": "Maksim",
-        "picture": "https://avatars.githubusercontent.com/u/116797616?v=4"
-      },
-      "category": "tilda-widgets",
-      "collection": "tilda-widgets",
-      "coverImage": "http://novo-studio-hub.s3.cloud.ru/tilda-widgets/static-img/0.png",
-      "description": "Сохраняйте свои изображения в тильде для того, чтобы получить прямую ссылку для использования в виджетак",
-      "price": "",
-      "publishedAt": "2024-10-23T12:28:19.089Z",
-      "slug": "hranilishche-izobrazheniy",
-      "status": "draft",
-      "tags": "Полезная информация",
-      "title": "Хранилище изображений"
     },
     {
       "__outstatic": {
