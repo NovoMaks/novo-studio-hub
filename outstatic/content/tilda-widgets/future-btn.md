@@ -1,4 +1,5 @@
 ---
+tags: ''
 category: 'tilda-widgets'
 price: ''
 coverImage: 'http://novo-studio-hub.s3.cloud.ru/tilda-widgets/future-btn/0.gif'
@@ -11,10 +12,6 @@ status: 'published'
 title: 'Футуристичная кнопка'
 publishedAt: '2024-10-21T07:18:20.173Z'
 ---
-
-# Футуристичная кнопка
-
-![](http://novo-studio-hub.s3.cloud.ru/tilda-widgets/future-btn/0.gif)
 
 ## ID шаблона: **56813301**
 

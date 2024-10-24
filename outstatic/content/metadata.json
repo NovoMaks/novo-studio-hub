@@ -1,6 +1,6 @@
 {
-  "commit": "9915cb1bc4c5a6b25c10e5e5bad8052ab68da218",
-  "generated": "2024-10-24T11:17:26.615Z",
+  "commit": "a6b25ad4353f17c8f1b40b76fd9d5b21dc5a7db3",
+  "generated": "2024-10-24T11:17:44.170Z",
   "metadata": [
     {
       "__outstatic": {
@@ -22,26 +22,6 @@
       "slug": "test-chernovika",
       "status": "draft",
       "title": "Тест черновика"
-    },
-    {
-      "__outstatic": {
-        "commit": "72afcc3f37a539539f87e015f772473cd93d95cf",
-        "hash": "2542302305",
-        "path": "outstatic/content/tilda-widgets/future-btn.md"
-      },
-      "author": {
-        "name": "Maksim",
-        "picture": ""
-      },
-      "category": "tilda-widgets",
-      "collection": "tilda-widgets",
-      "coverImage": "http://novo-studio-hub.s3.cloud.ru/tilda-widgets/future-btn/0.gif",
-      "description": "Футуристичная кнопка для привлечения внимания к целевому действию",
-      "price": "",
-      "publishedAt": "2024-10-21T07:18:20.173Z",
-      "slug": "future-btn",
-      "status": "published",
-      "title": "Футуристичная кнопка"
     },
     {
       "__outstatic": {
@@ -146,6 +126,27 @@
       "status": "published",
       "tags": "",
       "title": "Курсор-капля"
+    },
+    {
+      "__outstatic": {
+        "commit": "a6b25ad4353f17c8f1b40b76fd9d5b21dc5a7db3",
+        "hash": "3546845511",
+        "path": "outstatic/content/tilda-widgets/future-btn.md"
+      },
+      "author": {
+        "name": "Maksim",
+        "picture": ""
+      },
+      "category": "tilda-widgets",
+      "collection": "tilda-widgets",
+      "coverImage": "http://novo-studio-hub.s3.cloud.ru/tilda-widgets/future-btn/0.gif",
+      "description": "Футуристичная кнопка для привлечения внимания к целевому действию",
+      "price": "",
+      "publishedAt": "2024-10-21T07:18:20.173Z",
+      "slug": "future-btn",
+      "status": "published",
+      "tags": "",
+      "title": "Футуристичная кнопка"
     }
   ]
 }
