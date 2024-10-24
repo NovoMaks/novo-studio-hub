@@ -21,7 +21,12 @@ export default async function Page({ searchParams }: { searchParams?: { page?: s
           <Typography variant='h2'>Мои покупки</Typography>
           <Divider />
         </Grid>
-        <PostList posts={allPostsData?.slice(currentPage - 1, pageLimit)} />
+        <PostList
+          posts={allPostsData?.slice(
+            (currentPage - 1) * pageLimit,
+            (currentPage - 1) * pageLimit + pageLimit,
+          )}
+        />
         {Math.ceil(allPostsData.length / 9) > 1 && (
           <Grid item xs={12} className='flex items-center justify-center'>
             <Pagination totalPages={Math.ceil(allPostsData.length / pageLimit)} />

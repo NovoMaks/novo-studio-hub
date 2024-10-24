@@ -11,6 +11,7 @@ export default async function Page({ searchParams }: { searchParams?: { page?: s
   const session = await getServerSession(authOptions);
   const pageLimit = 6;
   const currentPage = Number(searchParams?.page) || 1;
+
   const allPostsData = getSortedPostsData({
     category: 'tilda-widgets',
     isAdmin: session?.user?.role === 'ADMIN',
@@ -25,7 +26,12 @@ export default async function Page({ searchParams }: { searchParams?: { page?: s
       <Grid item xs={12}>
         <WidgetHelpCards />
       </Grid>
-      <PostList posts={allPostsData.slice(currentPage - 1, pageLimit)} />
+      <PostList
+        posts={allPostsData?.slice(
+          (currentPage - 1) * pageLimit,
+          (currentPage - 1) * pageLimit + pageLimit,
+        )}
+      />
       {Math.ceil(allPostsData.length / pageLimit) > 1 && (
         <Grid item xs={12} className='flex items-center justify-center'>
           <Pagination totalPages={Math.ceil(allPostsData.length / pageLimit)} />
