@@ -2,13 +2,13 @@
 tags: ''
 category: 'tilda-widgets'
 price: '350'
-coverImage: ''
-description: ''
-slug: 'blok-do-posle'
+coverImage: 'http://novo-studio-hub.s3.cloud.ru/tilda-widgets/before-after/0.gif'
+description: 'Слайдер До-После поможет показать результат ваших работ'
+slug: 'before-after'
 author:
   name: 'Maksim'
   picture: 'https://avatars.githubusercontent.com/u/116797616?v=4'
-status: 'draft'
+status: 'published'
 title: 'Блок До-После'
 publishedAt: '2024-10-24T11:37:02.281Z'
 ---
@@ -22,9 +22,13 @@ publishedAt: '2024-10-24T11:37:02.281Z'
 Создаем Zero-блок и внутри него добавляем 2 изображения, переносим их из области видимости блока.\
 Загружаем необходимые изображения до-после.
 
+![](http://novo-studio-hub.s3.cloud.ru/tilda-widgets/before-after/1.png)
+
 ## Шаг 2
 
 Теперь нужно получить ссылки для изображений. Для этого кликаем правой кнопкой мыши по добавленному изображению и нажимаем "Copy Image Url". Сделайте так для двух изображений и запишите url в заметку.
+
+![](http://novo-studio-hub.s3.cloud.ru/tilda-widgets/before-after/2.png)
 
 ## Шаг 3
 
@@ -64,6 +68,10 @@ publishedAt: '2024-10-24T11:37:02.281Z'
 ## Шаг 4
 
 Теперь необходимо поставить нужную ширину и высоту для html блока на всех типах устройства. Очень важно, чтобы она была пропорциональна оригинальным размерам изображения. У меня в примере изображения квадратные, поэтому и блок html на всех устройствах будет квадратным. Нельзя выставлять в %.
+
+![](http://novo-studio-hub.s3.cloud.ru/tilda-widgets/before-after/3.png)
+
+![](http://novo-studio-hub.s3.cloud.ru/tilda-widgets/before-after/4.png)
 
 ## Шаг 5
 

@@ -1,6 +1,6 @@
 {
   "commit": "ececa4b65054ca6b90de2ef049ce62e455d41e83",
-  "generated": "2024-10-24T16:13:53.658Z",
+  "generated": "2024-10-24T16:20:37.996Z",
   "metadata": [
     {
       "__outstatic": {
@@ -153,8 +153,8 @@
     {
       "__outstatic": {
         "commit": "ececa4b65054ca6b90de2ef049ce62e455d41e83",
-        "hash": "3937260202",
-        "path": "outstatic/content/tilda-widgets/blok-do-posle.md"
+        "hash": "1671949975",
+        "path": "outstatic/content/tilda-widgets/before-after.md"
       },
       "author": {
         "name": "Maksim",
@@ -162,12 +162,12 @@
       },
       "category": "tilda-widgets",
       "collection": "tilda-widgets",
-      "coverImage": "",
-      "description": "",
+      "coverImage": "http://novo-studio-hub.s3.cloud.ru/tilda-widgets/before-after/0.gif",
+      "description": "Слайдер До-После поможет показать результат ваших работ",
       "price": "350",
       "publishedAt": "2024-10-24T11:37:02.281Z",
-      "slug": "blok-do-posle",
-      "status": "draft",
+      "slug": "before-after",
+      "status": "published",
       "tags": "",
       "title": "Блок До-После"
     }
