@@ -1,6 +1,6 @@
 {
-  "commit": "615d64786b7e481b8816f78c72c7a2448d7fd1df",
-  "generated": "2024-10-23T12:27:59.287Z",
+  "commit": "408609c684f72f273b3836fb9e3b6c109af7c86e",
+  "generated": "2024-10-24T11:16:35.104Z",
   "metadata": [
     {
       "__outstatic": {
@@ -127,27 +127,6 @@
     },
     {
       "__outstatic": {
-        "commit": "455fe2aac890459f12511c321db2aea694b3701e",
-        "hash": "38111745",
-        "path": "outstatic/content/tilda-widgets/bw-filter.md"
-      },
-      "author": {
-        "name": "Maksim",
-        "picture": ""
-      },
-      "category": "tilda-widgets",
-      "collection": "tilda-widgets",
-      "coverImage": "http://novo-studio-hub.s3.cloud.ru/tilda-widgets/bw-filter/0.gif",
-      "description": "Привлеките внимание к своим блокам с эффектом цветной картинки при наведении",
-      "price": "100",
-      "publishedAt": "2024-10-23T08:10:15.916Z",
-      "slug": "bw-filter",
-      "status": "published",
-      "tags": "",
-      "title": "Чб-фильтр на Zero-блок"
-    },
-    {
-      "__outstatic": {
         "commit": "615d64786b7e481b8816f78c72c7a2448d7fd1df",
         "hash": "571984908",
         "path": "outstatic/content/tilda-widgets/hranilishche-izobrazheniy.md"
@@ -166,6 +145,27 @@
       "status": "draft",
       "tags": "Полезная информация",
       "title": "Хранилище изображений"
+    },
+    {
+      "__outstatic": {
+        "commit": "408609c684f72f273b3836fb9e3b6c109af7c86e",
+        "hash": "9418033",
+        "path": "outstatic/content/tilda-widgets/bw-filter.md"
+      },
+      "author": {
+        "name": "Maksim",
+        "picture": ""
+      },
+      "category": "tilda-widgets",
+      "collection": "tilda-widgets",
+      "coverImage": "http://novo-studio-hub.s3.cloud.ru/tilda-widgets/bw-filter/0.gif",
+      "description": "Привлеките внимание к своим блокам с эффектом цветной картинки при наведении",
+      "price": "100",
+      "publishedAt": "2024-10-23T08:10:15.916Z",
+      "slug": "bw-filter",
+      "status": "published",
+      "tags": "",
+      "title": "Чб-фильтр на Zero-блок"
     }
   ]
 }
