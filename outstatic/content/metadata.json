@@ -1,6 +1,6 @@
 {
-  "commit": "b3dcb4703e3b795f30ac8cb5e6f5ff71991064cc",
-  "generated": "2024-10-24T11:17:06.944Z",
+  "commit": "9915cb1bc4c5a6b25c10e5e5bad8052ab68da218",
+  "generated": "2024-10-24T11:17:26.615Z",
   "metadata": [
     {
       "__outstatic": {
@@ -22,26 +22,6 @@
       "slug": "test-chernovika",
       "status": "draft",
       "title": "Тест черновика"
-    },
-    {
-      "__outstatic": {
-        "commit": "c256076975a009c93e8ed635009758f7f46eef0a",
-        "hash": "2070605957",
-        "path": "outstatic/content/tilda-widgets/cursor-water.md"
-      },
-      "author": {
-        "name": "Maksim",
-        "picture": "https://avatars.githubusercontent.com/u/116797616?v=4"
-      },
-      "category": "tilda-widgets",
-      "collection": "tilda-widgets",
-      "coverImage": "http://novo-studio-hub.s3.cloud.ru/tilda-widgets/cursor-water/0.gif",
-      "description": "Курсор в форме капли с эффектом негатива при наведении на объекты",
-      "price": "300",
-      "publishedAt": "2024-10-21T07:51:19.201Z",
-      "slug": "cursor-water",
-      "status": "published",
-      "title": "Курсор-капля"
     },
     {
       "__outstatic": {
@@ -145,6 +125,27 @@
       "status": "published",
       "tags": "Бесплатная установка на сайт",
       "title": "Карточки услуг"
+    },
+    {
+      "__outstatic": {
+        "commit": "9915cb1bc4c5a6b25c10e5e5bad8052ab68da218",
+        "hash": "1362838242",
+        "path": "outstatic/content/tilda-widgets/cursor-water.md"
+      },
+      "author": {
+        "name": "Maksim",
+        "picture": "https://avatars.githubusercontent.com/u/116797616?v=4"
+      },
+      "category": "tilda-widgets",
+      "collection": "tilda-widgets",
+      "coverImage": "http://novo-studio-hub.s3.cloud.ru/tilda-widgets/cursor-water/0.gif",
+      "description": "Курсор в форме капли с эффектом негатива при наведении на объекты",
+      "price": "300",
+      "publishedAt": "2024-10-21T07:51:19.201Z",
+      "slug": "cursor-water",
+      "status": "published",
+      "tags": "",
+      "title": "Курсор-капля"
     }
   ]
 }

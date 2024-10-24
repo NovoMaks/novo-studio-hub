@@ -1,4 +1,5 @@
 ---
+tags: ''
 category: 'tilda-widgets'
 price: '300'
 coverImage: 'http://novo-studio-hub.s3.cloud.ru/tilda-widgets/cursor-water/0.gif'
@@ -11,10 +12,6 @@ status: 'published'
 title: 'Курсор-капля'
 publishedAt: '2024-10-21T07:51:19.201Z'
 ---
-
-# Курсор-капля
-
-![](http://novo-studio-hub.s3.cloud.ru/tilda-widgets/cursor-water/0.gif)
 
 ## ID шаблона: **56814299**
 
