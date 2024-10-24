@@ -15,7 +15,7 @@ publishedAt: '2024-10-20T16:48:41.275Z'
 
 ## ID шаблона: **56795561**
 
-(Инструкция по добавлению шаблона [тут](https://help-ru.tilda.cc/page-template))
+Инструкция по добавлению шаблона [тут](https://help-ru.tilda.cc/page-template)
 
 ## Шаг 1
 

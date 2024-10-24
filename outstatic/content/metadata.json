@@ -1,6 +1,6 @@
 {
-  "commit": "12e6522adee7b6dd79e83818001eafed2503977a",
-  "generated": "2024-10-24T11:18:31.327Z",
+  "commit": "72460d06e6c4432f811c923de4b703edec7e87f4",
+  "generated": "2024-10-24T11:18:42.595Z",
   "metadata": [
     {
       "__outstatic": {
@@ -109,27 +109,6 @@
     },
     {
       "__outstatic": {
-        "commit": "3e25b80ad0e294ea751f1fb447b4883da5907b36",
-        "hash": "905133469",
-        "path": "outstatic/content/tilda-widgets/min-audio-pleer.md"
-      },
-      "author": {
-        "name": "Maksim",
-        "picture": ""
-      },
-      "category": "tilda-widgets",
-      "collection": "tilda-widgets",
-      "coverImage": "http://novo-studio-hub.s3.cloud.ru/tilda-widgets/min-audio-pleer/0.gif",
-      "description": "Аудио плеер для плейлистов и одиночных треков",
-      "price": "350",
-      "publishedAt": "2024-10-20T16:48:41.275Z",
-      "slug": "min-audio-pleer",
-      "status": "published",
-      "tags": "",
-      "title": "Минималистичный аудио плеер"
-    },
-    {
-      "__outstatic": {
         "commit": "12e6522adee7b6dd79e83818001eafed2503977a",
         "hash": "229039001",
         "path": "outstatic/content/tilda-widgets/particles-main-bg.md"
@@ -149,6 +128,27 @@
       "status": "published",
       "tags": "",
       "title": "Анимированный фон (particles.js)"
+    },
+    {
+      "__outstatic": {
+        "commit": "72460d06e6c4432f811c923de4b703edec7e87f4",
+        "hash": "3137329252",
+        "path": "outstatic/content/tilda-widgets/min-audio-pleer.md"
+      },
+      "author": {
+        "name": "Maksim",
+        "picture": ""
+      },
+      "category": "tilda-widgets",
+      "collection": "tilda-widgets",
+      "coverImage": "http://novo-studio-hub.s3.cloud.ru/tilda-widgets/min-audio-pleer/0.gif",
+      "description": "Аудио плеер для плейлистов и одиночных треков",
+      "price": "350",
+      "publishedAt": "2024-10-20T16:48:41.275Z",
+      "slug": "min-audio-pleer",
+      "status": "published",
+      "tags": "",
+      "title": "Минималистичный аудио плеер"
     }
   ]
 }
