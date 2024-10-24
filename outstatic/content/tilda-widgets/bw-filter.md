@@ -13,10 +13,6 @@ title: 'Чб-фильтр на Zero-блок'
 publishedAt: '2024-10-23T08:10:15.916Z'
 ---
 
-# Чб-фильтр на Zero-блок
-
-![](http://novo-studio-hub.s3.cloud.ru/tilda-widgets/bw-filter/0.gif)
-
 ## ID шаблона: **56969877**
 
 Инструкция по добавлению шаблона [тут](https://help-ru.tilda.cc/page-template)
@@ -42,7 +38,7 @@ publishedAt: '2024-10-23T08:10:15.916Z'
 
 ## Шаг 4
 
-Продублируйте Zero-блок и установите другие фоновые изображения у Shape. В моем случае это еще 2 блока. 
+Продублируйте Zero-блок и установите другие фоновые изображения у Shape. В моем случае это еще 2 блока.
 
 ![](http://novo-studio-hub.s3.cloud.ru/tilda-widgets/bw-filter/4.png)
 

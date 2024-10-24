@@ -1,6 +1,6 @@
 {
-  "commit": "615d64786b7e481b8816f78c72c7a2448d7fd1df",
-  "generated": "2024-10-23T12:27:59.287Z",
+  "commit": "7b8c8f8fc01c817242eb83a19a6552b4b9ec736e",
+  "generated": "2024-10-24T11:18:54.786Z",
   "metadata": [
     {
       "__outstatic": {
@@ -25,110 +25,8 @@
     },
     {
       "__outstatic": {
-        "commit": "c256076975a009c93e8ed635009758f7f46eef0a",
-        "hash": "2070605957",
-        "path": "outstatic/content/tilda-widgets/cursor-water.md"
-      },
-      "author": {
-        "name": "Maksim",
-        "picture": "https://avatars.githubusercontent.com/u/116797616?v=4"
-      },
-      "category": "tilda-widgets",
-      "collection": "tilda-widgets",
-      "coverImage": "http://novo-studio-hub.s3.cloud.ru/tilda-widgets/cursor-water/0.gif",
-      "description": "Курсор в форме капли с эффектом негатива при наведении на объекты",
-      "price": "300",
-      "publishedAt": "2024-10-21T07:51:19.201Z",
-      "slug": "cursor-water",
-      "status": "published",
-      "title": "Курсор-капля"
-    },
-    {
-      "__outstatic": {
-        "commit": "72afcc3f37a539539f87e015f772473cd93d95cf",
-        "hash": "2542302305",
-        "path": "outstatic/content/tilda-widgets/future-btn.md"
-      },
-      "author": {
-        "name": "Maksim",
-        "picture": ""
-      },
-      "category": "tilda-widgets",
-      "collection": "tilda-widgets",
-      "coverImage": "http://novo-studio-hub.s3.cloud.ru/tilda-widgets/future-btn/0.gif",
-      "description": "Футуристичная кнопка для привлечения внимания к целевому действию",
-      "price": "",
-      "publishedAt": "2024-10-21T07:18:20.173Z",
-      "slug": "future-btn",
-      "status": "published",
-      "title": "Футуристичная кнопка"
-    },
-    {
-      "__outstatic": {
-        "commit": "fc8f7ad8400c8c3164d28a00f7283056b2046379",
-        "hash": "219739122",
-        "path": "outstatic/content/tilda-widgets/min-audio-pleer.md"
-      },
-      "author": {
-        "name": "Maksim",
-        "picture": ""
-      },
-      "category": "tilda-widgets",
-      "collection": "tilda-widgets",
-      "coverImage": "http://novo-studio-hub.s3.cloud.ru/tilda-widgets/min-audio-pleer/0.gif",
-      "description": "Аудио плеер для плейлистов и одиночных треков",
-      "price": "350",
-      "publishedAt": "2024-10-20T16:48:41.275Z",
-      "slug": "min-audio-pleer",
-      "status": "published",
-      "title": "Минималистичный аудио плеер"
-    },
-    {
-      "__outstatic": {
-        "commit": "2efeb0c918f18e73a382df69d35449496cf74ab9",
-        "hash": "2541408007",
-        "path": "outstatic/content/tilda-widgets/particles-main-bg.md"
-      },
-      "author": {
-        "name": "",
-        "picture": ""
-      },
-      "category": "tilda-widgets",
-      "collection": "tilda-widgets",
-      "coverImage": "/images/untitled-A1Nz.gif",
-      "description": "Очень эффектный фон для главного экрана",
-      "isFree": "",
-      "price": "350",
-      "publishedAt": "2024-10-14T08:11:03.485Z",
-      "slug": "particles-main-bg",
-      "status": "published",
-      "title": "Анимированный фон (particles.js)"
-    },
-    {
-      "__outstatic": {
-        "commit": "ba14c1bcaa3b513744d15e25da28900e6573db91",
-        "hash": "3114907262",
-        "path": "outstatic/content/tilda-widgets/service-cards.md"
-      },
-      "author": {
-        "name": "Maksim",
-        "picture": ""
-      },
-      "category": "tilda-widgets",
-      "collection": "tilda-widgets",
-      "coverImage": "http://novo-studio-hub.s3.cloud.ru/tilda-widgets/service-cards/0.gif",
-      "description": "Адаптивные анимированные карточки услуг в Zero-блоке",
-      "price": "450",
-      "publishedAt": "2024-10-22T11:36:18.705Z",
-      "slug": "service-cards",
-      "status": "published",
-      "tags": "Бесплатная установка на сайт",
-      "title": "Карточки услуг"
-    },
-    {
-      "__outstatic": {
-        "commit": "455fe2aac890459f12511c321db2aea694b3701e",
-        "hash": "38111745",
+        "commit": "408609c684f72f273b3836fb9e3b6c109af7c86e",
+        "hash": "9418033",
         "path": "outstatic/content/tilda-widgets/bw-filter.md"
       },
       "author": {
@@ -148,9 +46,94 @@
     },
     {
       "__outstatic": {
-        "commit": "615d64786b7e481b8816f78c72c7a2448d7fd1df",
-        "hash": "571984908",
-        "path": "outstatic/content/tilda-widgets/hranilishche-izobrazheniy.md"
+        "commit": "b3dcb4703e3b795f30ac8cb5e6f5ff71991064cc",
+        "hash": "3161556365",
+        "path": "outstatic/content/tilda-widgets/service-cards.md"
+      },
+      "author": {
+        "name": "Maksim",
+        "picture": ""
+      },
+      "category": "tilda-widgets",
+      "collection": "tilda-widgets",
+      "coverImage": "http://novo-studio-hub.s3.cloud.ru/tilda-widgets/service-cards/0.gif",
+      "description": "Адаптивные анимированные карточки услуг в Zero-блоке",
+      "price": "450",
+      "publishedAt": "2024-10-22T11:36:18.705Z",
+      "slug": "service-cards",
+      "status": "published",
+      "tags": "Бесплатная установка на сайт",
+      "title": "Карточки услуг"
+    },
+    {
+      "__outstatic": {
+        "commit": "a6b25ad4353f17c8f1b40b76fd9d5b21dc5a7db3",
+        "hash": "3546845511",
+        "path": "outstatic/content/tilda-widgets/future-btn.md"
+      },
+      "author": {
+        "name": "Maksim",
+        "picture": ""
+      },
+      "category": "tilda-widgets",
+      "collection": "tilda-widgets",
+      "coverImage": "http://novo-studio-hub.s3.cloud.ru/tilda-widgets/future-btn/0.gif",
+      "description": "Футуристичная кнопка для привлечения внимания к целевому действию",
+      "price": "",
+      "publishedAt": "2024-10-21T07:18:20.173Z",
+      "slug": "future-btn",
+      "status": "published",
+      "tags": "",
+      "title": "Футуристичная кнопка"
+    },
+    {
+      "__outstatic": {
+        "commit": "12e6522adee7b6dd79e83818001eafed2503977a",
+        "hash": "229039001",
+        "path": "outstatic/content/tilda-widgets/particles-main-bg.md"
+      },
+      "author": {
+        "name": "",
+        "picture": ""
+      },
+      "category": "tilda-widgets",
+      "collection": "tilda-widgets",
+      "coverImage": "/images/untitled-A1Nz.gif",
+      "description": "Очень эффектный фон для главного экрана",
+      "isFree": "",
+      "price": "350",
+      "publishedAt": "2024-10-14T08:11:03.485Z",
+      "slug": "particles-main-bg",
+      "status": "published",
+      "tags": "",
+      "title": "Анимированный фон (particles.js)"
+    },
+    {
+      "__outstatic": {
+        "commit": "72460d06e6c4432f811c923de4b703edec7e87f4",
+        "hash": "3137329252",
+        "path": "outstatic/content/tilda-widgets/min-audio-pleer.md"
+      },
+      "author": {
+        "name": "Maksim",
+        "picture": ""
+      },
+      "category": "tilda-widgets",
+      "collection": "tilda-widgets",
+      "coverImage": "http://novo-studio-hub.s3.cloud.ru/tilda-widgets/min-audio-pleer/0.gif",
+      "description": "Аудио плеер для плейлистов и одиночных треков",
+      "price": "350",
+      "publishedAt": "2024-10-20T16:48:41.275Z",
+      "slug": "min-audio-pleer",
+      "status": "published",
+      "tags": "",
+      "title": "Минималистичный аудио плеер"
+    },
+    {
+      "__outstatic": {
+        "commit": "7b8c8f8fc01c817242eb83a19a6552b4b9ec736e",
+        "hash": "568931258",
+        "path": "outstatic/content/tilda-widgets/cursor-water.md"
       },
       "author": {
         "name": "Maksim",
@@ -158,14 +141,14 @@
       },
       "category": "tilda-widgets",
       "collection": "tilda-widgets",
-      "coverImage": "http://novo-studio-hub.s3.cloud.ru/tilda-widgets/static-img/0.png",
-      "description": "Сохраняйте свои изображения в тильде для того, чтобы получить прямую ссылку для использования в виджетак",
-      "price": "",
-      "publishedAt": "2024-10-23T12:28:19.089Z",
-      "slug": "hranilishche-izobrazheniy",
-      "status": "draft",
-      "tags": "Полезная информация",
-      "title": "Хранилище изображений"
+      "coverImage": "http://novo-studio-hub.s3.cloud.ru/tilda-widgets/cursor-water/0.gif",
+      "description": "Курсор в форме капли с эффектом негатива при наведении на объекты",
+      "price": "300",
+      "publishedAt": "2024-10-21T07:51:19.201Z",
+      "slug": "cursor-water",
+      "status": "published",
+      "tags": "",
+      "title": "Курсор-капля"
     }
   ]
 }
