@@ -16,4 +16,5 @@ export type Post = {
   price: string;
   category: string;
   tags?: string;
+  content?: string;
 };

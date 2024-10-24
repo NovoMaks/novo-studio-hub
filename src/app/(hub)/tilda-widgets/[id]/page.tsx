@@ -14,7 +14,7 @@ export default async function Page({ params }: { params: { id: string } }) {
   return (
     <AuthGuard disabled={!postInfo.price}>
       <BuyPostGuard post={postInfo}>
-        <Post content={postInfo.content} />
+        <Post postInfo={postInfo} />
         <Divider className='my-9' />
         <WidgetHelpCards />
       </BuyPostGuard>

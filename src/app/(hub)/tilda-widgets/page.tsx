@@ -9,7 +9,7 @@ import { getServerSession } from 'next-auth';
 
 export default async function Page({ searchParams }: { searchParams?: { page?: string } }) {
   const session = await getServerSession(authOptions);
-  const pageLimit = 9;
+  const pageLimit = 6;
   const currentPage = Number(searchParams?.page) || 1;
   const allPostsData = getSortedPostsData({
     category: 'tilda-widgets',
