@@ -1,6 +1,6 @@
 {
   "commit": "5b816dd765fedad360f704d77aa9f89a340a389b",
-  "generated": "2024-10-25T09:09:55.863Z",
+  "generated": "2024-10-25T09:24:21.818Z",
   "metadata": [
     {
       "__outstatic": {
@@ -174,7 +174,7 @@
     {
       "__outstatic": {
         "commit": "5b816dd765fedad360f704d77aa9f89a340a389b",
-        "hash": "4275873687",
+        "hash": "3293105271",
         "path": "outstatic/content/tilda-widgets/anim-laptop.md"
       },
       "author": {
