@@ -1,6 +1,6 @@
 {
-  "commit": "ececa4b65054ca6b90de2ef049ce62e455d41e83",
-  "generated": "2024-10-24T16:20:37.996Z",
+  "commit": "b2003d03e7d25035cc93d13d426c5589359322b0",
+  "generated": "2024-10-25T08:46:40.520Z",
   "metadata": [
     {
       "__outstatic": {
@@ -170,6 +170,27 @@
       "status": "published",
       "tags": "",
       "title": "Блок До-После"
+    },
+    {
+      "__outstatic": {
+        "commit": "b2003d03e7d25035cc93d13d426c5589359322b0",
+        "hash": "3888854720",
+        "path": "outstatic/content/tilda-widgets/anim-laptop.md"
+      },
+      "author": {
+        "name": "Maksim",
+        "picture": ""
+      },
+      "category": "tilda-widgets",
+      "collection": "tilda-widgets",
+      "coverImage": "",
+      "description": "Привлеките внимание к вашему блоку. Анимация начинается, когда объект появляется в видимой области",
+      "price": "60",
+      "publishedAt": "2024-10-25T09:00:30.998Z",
+      "slug": "anim-laptop",
+      "status": "published",
+      "tags": "",
+      "title": "Анимированный ноутбук"
     }
   ]
 }
