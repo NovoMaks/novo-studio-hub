@@ -1,6 +1,6 @@
 {
-  "commit": "b2003d03e7d25035cc93d13d426c5589359322b0",
-  "generated": "2024-10-25T08:46:40.520Z",
+  "commit": "5b816dd765fedad360f704d77aa9f89a340a389b",
+  "generated": "2024-10-25T09:09:55.863Z",
   "metadata": [
     {
       "__outstatic": {
@@ -173,8 +173,8 @@
     },
     {
       "__outstatic": {
-        "commit": "b2003d03e7d25035cc93d13d426c5589359322b0",
-        "hash": "3888854720",
+        "commit": "5b816dd765fedad360f704d77aa9f89a340a389b",
+        "hash": "4275873687",
         "path": "outstatic/content/tilda-widgets/anim-laptop.md"
       },
       "author": {
@@ -183,9 +183,9 @@
       },
       "category": "tilda-widgets",
       "collection": "tilda-widgets",
-      "coverImage": "",
-      "description": "Привлеките внимание к вашему блоку. Анимация начинается, когда объект появляется в видимой области",
-      "price": "60",
+      "coverImage": "http://novo-studio-hub.s3.cloud.ru/tilda-widgets/anim-laptop/0.gif",
+      "description": "Анимация начинается, когда объект появляется в видимой области, при наведении на экран можно поставить любое свое изображение",
+      "price": "150",
       "publishedAt": "2024-10-25T09:00:30.998Z",
       "slug": "anim-laptop",
       "status": "published",

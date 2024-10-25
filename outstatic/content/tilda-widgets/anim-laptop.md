@@ -1,9 +1,9 @@
 ---
 tags: ''
 category: 'tilda-widgets'
-price: '60'
-coverImage: ''
-description: 'Привлеките внимание к вашему блоку. Анимация начинается, когда объект появляется в видимой области'
+price: '150'
+coverImage: 'http://novo-studio-hub.s3.cloud.ru/tilda-widgets/anim-laptop/0.gif'
+description: 'Анимация начинается, когда объект появляется в видимой области, при наведении на экран можно поставить любое свое изображение'
 slug: 'anim-laptop'
 author:
   name: 'Maksim'
