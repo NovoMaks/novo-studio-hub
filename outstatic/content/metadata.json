@@ -1,6 +1,6 @@
 {
-  "commit": "5b816dd765fedad360f704d77aa9f89a340a389b",
-  "generated": "2024-10-25T09:54:08.959Z",
+  "commit": "6cb8f0a8ae8ced279f29c89401ca81808f73a4bc",
+  "generated": "2024-10-28T14:03:00.500Z",
   "metadata": [
     {
       "__outstatic": {
@@ -191,6 +191,27 @@
       "status": "published",
       "tags": "",
       "title": "Анимированный ноутбук"
+    },
+    {
+      "__outstatic": {
+        "commit": "6cb8f0a8ae8ced279f29c89401ca81808f73a4bc",
+        "hash": "2757568828",
+        "path": "outstatic/content/tilda-widgets/cursor-firework.md"
+      },
+      "author": {
+        "name": "Maksim",
+        "picture": ""
+      },
+      "category": "tilda-widgets",
+      "collection": "tilda-widgets",
+      "coverImage": "http://novo-studio-hub.s3.cloud.ru/tilda-widgets/cursor-firework/0.gif",
+      "description": "",
+      "price": "200",
+      "publishedAt": "2024-10-28T13:54:11.096Z",
+      "slug": "cursor-firework",
+      "status": "published",
+      "tags": "",
+      "title": "Курсор-фейерверк в Zero-блоке"
     }
   ]
 }
