@@ -3,7 +3,7 @@ tags: ''
 category: 'tilda-widgets'
 price: '200'
 coverImage: 'http://novo-studio-hub.s3.cloud.ru/tilda-widgets/cursor-firework/0.gif'
-description: ''
+description: 'Отлично подойдет для блока, к которому нужно привлечь внимание'
 slug: 'cursor-firework'
 author:
   name: 'Maksim'

@@ -1,6 +1,6 @@
 {
-  "commit": "00072bdffca03fb8d214e5c306c0ad74d61433aa",
-  "generated": "2024-10-28T14:13:17.756Z",
+  "commit": "55aa4338df913e0bc6eda97e3aeab11dcb5d831f",
+  "generated": "2024-10-28T14:22:12.107Z",
   "metadata": [
     {
       "__outstatic": {
@@ -194,8 +194,8 @@
     },
     {
       "__outstatic": {
-        "commit": "00072bdffca03fb8d214e5c306c0ad74d61433aa",
-        "hash": "439213203",
+        "commit": "55aa4338df913e0bc6eda97e3aeab11dcb5d831f",
+        "hash": "1511300650",
         "path": "outstatic/content/tilda-widgets/cursor-firework.md"
       },
       "author": {
@@ -205,7 +205,7 @@
       "category": "tilda-widgets",
       "collection": "tilda-widgets",
       "coverImage": "http://novo-studio-hub.s3.cloud.ru/tilda-widgets/cursor-firework/0.gif",
-      "description": "",
+      "description": "Отлично подойдет для блока, к которому нужно привлечь внимание",
       "price": "200",
       "publishedAt": "2024-10-28T13:54:11.096Z",
       "slug": "cursor-firework",
