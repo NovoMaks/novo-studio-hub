@@ -1,6 +1,6 @@
 {
-  "commit": "6cb8f0a8ae8ced279f29c89401ca81808f73a4bc",
-  "generated": "2024-10-28T14:03:00.500Z",
+  "commit": "00072bdffca03fb8d214e5c306c0ad74d61433aa",
+  "generated": "2024-10-28T14:13:17.756Z",
   "metadata": [
     {
       "__outstatic": {
@@ -194,8 +194,8 @@
     },
     {
       "__outstatic": {
-        "commit": "6cb8f0a8ae8ced279f29c89401ca81808f73a4bc",
-        "hash": "2757568828",
+        "commit": "00072bdffca03fb8d214e5c306c0ad74d61433aa",
+        "hash": "439213203",
         "path": "outstatic/content/tilda-widgets/cursor-firework.md"
       },
       "author": {
