@@ -1,8 +1,7 @@
 import CardStudio from '@/components/CardStudio';
 import CardTelegram from '@/components/CardTelegram';
 import ServicesCards from '@/components/ServicesCards';
-import TopContent from '@/components/TopContent';
-import UpcomingWebinar from '@/components/UpcomingWebinar';
+import TildaWidgets from '@/components/TildaWidgets';
 import WelcomeCard from '@/components/WelcomeCard';
 import { Grid } from '@mui/material';
 
@@ -19,12 +18,15 @@ export default function Page() {
         <Grid item xs={12} md={3}>
           <CardTelegram />
         </Grid>
-        <Grid item xs={12} md={6}>
+        <Grid item xs={12}>
+          <TildaWidgets />
+        </Grid>
+        {/* <Grid item xs={12} md={6}>
           <TopContent />
         </Grid>
         <Grid item xs={12} md={6}>
           <UpcomingWebinar />
-        </Grid>
+        </Grid> */}
         <Grid item md={12}>
           <ServicesCards />
         </Grid>

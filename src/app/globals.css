@@ -121,7 +121,7 @@ input[autocomplete='one-time-code'][data-input-otp='true'] {
   inline-size: 100% !important;
 }
 
-code {
+/* code {
   font-family: inherit;
   padding-block: 2px;
   padding-inline: 4px;
@@ -130,7 +130,7 @@ code {
   color: var(--mui-palette-info-main);
   background-color: rgb(var(--mui-palette-info-mainChannel) / 0.08);
   border: 0;
-}
+} */
 
 .post img {
   max-height: 500px;
