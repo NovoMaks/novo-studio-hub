@@ -1,33 +1,12 @@
 {
-  "commit": "7308d247a3e5eed54c421cc0f1d9542f0c4a529b",
-  "generated": "2024-10-29T16:06:08.987Z",
+  "commit": "ecc55ceab8d7dd8d8e3a5ad416e98edbd86bd2d0",
+  "generated": "Tue, 29 Oct 2024 16:09:10 GMT",
   "metadata": [
     {
       "__outstatic": {
-        "commit": "58713148ca7b2a9285fb8273ab55108ffc1a205e",
-        "hash": "3442489698",
-        "path": "outstatic/content/tilda-widgets/test-chernovika.md"
-      },
-      "author": {
-        "name": "Maksim",
-        "picture": "https://avatars.githubusercontent.com/u/116797616?v=4"
-      },
-      "category": "tilda-widgets",
-      "collection": "tilda-widgets",
-      "coverImage": "/images/screenshot-2024-10-07-at-10.45.13-k0MD.png",
-      "description": "Тест черновика",
-      "isFree": "",
-      "price": "",
-      "publishedAt": "2024-10-14T09:10:39.365Z",
-      "slug": "test-chernovika",
-      "status": "draft",
-      "title": "Тест черновика"
-    },
-    {
-      "__outstatic": {
-        "commit": "408609c684f72f273b3836fb9e3b6c109af7c86e",
-        "hash": "9418033",
-        "path": "outstatic/content/tilda-widgets/bw-filter.md"
+        "commit": "b1792ca793e983640f67cba8bd271fe4bf8aa238",
+        "hash": "1432347759",
+        "path": "outstatic/content/tilda-widgets/anim-laptop.md"
       },
       "author": {
         "name": "Maksim",
@@ -35,39 +14,18 @@
       },
       "category": "tilda-widgets",
       "collection": "tilda-widgets",
-      "coverImage": "http://novo-studio-hub.s3.cloud.ru/tilda-widgets/bw-filter/0.gif",
-      "description": "Привлеките внимание к своим блокам с эффектом цветной картинки при наведении",
-      "price": "100",
-      "publishedAt": "2024-10-23T08:10:15.916Z",
-      "slug": "bw-filter",
+      "coverImage": "http://novo-studio-hub.s3.cloud.ru/tilda-widgets/anim-laptop/0.gif",
+      "description": "Анимация начинается, когда объект появляется в видимой области, при наведении на экран можно поставить любое свое изображение",
+      "price": "150",
+      "publishedAt": "2024-10-25T09:00:30.998Z",
+      "slug": "anim-laptop",
       "status": "published",
       "tags": "",
-      "title": "Чб-фильтр на Zero-блок"
+      "title": "Анимированный ноутбук"
     },
     {
       "__outstatic": {
-        "commit": "b3dcb4703e3b795f30ac8cb5e6f5ff71991064cc",
-        "hash": "3161556365",
-        "path": "outstatic/content/tilda-widgets/service-cards.md"
-      },
-      "author": {
-        "name": "Maksim",
-        "picture": ""
-      },
-      "category": "tilda-widgets",
-      "collection": "tilda-widgets",
-      "coverImage": "http://novo-studio-hub.s3.cloud.ru/tilda-widgets/service-cards/0.gif",
-      "description": "Адаптивные анимированные карточки услуг в Zero-блоке",
-      "price": "450",
-      "publishedAt": "2024-10-22T11:36:18.705Z",
-      "slug": "service-cards",
-      "status": "published",
-      "tags": "Бесплатная установка на сайт",
-      "title": "Карточки услуг"
-    },
-    {
-      "__outstatic": {
-        "commit": "a6b25ad4353f17c8f1b40b76fd9d5b21dc5a7db3",
+        "commit": "de2cedc2faedadca6107b9cf2fbea87726f1d826",
         "hash": "3546845511",
         "path": "outstatic/content/tilda-widgets/future-btn.md"
       },
@@ -88,7 +46,154 @@
     },
     {
       "__outstatic": {
-        "commit": "12e6522adee7b6dd79e83818001eafed2503977a",
+        "commit": "d92cec37b1c9980ee0a26c39728243b4c1bf73d3",
+        "hash": "568931258",
+        "path": "outstatic/content/tilda-widgets/cursor-water.md"
+      },
+      "author": {
+        "name": "Maksim",
+        "picture": "https://avatars.githubusercontent.com/u/116797616?v=4"
+      },
+      "category": "tilda-widgets",
+      "collection": "tilda-widgets",
+      "coverImage": "http://novo-studio-hub.s3.cloud.ru/tilda-widgets/cursor-water/0.gif",
+      "description": "Курсор в форме капли с эффектом негатива при наведении на объекты",
+      "price": "300",
+      "publishedAt": "2024-10-21T07:51:19.201Z",
+      "slug": "cursor-water",
+      "status": "published",
+      "tags": "",
+      "title": "Курсор-капля"
+    },
+    {
+      "__outstatic": {
+        "commit": "50a6331b2d6cb96e0d7c7d5b836e30836d1d0aa1",
+        "hash": "1511300650",
+        "path": "outstatic/content/tilda-widgets/cursor-firework.md"
+      },
+      "author": {
+        "name": "Maksim",
+        "picture": ""
+      },
+      "category": "tilda-widgets",
+      "collection": "tilda-widgets",
+      "coverImage": "http://novo-studio-hub.s3.cloud.ru/tilda-widgets/cursor-firework/0.gif",
+      "description": "Отлично подойдет для блока, к которому нужно привлечь внимание",
+      "price": "200",
+      "publishedAt": "2024-10-28T13:54:11.096Z",
+      "slug": "cursor-firework",
+      "status": "published",
+      "tags": "",
+      "title": "Курсор-фейерверк в Zero-блоке"
+    },
+    {
+      "__outstatic": {
+        "commit": "9e97bca31ce9494cab13b0f72c1ace6cfa1e3df6",
+        "hash": "9418033",
+        "path": "outstatic/content/tilda-widgets/bw-filter.md"
+      },
+      "author": {
+        "name": "Maksim",
+        "picture": ""
+      },
+      "category": "tilda-widgets",
+      "collection": "tilda-widgets",
+      "coverImage": "http://novo-studio-hub.s3.cloud.ru/tilda-widgets/bw-filter/0.gif",
+      "description": "Привлеките внимание к своим блокам с эффектом цветной картинки при наведении",
+      "price": "100",
+      "publishedAt": "2024-10-23T08:10:15.916Z",
+      "slug": "bw-filter",
+      "status": "published",
+      "tags": "",
+      "title": "Чб-фильтр на Zero-блок"
+    },
+    {
+      "__outstatic": {
+        "commit": "6321ac9f61d20ad3ec75d900ee9b4f9fef38b110",
+        "hash": "1671949975",
+        "path": "outstatic/content/tilda-widgets/before-after.md"
+      },
+      "author": {
+        "name": "Maksim",
+        "picture": "https://avatars.githubusercontent.com/u/116797616?v=4"
+      },
+      "category": "tilda-widgets",
+      "collection": "tilda-widgets",
+      "coverImage": "http://novo-studio-hub.s3.cloud.ru/tilda-widgets/before-after/0.gif",
+      "description": "Слайдер До-После поможет показать результат ваших работ",
+      "price": "350",
+      "publishedAt": "2024-10-24T11:37:02.281Z",
+      "slug": "before-after",
+      "status": "published",
+      "tags": "",
+      "title": "Блок До-После"
+    },
+    {
+      "__outstatic": {
+        "commit": "7e233618eb6ad7dd97e6ab73d16d612dbfd2ce8b",
+        "hash": "2702070683",
+        "path": "outstatic/content/ya-direct/without-site.md"
+      },
+      "author": {
+        "name": "Maksim",
+        "picture": "https://avatars.githubusercontent.com/u/116797616?v=4"
+      },
+      "category": "ya-direct",
+      "collection": "ya-direct",
+      "coverImage": "http://novo-studio-hub.s3.cloud.ru/ya-direct/without-site/0.png",
+      "description": "Если у вас нет сайта, для размещения рекламы-не старшно Яндекс выкатил обновление, реклама без сайта. Для этого вам достаточно иметь номер телефона!",
+      "price": "",
+      "publishedAt": "2024-10-29T15:27:14.272Z",
+      "slug": "without-site",
+      "status": "published",
+      "tags": "",
+      "title": "Продвижение бизнеса без сайта"
+    },
+    {
+      "__outstatic": {
+        "commit": "89ce35b5c0a3bdb0fffd4533aa6f01c3994d7a90",
+        "hash": "361863887",
+        "path": "outstatic/content/tilda-widgets/tg-link.md"
+      },
+      "author": {
+        "name": "Maksim",
+        "picture": ""
+      },
+      "category": "tilda-widgets",
+      "collection": "tilda-widgets",
+      "coverImage": "http://novo-studio-hub.s3.cloud.ru/tilda-widgets/tg-link/0.gif ",
+      "description": "Закрепленная ссылка на телеграм. Также возможно использовать просто в любом Zero-блоке",
+      "price": "200",
+      "publishedAt": "2024-10-29T14:32:37.972Z",
+      "slug": "tg-link",
+      "status": "published",
+      "tags": "Бесплатная установка на сайт",
+      "title": "Ссылка на телеграм"
+    },
+    {
+      "__outstatic": {
+        "commit": "465503d8421e5c79f43338eed9ce5d8b9e9731b0",
+        "hash": "3161556365",
+        "path": "outstatic/content/tilda-widgets/service-cards.md"
+      },
+      "author": {
+        "name": "Maksim",
+        "picture": ""
+      },
+      "category": "tilda-widgets",
+      "collection": "tilda-widgets",
+      "coverImage": "http://novo-studio-hub.s3.cloud.ru/tilda-widgets/service-cards/0.gif",
+      "description": "Адаптивные анимированные карточки услуг в Zero-блоке",
+      "price": "450",
+      "publishedAt": "2024-10-22T11:36:18.705Z",
+      "slug": "service-cards",
+      "status": "published",
+      "tags": "Бесплатная установка на сайт",
+      "title": "Карточки услуг"
+    },
+    {
+      "__outstatic": {
+        "commit": "efaf86bde4b6d7917667aa8c987a8ff89ba99dd8",
         "hash": "229039001",
         "path": "outstatic/content/tilda-widgets/particles-main-bg.md"
       },
@@ -110,7 +215,7 @@
     },
     {
       "__outstatic": {
-        "commit": "72460d06e6c4432f811c923de4b703edec7e87f4",
+        "commit": "0a36d3060d29ddaaeff4c91923f9f06bbde79084",
         "hash": "3137329252",
         "path": "outstatic/content/tilda-widgets/min-audio-pleer.md"
       },
@@ -128,132 +233,6 @@
       "status": "published",
       "tags": "",
       "title": "Минималистичный аудио плеер"
-    },
-    {
-      "__outstatic": {
-        "commit": "7b8c8f8fc01c817242eb83a19a6552b4b9ec736e",
-        "hash": "568931258",
-        "path": "outstatic/content/tilda-widgets/cursor-water.md"
-      },
-      "author": {
-        "name": "Maksim",
-        "picture": "https://avatars.githubusercontent.com/u/116797616?v=4"
-      },
-      "category": "tilda-widgets",
-      "collection": "tilda-widgets",
-      "coverImage": "http://novo-studio-hub.s3.cloud.ru/tilda-widgets/cursor-water/0.gif",
-      "description": "Курсор в форме капли с эффектом негатива при наведении на объекты",
-      "price": "300",
-      "publishedAt": "2024-10-21T07:51:19.201Z",
-      "slug": "cursor-water",
-      "status": "published",
-      "tags": "",
-      "title": "Курсор-капля"
-    },
-    {
-      "__outstatic": {
-        "commit": "ececa4b65054ca6b90de2ef049ce62e455d41e83",
-        "hash": "1671949975",
-        "path": "outstatic/content/tilda-widgets/before-after.md"
-      },
-      "author": {
-        "name": "Maksim",
-        "picture": "https://avatars.githubusercontent.com/u/116797616?v=4"
-      },
-      "category": "tilda-widgets",
-      "collection": "tilda-widgets",
-      "coverImage": "http://novo-studio-hub.s3.cloud.ru/tilda-widgets/before-after/0.gif",
-      "description": "Слайдер До-После поможет показать результат ваших работ",
-      "price": "350",
-      "publishedAt": "2024-10-24T11:37:02.281Z",
-      "slug": "before-after",
-      "status": "published",
-      "tags": "",
-      "title": "Блок До-После"
-    },
-    {
-      "__outstatic": {
-        "commit": "5b816dd765fedad360f704d77aa9f89a340a389b",
-        "hash": "1432347759",
-        "path": "outstatic/content/tilda-widgets/anim-laptop.md"
-      },
-      "author": {
-        "name": "Maksim",
-        "picture": ""
-      },
-      "category": "tilda-widgets",
-      "collection": "tilda-widgets",
-      "coverImage": "http://novo-studio-hub.s3.cloud.ru/tilda-widgets/anim-laptop/0.gif",
-      "description": "Анимация начинается, когда объект появляется в видимой области, при наведении на экран можно поставить любое свое изображение",
-      "price": "150",
-      "publishedAt": "2024-10-25T09:00:30.998Z",
-      "slug": "anim-laptop",
-      "status": "published",
-      "tags": "",
-      "title": "Анимированный ноутбук"
-    },
-    {
-      "__outstatic": {
-        "commit": "55aa4338df913e0bc6eda97e3aeab11dcb5d831f",
-        "hash": "1511300650",
-        "path": "outstatic/content/tilda-widgets/cursor-firework.md"
-      },
-      "author": {
-        "name": "Maksim",
-        "picture": ""
-      },
-      "category": "tilda-widgets",
-      "collection": "tilda-widgets",
-      "coverImage": "http://novo-studio-hub.s3.cloud.ru/tilda-widgets/cursor-firework/0.gif",
-      "description": "Отлично подойдет для блока, к которому нужно привлечь внимание",
-      "price": "200",
-      "publishedAt": "2024-10-28T13:54:11.096Z",
-      "slug": "cursor-firework",
-      "status": "published",
-      "tags": "",
-      "title": "Курсор-фейерверк в Zero-блоке"
-    },
-    {
-      "__outstatic": {
-        "commit": "64603a7837e78250b2f9db7824fdb9c35783d9f8",
-        "hash": "361863887",
-        "path": "outstatic/content/tilda-widgets/tg-link.md"
-      },
-      "author": {
-        "name": "Maksim",
-        "picture": ""
-      },
-      "category": "tilda-widgets",
-      "collection": "tilda-widgets",
-      "coverImage": "http://novo-studio-hub.s3.cloud.ru/tilda-widgets/tg-link/0.gif ",
-      "description": "Закрепленная ссылка на телеграм. Также возможно использовать просто в любом Zero-блоке",
-      "price": "200",
-      "publishedAt": "2024-10-29T14:32:37.972Z",
-      "slug": "tg-link",
-      "status": "published",
-      "tags": "Бесплатная установка на сайт",
-      "title": "Ссылка на телеграм"
-    },
-    {
-      "__outstatic": {
-        "commit": "7308d247a3e5eed54c421cc0f1d9542f0c4a529b",
-        "hash": "2702070683",
-        "path": "outstatic/content/ya-direct/without-site.md"
-      },
-      "author": {
-        "name": "Maksim",
-        "picture": "https://avatars.githubusercontent.com/u/116797616?v=4"
-      },
-      "category": "ya-direct",
-      "collection": "ya-direct",
-      "coverImage": "http://novo-studio-hub.s3.cloud.ru/ya-direct/without-site/0.png",
-      "description": "Если у вас нет сайта, для размещения рекламы-не старшно Яндекс выкатил обновление, реклама без сайта. Для этого вам достаточно иметь номер телефона!",
-      "price": "",
-      "publishedAt": "2024-10-29T15:27:14.272Z",
-      "slug": "without-site",
-      "status": "published",
-      "tags": "",
-      "title": "Продвижение бизнеса без сайта"
     }
   ]
 }
