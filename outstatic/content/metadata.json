@@ -1,6 +1,6 @@
 {
-  "commit": "55aa4338df913e0bc6eda97e3aeab11dcb5d831f",
-  "generated": "2024-10-28T14:22:12.107Z",
+  "commit": "67b36f7870547d82f48e31308ca1b29bbb2073bb",
+  "generated": "2024-10-29T14:25:15.917Z",
   "metadata": [
     {
       "__outstatic": {
@@ -212,6 +212,27 @@
       "status": "published",
       "tags": "",
       "title": "Курсор-фейерверк в Zero-блоке"
+    },
+    {
+      "__outstatic": {
+        "commit": "67b36f7870547d82f48e31308ca1b29bbb2073bb",
+        "hash": "824502322",
+        "path": "outstatic/content/tilda-widgets/tg-link.md"
+      },
+      "author": {
+        "name": "Maksim",
+        "picture": ""
+      },
+      "category": "tilda-widgets",
+      "collection": "tilda-widgets",
+      "coverImage": "http://novo-studio-hub.s3.cloud.ru/tilda-widgets/tg-link/0.gif ",
+      "description": "Закрепленная ссылка на телеграм. Также возможно использовать просто в любом Zero-блоке",
+      "price": "200",
+      "publishedAt": "2024-10-29T14:32:37.972Z",
+      "slug": "tg-link",
+      "status": "published",
+      "tags": "Бесплатная установка на сайт",
+      "title": "Ссылка на телеграм"
     }
   ]
 }
