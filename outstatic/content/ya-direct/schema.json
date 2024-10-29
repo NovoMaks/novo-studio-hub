@@ -1,0 +1,13 @@
+{
+  "title": "ya-direct",
+  "type": "object",
+  "properties": {
+    "price": {
+      "required": true,
+      "description": "",
+      "fieldType": "Number",
+      "dataType": "number",
+      "title": "Price"
+    }
+  }
+}
