@@ -1,6 +1,6 @@
 {
-  "commit": "ecc55ceab8d7dd8d8e3a5ad416e98edbd86bd2d0",
-  "generated": "Tue, 29 Oct 2024 16:09:10 GMT",
+  "commit": "0f8b6e6302daf9e213b2809dfe6833e7e51a8b69",
+  "generated": "Tue, 29 Oct 2024 16:11:31 GMT",
   "metadata": [
     {
       "__outstatic": {
@@ -67,27 +67,6 @@
     },
     {
       "__outstatic": {
-        "commit": "50a6331b2d6cb96e0d7c7d5b836e30836d1d0aa1",
-        "hash": "1511300650",
-        "path": "outstatic/content/tilda-widgets/cursor-firework.md"
-      },
-      "author": {
-        "name": "Maksim",
-        "picture": ""
-      },
-      "category": "tilda-widgets",
-      "collection": "tilda-widgets",
-      "coverImage": "http://novo-studio-hub.s3.cloud.ru/tilda-widgets/cursor-firework/0.gif",
-      "description": "Отлично подойдет для блока, к которому нужно привлечь внимание",
-      "price": "200",
-      "publishedAt": "2024-10-28T13:54:11.096Z",
-      "slug": "cursor-firework",
-      "status": "published",
-      "tags": "",
-      "title": "Курсор-фейерверк в Zero-блоке"
-    },
-    {
-      "__outstatic": {
         "commit": "9e97bca31ce9494cab13b0f72c1ace6cfa1e3df6",
         "hash": "9418033",
         "path": "outstatic/content/tilda-widgets/bw-filter.md"
@@ -109,6 +88,27 @@
     },
     {
       "__outstatic": {
+        "commit": "50a6331b2d6cb96e0d7c7d5b836e30836d1d0aa1",
+        "hash": "1511300650",
+        "path": "outstatic/content/tilda-widgets/cursor-firework.md"
+      },
+      "author": {
+        "name": "Maksim",
+        "picture": ""
+      },
+      "category": "tilda-widgets",
+      "collection": "tilda-widgets",
+      "coverImage": "http://novo-studio-hub.s3.cloud.ru/tilda-widgets/cursor-firework/0.gif",
+      "description": "Отлично подойдет для блока, к которому нужно привлечь внимание",
+      "price": "200",
+      "publishedAt": "2024-10-28T13:54:11.096Z",
+      "slug": "cursor-firework",
+      "status": "published",
+      "tags": "",
+      "title": "Курсор-фейерверк в Zero-блоке"
+    },
+    {
+      "__outstatic": {
         "commit": "6321ac9f61d20ad3ec75d900ee9b4f9fef38b110",
         "hash": "1671949975",
         "path": "outstatic/content/tilda-widgets/before-after.md"
@@ -127,27 +127,6 @@
       "status": "published",
       "tags": "",
       "title": "Блок До-После"
-    },
-    {
-      "__outstatic": {
-        "commit": "7e233618eb6ad7dd97e6ab73d16d612dbfd2ce8b",
-        "hash": "2702070683",
-        "path": "outstatic/content/ya-direct/without-site.md"
-      },
-      "author": {
-        "name": "Maksim",
-        "picture": "https://avatars.githubusercontent.com/u/116797616?v=4"
-      },
-      "category": "ya-direct",
-      "collection": "ya-direct",
-      "coverImage": "http://novo-studio-hub.s3.cloud.ru/ya-direct/without-site/0.png",
-      "description": "Если у вас нет сайта, для размещения рекламы-не старшно Яндекс выкатил обновление, реклама без сайта. Для этого вам достаточно иметь номер телефона!",
-      "price": "",
-      "publishedAt": "2024-10-29T15:27:14.272Z",
-      "slug": "without-site",
-      "status": "published",
-      "tags": "",
-      "title": "Продвижение бизнеса без сайта"
     },
     {
       "__outstatic": {
@@ -193,25 +172,24 @@
     },
     {
       "__outstatic": {
-        "commit": "efaf86bde4b6d7917667aa8c987a8ff89ba99dd8",
-        "hash": "229039001",
-        "path": "outstatic/content/tilda-widgets/particles-main-bg.md"
+        "commit": "7e233618eb6ad7dd97e6ab73d16d612dbfd2ce8b",
+        "hash": "2702070683",
+        "path": "outstatic/content/ya-direct/without-site.md"
       },
       "author": {
-        "name": "",
-        "picture": ""
+        "name": "Maksim",
+        "picture": "https://avatars.githubusercontent.com/u/116797616?v=4"
       },
-      "category": "tilda-widgets",
-      "collection": "tilda-widgets",
-      "coverImage": "/images/untitled-A1Nz.gif",
-      "description": "Очень эффектный фон для главного экрана",
-      "isFree": "",
-      "price": "350",
-      "publishedAt": "2024-10-14T08:11:03.485Z",
-      "slug": "particles-main-bg",
+      "category": "ya-direct",
+      "collection": "ya-direct",
+      "coverImage": "http://novo-studio-hub.s3.cloud.ru/ya-direct/without-site/0.png",
+      "description": "Если у вас нет сайта, для размещения рекламы-не старшно Яндекс выкатил обновление, реклама без сайта. Для этого вам достаточно иметь номер телефона!",
+      "price": "",
+      "publishedAt": "2024-10-29T15:27:14.272Z",
+      "slug": "without-site",
       "status": "published",
       "tags": "",
-      "title": "Анимированный фон (particles.js)"
+      "title": "Продвижение бизнеса без сайта"
     },
     {
       "__outstatic": {
@@ -233,6 +211,28 @@
       "status": "published",
       "tags": "",
       "title": "Минималистичный аудио плеер"
+    },
+    {
+      "__outstatic": {
+        "commit": "efaf86bde4b6d7917667aa8c987a8ff89ba99dd8",
+        "hash": "229039001",
+        "path": "outstatic/content/tilda-widgets/particles-main-bg.md"
+      },
+      "author": {
+        "name": "",
+        "picture": ""
+      },
+      "category": "tilda-widgets",
+      "collection": "tilda-widgets",
+      "coverImage": "/images/untitled-A1Nz.gif",
+      "description": "Очень эффектный фон для главного экрана",
+      "isFree": "",
+      "price": "350",
+      "publishedAt": "2024-10-14T08:11:03.485Z",
+      "slug": "particles-main-bg",
+      "status": "published",
+      "tags": "",
+      "title": "Анимированный фон (particles.js)"
     }
   ]
 }
