@@ -1,6 +1,6 @@
 {
-  "commit": "64603a7837e78250b2f9db7824fdb9c35783d9f8",
-  "generated": "2024-10-29T14:26:51.299Z",
+  "commit": "71f5f4a7bda7359b39dbbe58cd9e75c8d2116128",
+  "generated": "2024-10-29T15:29:31.465Z",
   "metadata": [
     {
       "__outstatic": {
@@ -233,6 +233,27 @@
       "status": "published",
       "tags": "Бесплатная установка на сайт",
       "title": "Ссылка на телеграм"
+    },
+    {
+      "__outstatic": {
+        "commit": "71f5f4a7bda7359b39dbbe58cd9e75c8d2116128",
+        "hash": "3286776455",
+        "path": "outstatic/content/ya-direct/prodvizhenie-biznesa-bez-sayta.md"
+      },
+      "author": {
+        "name": "Maksim",
+        "picture": "https://avatars.githubusercontent.com/u/116797616?v=4"
+      },
+      "category": "ya-direct",
+      "collection": "ya-direct",
+      "coverImage": "http://novo-studio-hub.s3.cloud.ru/ya-direct/without-site/0.png",
+      "description": "",
+      "price": "",
+      "publishedAt": "2024-10-29T15:27:14.272Z",
+      "slug": "prodvizhenie-biznesa-bez-sayta",
+      "status": "draft",
+      "tags": "",
+      "title": "Продвижение бизнеса без сайта"
     }
   ]
 }
