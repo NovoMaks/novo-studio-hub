@@ -5,7 +5,7 @@ price: ''
 coverImage: 'http://novo-studio-hub.s3.cloud.ru/ya-direct/without-site/0.png'
 description: 'Если у вас нет сайта, для размещения рекламы-не старшно Яндекс выкатил обновление, реклама без сайта.
 Для этого вам достаточно иметь номер телефона!'
-slug: 'prodvizhenie-biznesa-bez-sayta'
+slug: 'without-site'
 author:
   name: 'Maksim'
   picture: 'https://avatars.githubusercontent.com/u/116797616?v=4'

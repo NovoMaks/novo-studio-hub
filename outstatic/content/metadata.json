@@ -1,6 +1,6 @@
 {
   "commit": "7308d247a3e5eed54c421cc0f1d9542f0c4a529b",
-  "generated": "2024-10-29T16:05:38.803Z",
+  "generated": "2024-10-29T16:06:08.987Z",
   "metadata": [
     {
       "__outstatic": {
@@ -237,8 +237,8 @@
     {
       "__outstatic": {
         "commit": "7308d247a3e5eed54c421cc0f1d9542f0c4a529b",
-        "hash": "2995860902",
-        "path": "outstatic/content/ya-direct/prodvizhenie-biznesa-bez-sayta.md"
+        "hash": "2702070683",
+        "path": "outstatic/content/ya-direct/without-site.md"
       },
       "author": {
         "name": "Maksim",
@@ -250,7 +250,7 @@
       "description": "Если у вас нет сайта, для размещения рекламы-не старшно Яндекс выкатил обновление, реклама без сайта. Для этого вам достаточно иметь номер телефона!",
       "price": "",
       "publishedAt": "2024-10-29T15:27:14.272Z",
-      "slug": "prodvizhenie-biznesa-bez-sayta",
+      "slug": "without-site",
       "status": "published",
       "tags": "",
       "title": "Продвижение бизнеса без сайта"
