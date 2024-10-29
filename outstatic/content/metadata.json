@@ -1,6 +1,6 @@
 {
-  "commit": "71f5f4a7bda7359b39dbbe58cd9e75c8d2116128",
-  "generated": "2024-10-29T15:29:31.465Z",
+  "commit": "7308d247a3e5eed54c421cc0f1d9542f0c4a529b",
+  "generated": "2024-10-29T15:33:01.301Z",
   "metadata": [
     {
       "__outstatic": {
@@ -236,8 +236,8 @@
     },
     {
       "__outstatic": {
-        "commit": "71f5f4a7bda7359b39dbbe58cd9e75c8d2116128",
-        "hash": "3286776455",
+        "commit": "7308d247a3e5eed54c421cc0f1d9542f0c4a529b",
+        "hash": "2524648912",
         "path": "outstatic/content/ya-direct/prodvizhenie-biznesa-bez-sayta.md"
       },
       "author": {
