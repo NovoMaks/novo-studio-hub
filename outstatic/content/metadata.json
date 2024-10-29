@@ -1,6 +1,6 @@
 {
-  "commit": "67b36f7870547d82f48e31308ca1b29bbb2073bb",
-  "generated": "2024-10-29T14:25:15.917Z",
+  "commit": "64603a7837e78250b2f9db7824fdb9c35783d9f8",
+  "generated": "2024-10-29T14:26:51.299Z",
   "metadata": [
     {
       "__outstatic": {
@@ -215,8 +215,8 @@
     },
     {
       "__outstatic": {
-        "commit": "67b36f7870547d82f48e31308ca1b29bbb2073bb",
-        "hash": "824502322",
+        "commit": "64603a7837e78250b2f9db7824fdb9c35783d9f8",
+        "hash": "361863887",
         "path": "outstatic/content/tilda-widgets/tg-link.md"
       },
       "author": {
