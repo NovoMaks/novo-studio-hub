@@ -3,6 +3,7 @@ import CardTelegram from '@/components/CardTelegram';
 import ServicesCards from '@/components/ServicesCards';
 import TildaWidgets from '@/components/TildaWidgets';
 import WelcomeCard from '@/components/WelcomeCard';
+import YaDirect from '@/components/YaDirect';
 import { Grid } from '@mui/material';
 
 export default function Page() {
@@ -18,8 +19,11 @@ export default function Page() {
         <Grid item xs={12} md={3}>
           <CardTelegram />
         </Grid>
-        <Grid item xs={12}>
+        <Grid item xs={6}>
           <TildaWidgets />
+        </Grid>
+        <Grid item xs={6}>
+          <YaDirect />
         </Grid>
         {/* <Grid item xs={12} md={6}>
           <TopContent />

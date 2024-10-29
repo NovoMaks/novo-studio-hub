@@ -7,31 +7,28 @@ import Typography from '@mui/material/Typography';
 
 // Components Imports
 import CustomAvatar from '@core/components/mui/Avatar';
-import WidgetHelpCards from './WidgetHelpCards';
 
-const TildaWidgets = () => {
+const YaDirect = () => {
   return (
     <Card className='h-full'>
       <CardContent className='h-full flex flex-col gap-4'>
         <Grid container spacing={6} gridAutoRows={1}>
           <Grid item sm={12}>
             <div className='flex flex-col items-center justify-center gap-y-4 bs-full text-center w-full'>
-              <CustomAvatar variant='rounded' skin='light' color='secondary' size={52}>
-                <i className='tabler-tilde text-4xl' />
+              <CustomAvatar variant='rounded' skin='light' color='warning' size={52}>
+                <i className='tabler-brand-yandex text-4xl' />
               </CustomAvatar>
-              <Typography variant='h4'>Тильда виджеты</Typography>
-              <Typography>
-                Улучшите свой сайт тильда, с нашими готовымы блоками или закажите свой
-              </Typography>
+              <Typography variant='h4'>Яндекс директ</Typography>
+              <Typography>Узнайте, как привлечь новых клиентов и увеличить продажи</Typography>
             </div>
           </Grid>
         </Grid>
-        <Button variant='contained' color='secondary' href='/tilda-widgets' className='mt-auto'>
-          Смотреть виджеты
+        <Button variant='contained' color='warning' href='/ya-direct' className='mt-auto'>
+          Смотреть статьи
         </Button>
       </CardContent>
     </Card>
   );
 };
 
-export default TildaWidgets;
+export default YaDirect;

@@ -12,10 +12,11 @@ const horizontalMenuData = (): HorizontalMenuDataType[] => [
     href: '/tilda-widgets',
     icon: 'tabler-tilde',
   },
-  // {
-  //   label: 'Яндекс директ',
-  //   icon: 'tabler-brand-yandex',
-  // },
+  {
+    label: 'Яндекс директ',
+    icon: 'tabler-brand-yandex',
+    href: '/ya-direct',
+  },
   // {
   //   label: 'Дизайн',
   //   icon: 'tabler-palette',
