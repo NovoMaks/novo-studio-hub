@@ -1,6 +1,6 @@
 {
   "commit": "7308d247a3e5eed54c421cc0f1d9542f0c4a529b",
-  "generated": "2024-10-29T16:04:38.724Z",
+  "generated": "2024-10-29T16:05:38.803Z",
   "metadata": [
     {
       "__outstatic": {
@@ -237,7 +237,7 @@
     {
       "__outstatic": {
         "commit": "7308d247a3e5eed54c421cc0f1d9542f0c4a529b",
-        "hash": "3151288640",
+        "hash": "2995860902",
         "path": "outstatic/content/ya-direct/prodvizhenie-biznesa-bez-sayta.md"
       },
       "author": {
@@ -247,7 +247,7 @@
       "category": "ya-direct",
       "collection": "ya-direct",
       "coverImage": "http://novo-studio-hub.s3.cloud.ru/ya-direct/without-site/0.png",
-      "description": "",
+      "description": "Если у вас нет сайта, для размещения рекламы-не старшно Яндекс выкатил обновление, реклама без сайта. Для этого вам достаточно иметь номер телефона!",
       "price": "",
       "publishedAt": "2024-10-29T15:27:14.272Z",
       "slug": "prodvizhenie-biznesa-bez-sayta",
