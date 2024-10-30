@@ -25,6 +25,20 @@ const FooterContent = () => {
           Novo-studio
         </Link>
       </p>
+      <div className='flex items-center gap-4 flex-wrap'>
+        <Link href='/policy' target='_blank' className='text-primary'>
+          Политика обработки персональных данных
+        </Link>
+        <Link href='/offer' target='_blank' className='text-primary'>
+          Публичная оферта
+        </Link>
+        <Link href='/terms' target='_blank' className='text-primary'>
+          Пользовательское соглашение (лицензия)
+        </Link>
+        <Link href='/offer' target='_blank' className='text-primary'>
+          Реквизиты
+        </Link>
+      </div>
     </div>
   );
 };

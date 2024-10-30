@@ -1,7 +1,6 @@
 import PrismLoader from '@/components/PrismLoader';
 import { Post as PostType } from '@/types/post';
 import { Typography } from '@mui/material';
-import Image from 'next/image';
 const Post = ({ postInfo }: { postInfo: PostType }) => {
   return (
     <div className='max-w-screen-md mx-auto overflow-hidden'>
