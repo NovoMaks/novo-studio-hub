@@ -1,3 +1,3 @@
 export const links = {
-  tg_service: 'https://t.me/novms',
+  tg_service: 'https://t.me/Aliiishme',
 };

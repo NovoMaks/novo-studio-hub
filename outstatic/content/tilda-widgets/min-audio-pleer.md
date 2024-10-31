@@ -374,24 +374,24 @@ publishedAt: '2024-10-20T16:48:41.275Z'
 Найдите фрагмент, который представлен ниже, и измените песни на свои по аналогии с примером. Их может быть любое количество. Если песня одна, то в плеере не будет отображаться плейлист и кнопки переключения.\
 Обратите внимание, что ссылка на песню "прямая" (в конце стоит .mp3 или любой другой формат). Облачные диски, например Яндекс Диск, такой ссылки не предоставляют.\
 На данный момент самым выгодным и простым является Vk Cloud - Облачное S3 хранилище. Это платно, но зависит от количества прослушиваний на сайте, в среднем около 150 рублей в месяц. [Здесь](https://cloud.vk.com/storage/#benefits) вы можете про него прочитать.\
-Если вам нужна подробная инструкция о том, как загрузить свою музыку и получить прямую ссылку, пишите нам в [телеграмм](https://t.me/novms), мы вышлем бесплатную видео-инструкцию.
+Если вам нужна подробная инструкция о том, как загрузить свою музыку и получить прямую ссылку, пишите нам в [телеграмм](https://t.me/Aliiishme), мы вышлем бесплатную видео-инструкцию.
 
 ```javascript
-    // title - название песни, name - автор, source - ссылка на музыку
-    const songs = [
-      {
-        title: 'All Time Low',
-        name: 'Jon Bellion, Stormzy',
-        source:
-          'https://raw.githubusercontent.com/hafizmp/Music-Application/master/Assets/music/All_Time_Low.mp3',
-      },
-      {
-        title: 'Weak when ur around',
-        name: 'Blackbear',
-        source:
-          'https://raw.githubusercontent.com/hafizmp/Music-Application/master/Assets/music/Blackbear.mp3',
-      },
-    ];
+// title - название песни, name - автор, source - ссылка на музыку
+const songs = [
+  {
+    title: 'All Time Low',
+    name: 'Jon Bellion, Stormzy',
+    source:
+      'https://raw.githubusercontent.com/hafizmp/Music-Application/master/Assets/music/All_Time_Low.mp3',
+  },
+  {
+    title: 'Weak when ur around',
+    name: 'Blackbear',
+    source:
+      'https://raw.githubusercontent.com/hafizmp/Music-Application/master/Assets/music/Blackbear.mp3',
+  },
+];
 ```
 
 ## Шаг 5
