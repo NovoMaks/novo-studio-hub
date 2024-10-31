@@ -30,6 +30,27 @@ model User {
   purchases   Purchase[]
 }
 
+model Order {
+    id          String    @id @default(auto()) @map("_id") @db.ObjectId
+
+    userEmail   String
+
+    totalAmount Int
+    status      OrderStatus
+    paymentId   String?
+
+    items Json
+
+    createdAt DateTime @default(now())
+    updatedAt DateTime @updatedAt
+}
+
+enum OrderStatus {
+    PENDING
+    SUCCEEDED
+    CANCELLED
+}
+
 enum SubscriptionType {
   BASIC
   STANDARD
