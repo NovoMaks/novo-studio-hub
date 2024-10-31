@@ -1,6 +1,6 @@
 {
   "commit": "cf13af006dc54da65066af60a5881a9faad60d6e",
-  "generated": "2024-10-31T12:28:17.400Z",
+  "generated": "2024-10-31T13:21:18.058Z",
   "metadata": [
     {
       "__outstatic": {
@@ -237,7 +237,7 @@
     {
       "__outstatic": {
         "commit": "cf13af006dc54da65066af60a5881a9faad60d6e",
-        "hash": "2086069185",
+        "hash": "1339049926",
         "path": "outstatic/content/tilda-widgets/3d-img.md"
       },
       "author": {
@@ -251,7 +251,7 @@
       "price": "350",
       "publishedAt": "2024-10-31T12:26:32.954Z",
       "slug": "3d-img",
-      "status": "draft",
+      "status": "published",
       "tags": "Бесплатная установка на сайт",
       "title": "Следящая 3D картинка"
     }
