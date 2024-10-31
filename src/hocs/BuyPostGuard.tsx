@@ -14,7 +14,7 @@ export default async function BuyPostGuard({ children, post }: ChildrenType & { 
       session.user.purchases?.find((p) => p.category === post.category && p.slug === post.slug)) ||
     !post.price
   ) {
-    return children;
+    return <>{children}</>;
   } else {
     await newOrder({
       userEmail: session?.user?.email ?? '',
@@ -22,5 +22,6 @@ export default async function BuyPostGuard({ children, post }: ChildrenType & { 
       totalAmount: +post.price,
       redirectTo: `/${post.category}/${post.slug}`,
     });
+    return <p>Loading</p>;
   }
 }
