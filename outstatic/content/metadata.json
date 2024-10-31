@@ -1,6 +1,6 @@
 {
-  "commit": "7dbe1a15c7d2d81f7728ee71be351782998da859",
-  "generated": "2024-10-29T16:22:00.164Z",
+  "commit": "cf13af006dc54da65066af60a5881a9faad60d6e",
+  "generated": "2024-10-31T13:21:18.058Z",
   "metadata": [
     {
       "__outstatic": {
@@ -233,6 +233,27 @@
       "status": "published",
       "tags": "",
       "title": "Продвижение бизнеса без сайта"
+    },
+    {
+      "__outstatic": {
+        "commit": "cf13af006dc54da65066af60a5881a9faad60d6e",
+        "hash": "1339049926",
+        "path": "outstatic/content/tilda-widgets/3d-img.md"
+      },
+      "author": {
+        "name": "Maksim",
+        "picture": ""
+      },
+      "category": "tilda-widgets",
+      "collection": "tilda-widgets",
+      "coverImage": "http://novo-studio-hub.s3.cloud.ru/tilda-widgets/3d-img/0.gif",
+      "description": "Картинка в Zero-блоке, которая будет следить за курсором пользователя",
+      "price": "350",
+      "publishedAt": "2024-10-31T12:26:32.954Z",
+      "slug": "3d-img",
+      "status": "published",
+      "tags": "Бесплатная установка на сайт",
+      "title": "Следящая 3D картинка"
     }
   ]
 }
