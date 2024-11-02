@@ -30,6 +30,8 @@ model User {
   purchases   Purchase[]
 }
 
+
+
 model Order {
     id          String    @id @default(auto()) @map("_id") @db.ObjectId
 
@@ -39,10 +41,10 @@ model Order {
     status      OrderStatus
     paymentId   String?
 
-    items Json
+    purchases   Purchase[]
 
-    createdAt DateTime @default(now())
-    updatedAt DateTime @updatedAt
+    createdAt   DateTime @default(now())
+    updatedAt   DateTime @updatedAt
 }
 
 enum OrderStatus {

@@ -1,3 +1,4 @@
+import { addUserPurchase } from '@/app/server/user';
 import prisma from '@/lib/prisma';
 import { PaymentCallbackData } from '@/types/yookassa';
 import { OrderStatus } from '@prisma/client';
@@ -19,7 +20,7 @@ export async function POST(req: NextRequest) {
 
     const isSucceeded = body.object.status === 'succeeded';
 
-    await prisma.order.update({
+    const newOrder = await prisma.order.update({
       where: {
         id: order.id,
       },
@@ -27,6 +28,15 @@ export async function POST(req: NextRequest) {
         status: isSucceeded ? OrderStatus.SUCCEEDED : OrderStatus.CANCELLED,
       },
     });
+
+    if (isSucceeded) {
+      newOrder.purchases?.map((purchase) => {
+        addUserPurchase({
+          email: newOrder.userEmail,
+          purchase: { category: purchase.category, slug: purchase.slug },
+        });
+      });
+    }
 
     // const items = JSON.parse(order?.items as string) as CartItemDTO[];
 

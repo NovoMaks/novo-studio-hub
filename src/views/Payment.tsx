@@ -19,8 +19,7 @@ import type { SystemMode } from '@core/types';
 // Hook Imports
 import { useImageVariant } from '@core/hooks/useImageVariant';
 import MainLoader from '@/components/MainLoader';
-import { useEffect, useState } from 'react';
-import { redirect, useRouter, useSearchParams } from 'next/navigation';
+import { useRouter, useSearchParams } from 'next/navigation';
 import { addUserPurchase } from '@/app/server/user';
 
 // Styled Components

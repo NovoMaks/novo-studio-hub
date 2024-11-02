@@ -20,6 +20,8 @@ import ScrollToTop from '@core/components/scroll-to-top';
 
 // Util Imports
 import { getMode, getSystemMode } from '@core/utils/serverHelpers';
+import { Suspense } from 'react';
+import MainLoader from '@/components/MainLoader';
 
 const Layout = async ({ children }: ChildrenType) => {
   // Vars
@@ -37,12 +39,28 @@ const Layout = async ({ children }: ChildrenType) => {
             navbar={<Navbar />}
             footer={<VerticalFooter />}
           >
-            {children}
+            <Suspense
+              fallback={
+                <div className='flex justify-center items-center h-full w-full'>
+                  <MainLoader />
+                </div>
+              }
+            >
+              {children}
+            </Suspense>
           </VerticalLayout>
         }
         horizontalLayout={
           <HorizontalLayout header={<Header />} footer={<HorizontalFooter />}>
-            {children}
+            <Suspense
+              fallback={
+                <div className='flex justify-center items-center h-full w-full'>
+                  <MainLoader />
+                </div>
+              }
+            >
+              {children}
+            </Suspense>
           </HorizontalLayout>
         }
       />

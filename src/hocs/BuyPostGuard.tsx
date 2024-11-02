@@ -18,10 +18,10 @@ export default async function BuyPostGuard({ children, post }: ChildrenType & { 
   } else {
     await newOrder({
       userEmail: session?.user?.email ?? '',
-      items: JSON.stringify([post]),
       totalAmount: +post.price,
+      category: post.category,
+      slug: post.slug,
       redirectTo: `/${post.category}/${post.slug}`,
     });
-    return <p>Loading</p>;
   }
 }

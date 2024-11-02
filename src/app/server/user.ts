@@ -47,7 +47,6 @@ export const addUserPurchase = async ({
   email: string;
   purchase: User['purchases']['0'];
 }) => {
-  console.log(email, purchase);
   return prisma.user.update({
     where: { email },
     data: { purchases: { push: purchase } },

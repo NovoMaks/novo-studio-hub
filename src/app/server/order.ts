@@ -6,8 +6,9 @@ import { redirect } from 'next/navigation';
 
 export const newOrder = async (input: {
   userEmail: Order['userEmail'];
-  items: Order['items'];
   totalAmount: Order['totalAmount'];
+  category: string;
+  slug: string;
   redirectTo: string;
 }) => {
   let redirectUrl = '/';
@@ -17,7 +18,7 @@ export const newOrder = async (input: {
         userEmail: input.userEmail ?? '',
         totalAmount: input.totalAmount,
         status: OrderStatus.PENDING,
-        items: JSON.stringify([{ name: '', url: '' }]),
+        purchases: [{ category: input.category, slug: input.slug }],
       },
     });
 
