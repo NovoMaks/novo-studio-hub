@@ -20,10 +20,10 @@ export default function Page() {
       <Grid item xs={12} md={3}>
         <CardTelegram />
       </Grid>
-      <Grid item xs={6}>
+      <Grid item xs={12} md={6}>
         <TildaWidgets />
       </Grid>
-      <Grid item xs={6}>
+      <Grid item xs={12} md={6}>
         <YaDirect />
       </Grid>
       {/* <Grid item xs={12} md={6}>
