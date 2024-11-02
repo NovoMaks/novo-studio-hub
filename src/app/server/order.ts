@@ -60,3 +60,12 @@ export const newOrder = async (input: {
     redirect(redirectUrl);
   }
 };
+
+export const orderInfo = async (input: { id: Order['id'] }) => {
+  const order = await prisma.order.findFirst({
+    where: {
+      id: input.id,
+    },
+  });
+  return order;
+};

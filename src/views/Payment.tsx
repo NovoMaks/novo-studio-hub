@@ -6,8 +6,6 @@ import Link from 'next/link';
 // MUI Imports
 import useMediaQuery from '@mui/material/useMediaQuery';
 import { styled, useTheme } from '@mui/material/styles';
-
-import { useSession } from 'next-auth/react';
 import Typography from '@mui/material/Typography';
 
 // Third-party Imports
@@ -20,7 +18,8 @@ import type { SystemMode } from '@core/types';
 import { useImageVariant } from '@core/hooks/useImageVariant';
 import MainLoader from '@/components/MainLoader';
 import { useRouter, useSearchParams } from 'next/navigation';
-import { addUserPurchase } from '@/app/server/user';
+import { useEffect } from 'react';
+import { OrderStatus } from '@prisma/client';
 
 // Styled Components
 const MaskImg = styled('img')({
@@ -36,7 +35,6 @@ const Payment = ({ mode }: { mode: SystemMode }) => {
   // Vars
   const darkImg = '/images/pages/misc-mask-dark.png';
   const lightImg = '/images/pages/misc-mask-light.png';
-  const { data: session } = useSession();
   const { push } = useRouter();
 
   // Hooks
@@ -46,26 +44,44 @@ const Payment = ({ mode }: { mode: SystemMode }) => {
 
   const searchParams = useSearchParams();
   const redirectTo = searchParams.get('redirectTo') || '/';
-  const category = searchParams.get('category') || '';
-  const slug = searchParams.get('slug') || '';
+  const orderId = searchParams.get('orderID') || '';
 
+  useEffect(() => {
+    checkPayment();
+  }, []);
+
+  async function checkPayment() {
+    let response = await fetch(`/api/checkout/orderStatus?id=${orderId}`);
+
+    if (response.status != 200) {
+      alert(
+        'Возникла ошибка при оплате, приносим свои извенения. Свяжитесь с нами в Телеграм и мы все решим https://t.me/novms',
+      );
+      push(redirectTo);
+    } else {
+      const status = (await response.json()).status;
+
+      if (status === OrderStatus.PENDING) {
+        await checkPayment();
+      }
+
+      if (status === OrderStatus.SUCCEEDED) {
+        push(redirectTo);
+      }
+
+      if (status === OrderStatus.CANCELLED) {
+        alert(
+          'Платеж был отклонен платежной системой, приносим свои извенения. Если по какой-то причине денежные средства были списаны, свяжитесь с нами в Телеграм и мы все решим https://t.me/novms',
+        );
+        push(redirectTo);
+      }
+    }
+  }
   return (
     <div className='flex items-center justify-center min-bs-[100dvh] relative p-6 overflow-x-hidden'>
       <div className='flex items-center flex-col text-center'>
         <div className='flex flex-col gap-2 is-[90vw] sm:is-[unset] mbe-6'>
-          <Typography
-            onClick={async () => {
-              await addUserPurchase({
-                email: session?.user?.email ?? '',
-                purchase: { category, slug },
-              });
-              push(redirectTo);
-              ``;
-            }}
-            variant='h4'
-          >
-            Подтверждение оплаты, пожалуйста, подождите
-          </Typography>
+          <Typography variant='h4'>Подтверждение оплаты, пожалуйста, подождите</Typography>
         </div>
         <MainLoader />
       </div>
