@@ -1,12 +1,12 @@
 import Card from '@mui/material/Card';
-import CardMedia from '@mui/material/CardMedia';
 import CardContent from '@mui/material/CardContent';
 import Typography from '@mui/material/Typography';
-import Link from 'next/link';
-import { Button, Chip, Divider } from '@mui/material';
+
+import { Button, Chip } from '@mui/material';
 import { Post } from '@/types/post';
 import { getServerSession } from 'next-auth';
 import { authOptions } from '@/lib/auth';
+import PostImage from './PostImage';
 
 const PostCard = async ({
   title,
@@ -65,7 +65,8 @@ const PostCard = async ({
           color='error'
         />
       )}
-      <CardMedia image={coverImage} className='bs-[200px]' />
+
+      <PostImage coverImage={coverImage.replace('http://', 'https://')} alt={title} />
       <CardContent className='flex-1 flex flex-col'>
         <div className='flex flex-col mb-4'>
           <Typography variant='h5' className='mbe-2'>
